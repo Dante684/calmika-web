@@ -199,23 +199,29 @@ function FeatureCard({ feature, name, desc }: CardProps) {
         boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
       }}
     >
-      {/* Screenshot */}
+      {/* Screenshot in phone frame */}
       {feature.screenshot && (
-        <div className="relative overflow-hidden" style={{ height: 200 }}>
-          <Image
-            src={feature.screenshot}
-            alt={feature.screenshotAlt ?? name}
-            fill
-            className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-          {/* Overlay gradient */}
+        <div className="flex justify-center pt-5 pb-2">
           <div
-            className="absolute inset-0"
+            className="relative overflow-hidden rounded-[1.2rem]"
             style={{
-              background: "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.95) 100%)",
+              width: 120,
+              height: 240,
+              backgroundColor: "#1a1c1b",
+              padding: 4,
+              boxShadow: "0 8px 30px rgba(0,0,0,0.15)",
             }}
-          />
+          >
+            <div className="relative w-full h-full rounded-[1rem] overflow-hidden bg-white">
+              <Image
+                src={feature.screenshot}
+                alt={feature.screenshotAlt ?? name}
+                fill
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="120px"
+              />
+            </div>
+          </div>
         </div>
       )}
 
