@@ -753,5 +753,27 @@
       "title": "9. Kapcsolat",
       "p1": "Kérdés vagy észrevétel esetén:"
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "ASD szülői tudástár — tippek, kutatások, app frissítések",
+    "categories": {
+      "all": "Mind",
+      "parents": "Szülőknek",
+      "therapists": "Terapeutáknak",
+      "updates": "App frissítések",
+      "research": "Kutatás"
+    },
+    "readingTime": "{minutes} perc olvasás",
+    "by": "Írta",
+    "relatedPosts": "Kapcsolódó cikkek",
+    "newsletter": {
+      "title": "Iratkozz fel a hírlevélre",
+      "subtitle": "Heti ASD tippek és app frissítések",
+      "placeholder": "Email címed",
+      "button": "Feliratkozás"
+    },
+    "share": "Megosztás",
+    "toc": "Tartalomjegyzék"
   }
 }

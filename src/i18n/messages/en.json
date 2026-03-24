@@ -753,5 +753,27 @@
       "title": "9. Contact",
       "p1": "For questions or concerns:"
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "ASD parenting knowledge base — tips, research, app updates",
+    "categories": {
+      "all": "All",
+      "parents": "For Parents",
+      "therapists": "For Therapists",
+      "updates": "App Updates",
+      "research": "Research"
+    },
+    "readingTime": "{minutes} min read",
+    "by": "By",
+    "relatedPosts": "Related Posts",
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "subtitle": "Weekly ASD tips and app updates",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    },
+    "share": "Share",
+    "toc": "Table of Contents"
   }
 }
