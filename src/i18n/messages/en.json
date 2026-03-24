@@ -1,4 +1,54 @@
 {
+  "faq": {
+    "header": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to the most common questions"
+    },
+    "categories": {
+      "general": "General",
+      "pricing": "Pricing",
+      "therapists": "For Therapists",
+      "privacy": "Privacy"
+    },
+    "general": {
+      "q1": "What is Calmika?",
+      "a1": "Calmika is an all-in-one autism development app for children aged 2–7. It includes 30+ modules — from AAC communication and visual schedules to music therapy and coloring — available in 7 languages, and works fully offline.",
+      "q2": "Who is it for?",
+      "a2": "Calmika is designed for parents of children with ASD (Autism Spectrum Disorder), therapists, and speech-language pathologists. It also helps any child experiencing speech delays or communication difficulties.",
+      "q3": "What devices does it run on?",
+      "a3": "Available on Android 8.0 (Oreo) and newer phones and tablets. An iOS (iPhone / iPad) version is in development — coming soon!",
+      "q4": "Does it contain ads?",
+      "a4": "No, and it never will. Advertising in a children's app is unacceptable — this is our ethical principle, not a marketing pitch.",
+      "q5": "What languages are available?",
+      "a5": "Currently 7 languages: Hungarian, English, Polish, German, Spanish, French, and Italian. Dual language mode lets children learn in two languages simultaneously."
+    },
+    "pricing": {
+      "q1": "How much does it cost?",
+      "a1": "The basic version is completely free. Pro subscription: 1,990 HUF/mo (Hungary) | €5.99/mo (EU) | $7.99/mo (US). Save with annual billing: 14,990 HUF | €49.99 | $59.99.",
+      "q2": "Is there a free trial?",
+      "a2": "Yes! Get 14 days of full Pro access — no credit card required. No hidden conditions, just try everything.",
+      "q3": "What stays free forever?",
+      "a3": "The AAC Lite package (80 core words) and the Calm Corner module are permanently free. This is our ethical principle: every child deserves free access to basic communication tools.",
+      "q4": "How do I cancel my subscription?",
+      "a4": "Cancel anytime through the Google Play Store or App Store subscription manager with a single click. No cancellation fees, no complicated process."
+    },
+    "therapists": {
+      "q1": "How do I get free access as a therapist?",
+      "a1": "Visit the /terapeutaknak page and fill out the registration form. We'll send you a Pro activation code within 24 hours — valid for 10 devices for 1 year, completely free.",
+      "q2": "Can I use Calmika during therapy sessions?",
+      "a2": "Yes, that's exactly what it was designed for! Calmika works fully offline and is optimized for tablets — perfect for therapeutic environments without internet access."
+    },
+    "privacy": {
+      "q1": "What data do you collect?",
+      "a1": "Minimal data. We collect no personal child data — developmental data is stored exclusively on your device, offline. For full details, visit the /adatvedelem privacy policy page.",
+      "q2": "Is Calmika COPPA / GDPR compliant?",
+      "a2": "Yes. There is no tracking and no third-party analytics on Calmika's child-facing interface. We comply with COPPA (USA) and GDPR (EU) regulations."
+    },
+    "contact": {
+      "notFound": "Didn't find the answer you were looking for?",
+      "contactLink": "Contact us"
+    }
+  },
   "meta": {
     "siteName": "Calmika",
     "siteDescription": "The only all-in-one autism development app"
@@ -24,6 +74,180 @@
     "community": "Community",
     "copyright": "© 2026 Calmika. All rights reserved."
   },
+  "pages": {
+    "features": {
+      "title": "Features",
+      "description": "30+ modules for ASD children"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "description": "From free to premium"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "The story of Calmika"
+    },
+    "therapists": {
+      "title": "For Therapists",
+      "description": "Free Pro access"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "ASD parent knowledge base"
+    },
+    "download": {
+      "title": "Download",
+      "description": "Get Calmika"
+    },
+    "beta": {
+      "title": "Beta Program",
+      "description": "Be among the first"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Frequently asked questions"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Privacy information"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms and conditions"
+    }
+  },
+  "story": {
+    "sectionTitle": "Why Calmika?",
+    "quote": "My twin sons, Alex and Olivia, were diagnosed with autism at age 2. As a parent, the first months are the hardest — everyone says something different, apps are expensive, and most don't even support Hungarian. That's why I started building Calmika: so that one app can provide everything an ASD family needs.",
+    "author": "Dávid, founder of Calmika",
+    "ctaReadMore": "Read the full story"
+  },
+  "ctaBottom": {
+    "title": "Try Calmika — 14 days free, full Pro access",
+    "subtitle": "No credit card required. Download now.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "appStoreComingSoon": "Coming soon"
+  },
+  "features": {
+    "sectionTitle": "What can Calmika do?",
+    "sectionSubtitle": "30+ modules in one app",
+    "learnMore": "Learn more",
+    "aac": {
+      "name": "AAC Communication",
+      "desc": "5000+ words, prediction bar, drag-and-drop editing"
+    },
+    "napirend": {
+      "name": "Visual Schedule",
+      "desc": "Daily routines visually, works offline too"
+    },
+    "erzelmek": {
+      "name": "Emotions & Zones",
+      "desc": "Emotion recognition and Zones of Regulation"
+    },
+    "szocialis": {
+      "name": "Social Stories",
+      "desc": "Illustrated stories with rules and guidance"
+    },
+    "szotanulas": {
+      "name": "Vocabulary & ABC",
+      "desc": "757 words, dual language mode, interactive ABC"
+    },
+    "zeneterpia": {
+      "name": "Music Therapy",
+      "desc": "6 submodules, 15 instruments, rhythm games"
+    },
+    "kifesto": {
+      "name": "Coloring",
+      "desc": "110+ images, sensory world, calming coloring"
+    },
+    "nyugi-sarok": {
+      "name": "Calm Corner",
+      "desc": "Breathing, bubbles, calming sounds — ALWAYS FREE"
+    }
+  },
+  "socialProof": {
+    "sectionTitle": "Why do parents choose Calmika?",
+    "stats": {
+      "words": "AAC words",
+      "modules": "Modules",
+      "languages": "Languages",
+      "ads": "Ads"
+    },
+    "comparison": {
+      "title": "Comparison",
+      "feature": "Feature",
+      "price": "Price/mo",
+      "platform": "Platform",
+      "aacWords": "AAC words",
+      "education": "Education",
+      "dualLang": "Dual language",
+      "freeTier": "Free tier",
+      "hungarian": "Hungarian language"
+    },
+    "testimonials": {
+      "title": "Parents say",
+      "placeholder": "Beta tester reviews coming soon...",
+      "name": "Beta Tester"
+    }
+  },
+  "hero": {
+    "badge": "30+ modules • 7 languages • Free AAC",
+    "title": "Help your child find their voice ✨",
+    "subtitle": "The only all-in-one autism development app — AAC communication, visual schedules, music therapy and 30+ modules. Free to start.",
+    "ctaPrimary": "Download for free",
+    "ctaSecondary": "Explore features"
+  },
+  "download": {
+    "hero": {
+      "title": "Download Calmika",
+      "subtitle": "Free. No ads. 14 days full Pro."
+    },
+    "store": {
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "comingSoon": "Coming Soon"
+    },
+    "qr": {
+      "label": "Scan with your phone"
+    },
+    "steps": {
+      "title": "How to get started",
+      "step1": {
+        "title": "Download from Play Store",
+        "desc": "Find Calmika on Google Play and install it for free."
+      },
+      "step2": {
+        "title": "Set up your child's profile",
+        "desc": "Create a profile for your child, set their age and preferences."
+      },
+      "step3": {
+        "title": "Start exploring!",
+        "desc": "Discover 30+ modules: AAC, schedules, music therapy and much more."
+      }
+    },
+    "requirements": {
+      "title": "System Requirements",
+      "android": "Android 8.0+ (API 26)",
+      "storage": "~93 MB storage required",
+      "offline": "Works offline",
+      "tablet": "Tablet optimized"
+    },
+    "beta": {
+      "title": "Developer version download",
+      "warning": "This is a beta version and may contain bugs. Recommended for testing purposes only.",
+      "downloadApk": "Download APK (GitHub Releases)",
+      "hint": "To install, enable 'Unknown sources' in your device settings."
+    },
+    "screenshots": {
+      "title": "Screenshots",
+      "placeholder": "Real screenshots coming soon."
+    }
+  },
   "common": {
     "downloadFree": "Download for free",
     "learnMore": "Learn more",
@@ -37,5 +261,153 @@
     "monthly": "Monthly",
     "yearly": "Yearly",
     "lifetime": "Lifetime"
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "14 days free full Pro — no credit card required",
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "period": "Free forever",
+      "cta": "Start free",
+      "features": [
+        "AAC Lite (80 core words)",
+        "Calm Corner (full)",
+        "3 coloring images",
+        "5 vocabulary words",
+        "Basic schedule"
+      ]
+    },
+    "pro_monthly": {
+      "name": "Pro Monthly",
+      "badge": "Most Popular",
+      "price_hu": "1,990 HUF/mo",
+      "price_eu": "€5.99/mo",
+      "price_us": "$7.99/mo",
+      "period": "per month",
+      "cta": "Try free for 14 days",
+      "features": [
+        "ALL modules (30+)",
+        "5000+ AAC words",
+        "Dual language (7 languages)",
+        "Offline mode",
+        "Parent reports",
+        "Printable templates (86)"
+      ]
+    },
+    "pro_yearly": {
+      "name": "Pro Yearly",
+      "badge": "Best value",
+      "savings": "2 months free",
+      "price_hu": "14,990 HUF/yr",
+      "price_eu": "€49.99/yr",
+      "price_us": "$59.99/yr",
+      "period": "per year",
+      "cta": "Choose yearly",
+      "features": [
+        "ALL modules (30+)",
+        "5000+ AAC words",
+        "Dual language (7 languages)",
+        "Offline mode",
+        "Parent reports",
+        "Printable templates (86)"
+      ]
+    },
+    "comparison": {
+      "title": "What's included in each plan?",
+      "feature": "Feature",
+      "free": "Free",
+      "pro": "Pro",
+      "rows": {
+        "aac": "AAC words",
+        "coloring": "Coloring",
+        "vocab": "Vocabulary",
+        "music": "Music Therapy",
+        "schedule": "Schedule",
+        "emotions": "Emotions",
+        "social": "Social Stories",
+        "cognitive": "Cognitive Games",
+        "printable": "Printable templates",
+        "reports": "Parent reports",
+        "dualLang": "Dual language",
+        "offline": "Offline mode"
+      }
+    },
+    "ethics": {
+      "text": "🤝 AAC communication and Calm Corner will ALWAYS remain free. Communication is a human right."
+    },
+    "therapists": {
+      "title": "For Therapists & Schools",
+      "subtitle": "Special plans for institutions, therapists, and educators.",
+      "cta": "Learn more"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "When will I be charged?",
+      "a1": "After the 14-day free trial ends. No credit card required to sign up — only if you choose to continue.",
+      "q2": "How do I cancel?",
+      "a2": "Anytime, with one click in your Google Play account. No hidden conditions.",
+      "q3": "What happens after 14 days?",
+      "a3": "If you don't subscribe, you'll automatically revert to the Free plan. AAC and Calm Corner remain — they're free forever.",
+      "q4": "Is there a refund guarantee?",
+      "a4": "Yes. If you're not satisfied within the first 7 days after subscribing, we'll refund you. Email us at contact@calmika.app."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "The Calmika Story",
+      "subtitle": "Built by a dad of autistic twins — not a corporate product, but made with a parent's heart."
+    },
+    "timeline": {
+      "sectionTitle": "How We Got Here",
+      "y2022": {
+        "title": "The Diagnosis",
+        "text": "My twins, Alex and Olivia, were diagnosed with autism at age two. The first months were complete chaos — running from one doctor to the next, everyone saying something different. Online, I found only expensive English-language apps that couldn't even meet our needs."
+      },
+      "y2023": {
+        "title": "The Idea",
+        "text": "While working night shifts at a Lidl warehouse, I started learning to code during the day. I wasn't a developer — but I was a dad, and that was motivation enough. The idea was simple: one app that does everything, in our language, without costing a fortune."
+      },
+      "y2024": {
+        "title": "The Build",
+        "text": "Flutter, Dart, with AI assistance. First an AAC communication board, then schedules, emotions, coloring, music therapy... The list kept growing, because an ASD family needs ALL of this — not just one piece of the puzzle."
+      },
+      "y2025": {
+        "title": "Calmika",
+        "text": "Today Calmika has 30+ modules, is available in 7 languages, and AAC communication + Calm Corner will remain free forever. Because communication is a basic right — not a luxury."
+      }
+    },
+    "values": {
+      "sectionTitle": "Our Values",
+      "sectionSubtitle": "Not compromises — principles.",
+      "cards": {
+        "accessibility": {
+          "title": "Accessible Communication",
+          "description": "AAC + Calm Corner always free"
+        },
+        "noAds": {
+          "title": "Zero Ads",
+          "description": "Ads in a kids app? Never."
+        },
+        "privacy": {
+          "title": "Privacy First",
+          "description": "No tracking, no data upload"
+        },
+        "pricing": {
+          "title": "Transparent Pricing",
+          "description": "No hidden fees, cancel anytime"
+        }
+      }
+    },
+    "team": {
+      "sectionTitle": "The \"Team\"",
+      "description": "I build Calmika alone, with AI assistance. There's no company or investor behind me — just a dad who wanted something better for his kids. And what's good for Alex and Olivia might be good for other ASD families too.",
+      "founderTitle": "Founder, developer, ASD dad"
+    },
+    "photos": {
+      "portrait": "Dávid portrait",
+      "portraitCaption": "Dávid — founder",
+      "family": "The Calmika family"
+    }
   }
 }

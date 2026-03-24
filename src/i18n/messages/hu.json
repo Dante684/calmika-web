@@ -1,4 +1,54 @@
 {
+  "faq": {
+    "header": {
+      "title": "Gyakran Ismételt Kérdések",
+      "subtitle": "Válaszok a leggyakrabban feltett kérdésekre"
+    },
+    "categories": {
+      "general": "Általános",
+      "pricing": "Árazás",
+      "therapists": "Terapeutáknak",
+      "privacy": "Adatvédelem"
+    },
+    "general": {
+      "q1": "Mi az a Calmika?",
+      "a1": "A Calmika egy all-in-one autizmus fejlesztő alkalmazás 2–7 éves gyerekeknek. 30+ modult tartalmaz — AAC kommunikációtól a vizuális napirendig, zeneterápiától a kifestőig —, 7 nyelven érhető el, és teljesen offline is működik.",
+      "q2": "Kinek készült?",
+      "a2": "A Calmikát ASD (autizmus spektrum zavarral élő) gyerekek szüleinek, terapeutáknak és logopédusoknak terveztük, de minden olyan gyereknek segíthet, akinél beszédfejlődési késés vagy kommunikációs nehézség figyelhető meg.",
+      "q3": "Milyen eszközökön működik?",
+      "a3": "Android 8.0 (Oreo) és újabb operációs rendszert futtató telefonokon és tableteken érhető el. iOS (iPhone / iPad) verzió fejlesztés alatt áll — hamarosan!",
+      "q4": "Van benne reklám?",
+      "a4": "Nincs, és soha nem is lesz. Gyerekeknek szóló alkalmazásban a reklám elfogadhatatlan — ez etikai alapelvünk, nem marketingfogás.",
+      "q5": "Milyen nyelveken érhető el?",
+      "a5": "Jelenleg 7 nyelven: magyarul, angolul, lengyelül, németül, spanyolul, franciául és olaszul. A dual language mód lehetővé teszi, hogy a gyerek egyszerre két nyelven tanuljon."
+    },
+    "pricing": {
+      "q1": "Mennyibe kerül?",
+      "a1": "Az alap verzió teljesen ingyenes. A Pro előfizetés ára: 1 990 Ft/hó (Magyarország) | €5,99/hó (EU) | $7,99/hó (US). Éves előfizetéssel spórolhatsz: 14 990 Ft | €49,99 | $59,99.",
+      "q2": "Van próbaidőszak?",
+      "a2": "Igen! 14 napig teljes Pro hozzáférést kapsz — bankkártya megadása nélkül. Nincs rejtett feltétel, csak próbálj ki mindent.",
+      "q3": "Mi marad mindig ingyenes?",
+      "a3": "Az AAC Lite csomag (80 alapvető core szó) és a Nyugi Sarok modul örökre ingyenes marad. Ez etikai alapelvünk: a kommunikáció alapeszközeihez minden gyereknek szabad hozzáférése kell legyen.",
+      "q4": "Hogyan mondhatom le az előfizetést?",
+      "a4": "Az előfizetést bármikor lemondhatod a Google Play Store vagy az App Store előfizetés-kezelő felületén, egyetlen kattintással. Nincs felmondási díj, nincs bonyolult folyamat."
+    },
+    "therapists": {
+      "q1": "Hogyan kapok ingyenes hozzáférést terapeutaként?",
+      "a1": "Látogasd meg a /terapeutaknak oldalt, és töltsd ki a regisztrációs űrlapot. 24 órán belül Pro aktiváló kódot küldünk, amely 10 eszközön és 1 évig érvényes — teljesen ingyen.",
+      "q2": "Használhatom a Calmikát foglalkozásokon?",
+      "a2": "Igen, pontosan erre terveztük! A Calmika teljesen offline működik, és tableteken optimalizált — így terápiás környezetben is megbízhatóan használható, internet-hozzáférés nélkül is."
+    },
+    "privacy": {
+      "q1": "Milyen adatokat gyűjtötök?",
+      "a1": "Minimális adatot. Semmilyen személyes gyerekadatot nem gyűjtünk — a fejlődési adatok kizárólag a te eszközödön tárolódnak, offline. A részletes adatvédelmi tájékoztatóért látogasd meg az /adatvedelem oldalt.",
+      "q2": "COPPA / GDPR kompatibilis a Calmika?",
+      "a2": "Igen. A Calmika gyerekfelületén nincs semmilyen tracking, és harmadik féltől származó analitika sem fut. Megfelelünk a COPPA (USA) és a GDPR (EU) előírásainak."
+    },
+    "contact": {
+      "notFound": "Nem találtad a választ, amit kerestél?",
+      "contactLink": "Lépj kapcsolatba velünk"
+    }
+  },
   "meta": {
     "siteName": "Calmika",
     "siteDescription": "Az egyetlen all-in-one autizmus fejlesztő app"
@@ -24,6 +74,180 @@
     "community": "Közösség",
     "copyright": "© 2026 Calmika. Minden jog fenntartva."
   },
+  "pages": {
+    "features": {
+      "title": "Funkciók",
+      "description": "30+ modul ASD gyerekeknek"
+    },
+    "pricing": {
+      "title": "Árazás",
+      "description": "Ingyenestől prémiumig"
+    },
+    "about": {
+      "title": "Rólunk",
+      "description": "A Calmika története"
+    },
+    "therapists": {
+      "title": "Terapeutáknak",
+      "description": "Ingyenes Pro hozzáférés"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "ASD szülői tudástár"
+    },
+    "download": {
+      "title": "Letöltés",
+      "description": "Töltsd le a Calmikát"
+    },
+    "beta": {
+      "title": "Béta Program",
+      "description": "Légy az elsők között"
+    },
+    "contact": {
+      "title": "Kapcsolat",
+      "description": "Írj nekünk"
+    },
+    "faq": {
+      "title": "GYIK",
+      "description": "Gyakran ismételt kérdések"
+    },
+    "privacy": {
+      "title": "Adatvédelem",
+      "description": "Adatvédelmi tájékoztató"
+    },
+    "terms": {
+      "title": "ÁSZF",
+      "description": "Általános szerződési feltételek"
+    }
+  },
+  "story": {
+    "sectionTitle": "Miért Calmika?",
+    "quote": "Két fiamnak, Alexnek és Oliviának 2 évesen diagnosztizálták az autizmust. Szülőként az első hónapok a legnehezebbek — mindenki mást mond, az appok drágák, és a legtöbb nem is magyar. Ezért kezdtem el építeni a Calmikát: hogy egyetlen appban meglegyen minden, amire egy ASD család szüksége van.",
+    "author": "Dávid, a Calmika alapítója",
+    "ctaReadMore": "Olvasd el a teljes történetet"
+  },
+  "ctaBottom": {
+    "title": "Próbáld ki a Calmikát — 14 nap ingyen, teljes Pro",
+    "subtitle": "Nincs bankkártya szükség. Töltsd le most.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "appStoreComingSoon": "Hamarosan"
+  },
+  "features": {
+    "sectionTitle": "Mit tud a Calmika?",
+    "sectionSubtitle": "30+ modul egyetlen alkalmazásban",
+    "learnMore": "Tudj meg többet",
+    "aac": {
+      "name": "AAC Kommunikáció",
+      "desc": "5000+ szó, predikciós sáv, drag-and-drop szerkesztés"
+    },
+    "napirend": {
+      "name": "Vizuális Napirend",
+      "desc": "Napi rutinok vizuálisan, offline is működik"
+    },
+    "erzelmek": {
+      "name": "Érzelmek & Zones",
+      "desc": "Érzelemfelismerés és Zones of Regulation"
+    },
+    "szocialis": {
+      "name": "Szociális Történetek",
+      "desc": "Illusztrált történetek szabályokkal és útmutatóval"
+    },
+    "szotanulas": {
+      "name": "Szótanulás & ABC",
+      "desc": "757 szó, dual language mód, interaktív ABC"
+    },
+    "zeneterpia": {
+      "name": "Zeneterápia",
+      "desc": "6 almodul, 15 hangszer, ritmus játékok"
+    },
+    "kifesto": {
+      "name": "Kifestő",
+      "desc": "110+ kép, szenzoros világ, nyugtató színezés"
+    },
+    "nyugi-sarok": {
+      "name": "Nyugi Sarok",
+      "desc": "Lélegzés, buborékok, nyugtató hangok — MINDIG INGYENES"
+    }
+  },
+  "socialProof": {
+    "sectionTitle": "Miért választják a szülők?",
+    "stats": {
+      "words": "AAC szó",
+      "modules": "Modul",
+      "languages": "Nyelv",
+      "ads": "Reklám"
+    },
+    "comparison": {
+      "title": "Összehasonlítás",
+      "feature": "Funkció",
+      "price": "Ár/hó",
+      "platform": "Platform",
+      "aacWords": "AAC szavak",
+      "education": "Edukáció",
+      "dualLang": "Dual language",
+      "freeTier": "Ingyenes tier",
+      "hungarian": "Magyar nyelv"
+    },
+    "testimonials": {
+      "title": "Szülők mondják",
+      "placeholder": "Hamarosan béta tesztelői vélemények...",
+      "name": "Béta tesztelő"
+    }
+  },
+  "hero": {
+    "badge": "30+ modul • 7 nyelv • Ingyenes AAC",
+    "title": "Segítsd gyermeked megtalálni a hangját ✨",
+    "subtitle": "Az egyetlen all-in-one autizmus fejlesztő app — AAC kommunikáció, vizuális napirend, zeneterápia és 30+ modul. Ingyenesen.",
+    "ctaPrimary": "Töltsd le ingyen",
+    "ctaSecondary": "Nézd meg a funkciókat"
+  },
+  "download": {
+    "hero": {
+      "title": "Töltsd le a Calmikát",
+      "subtitle": "Ingyenes. Reklám nélkül. 14 nap teljes Pro."
+    },
+    "store": {
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "comingSoon": "Hamarosan"
+    },
+    "qr": {
+      "label": "Szkenneld be a telefonoddal"
+    },
+    "steps": {
+      "title": "Hogyan kezdj?",
+      "step1": {
+        "title": "Töltsd le a Play Store-ból",
+        "desc": "Keresd a Calmikát a Google Play áruházban és telepítsd ingyenesen."
+      },
+      "step2": {
+        "title": "Állítsd be a gyerek profilját",
+        "desc": "Hozz létre profilt gyermekednek, add meg a korát és preferenciáit."
+      },
+      "step3": {
+        "title": "Kezdjétek el felfedezni!",
+        "desc": "Fedezze fel a 30+ modult: AAC, napirend, zeneterápia és még sok más."
+      }
+    },
+    "requirements": {
+      "title": "Rendszerkövetelmények",
+      "android": "Android 8.0+ (API 26)",
+      "storage": "~93 MB tárhelyet igényel",
+      "offline": "Offline is működik",
+      "tablet": "Tablet optimalizált"
+    },
+    "beta": {
+      "title": "Fejlesztői verzió letöltése",
+      "warning": "Ez a béta verzió, hibákat tartalmazhat. Csak tesztelési célra ajánlott.",
+      "downloadApk": "APK letöltése (GitHub Releases)",
+      "hint": "A telepítéshez engedélyezd az 'Ismeretlen forrásból' telepítést az eszköz beállításaiban."
+    },
+    "screenshots": {
+      "title": "Képernyőképek",
+      "placeholder": "Valódi képernyőképek hamarosan érkeznek."
+    }
+  },
   "common": {
     "downloadFree": "Töltsd le ingyen",
     "learnMore": "Tudj meg többet",
@@ -37,5 +261,153 @@
     "monthly": "Havi",
     "yearly": "Éves",
     "lifetime": "Lifetime"
+  },
+  "pricing": {
+    "title": "Egyszerű, átlátható árazás",
+    "subtitle": "14 nap ingyen teljes Pro — nincs bankkártya szükség",
+    "free": {
+      "name": "Ingyenes",
+      "price": "0 Ft",
+      "period": "Örökre ingyenes",
+      "cta": "Kezdd ingyen",
+      "features": [
+        "AAC Lite (80 core szó)",
+        "Nyugi Sarok (teljes)",
+        "3 kifestő kép",
+        "5 szótanulás szó",
+        "Alapvető napirend"
+      ]
+    },
+    "pro_monthly": {
+      "name": "Pro Havi",
+      "badge": "Legnépszerűbb",
+      "price_hu": "1 990 Ft/hó",
+      "price_eu": "€5,99/hó",
+      "price_us": "$7,99/hó",
+      "period": "havonta",
+      "cta": "Próbáld ki 14 napig ingyen",
+      "features": [
+        "MINDEN modul (30+)",
+        "5000+ AAC szó",
+        "Dual language (7 nyelv)",
+        "Offline mód",
+        "Szülői riportok",
+        "Nyomtatható sablonok (86 db)"
+      ]
+    },
+    "pro_yearly": {
+      "name": "Pro Éves",
+      "badge": "Legjobb ajánlat",
+      "savings": "2 hónap ingyen",
+      "price_hu": "14 990 Ft/év",
+      "price_eu": "€49,99/év",
+      "price_us": "$59,99/év",
+      "period": "évente",
+      "cta": "Válaszd az éveset",
+      "features": [
+        "MINDEN modul (30+)",
+        "5000+ AAC szó",
+        "Dual language (7 nyelv)",
+        "Offline mód",
+        "Szülői riportok",
+        "Nyomtatható sablonok (86 db)"
+      ]
+    },
+    "comparison": {
+      "title": "Mit tartalmaz az egyes csomagok?",
+      "feature": "Funkció",
+      "free": "Ingyenes",
+      "pro": "Pro",
+      "rows": {
+        "aac": "AAC szavak",
+        "coloring": "Kifestő",
+        "vocab": "Szótanulás",
+        "music": "Zeneterápia",
+        "schedule": "Napirend",
+        "emotions": "Érzelmek",
+        "social": "Szociális Történetek",
+        "cognitive": "Kognitív Játékok",
+        "printable": "Nyomtatható sablonok",
+        "reports": "Szülői riportok",
+        "dualLang": "Dual language",
+        "offline": "Offline mód"
+      }
+    },
+    "ethics": {
+      "text": "🤝 AAC kommunikáció és Nyugi Sarok MINDIG INGYENES marad. A kommunikáció alapjog."
+    },
+    "therapists": {
+      "title": "Terapeutáknak és iskoláknak",
+      "subtitle": "Speciális csomag intézményeknek, terapeutáknak és pedagógusoknak.",
+      "cta": "Tudj meg többet"
+    },
+    "faq": {
+      "title": "Gyakori kérdések",
+      "q1": "Mikor számlázódik?",
+      "a1": "A 14 napos ingyenes próbaidőszak lejárta után. Nem kell bankkártya a regisztrációhoz — csak ha folytatni szeretnéd.",
+      "q2": "Hogyan mondhatom le?",
+      "a2": "Bármikor, egy kattintással a Google Play fiókodban. Nem tartjuk vissza, nincs rejtett feltétel.",
+      "q3": "Mi történik a 14 nap után?",
+      "a3": "Ha nem fizetsz elő, automatikusan visszavált az Ingyenes csomagra. Az AAC és Nyugi Sarok megmarad — ezek örökre ingyenesek.",
+      "q4": "Van visszatérítési garancia?",
+      "a4": "Igen. Ha az első 7 napon belül (előfizetés után) nem vagy elégedett, visszatérítjük. Írj nekünk a kapcsolat@calmika.app címre."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "A Calmika története",
+      "subtitle": "Egy ASD ikrek apukája által készített app — nem nagyvállalati termék, hanem szülői szívvel."
+    },
+    "timeline": {
+      "sectionTitle": "Hogyan jutottunk idáig",
+      "y2022": {
+        "title": "A diagnózis",
+        "text": "Két fiam, Alex és Olivia 2 évesen kapta meg az autizmus diagnózist. Az első hónapok teljes káosz — orvostól orvosig rohantunk, mindenki mást mondott. Az interneten angol nyelvű, drága alkalmazásokat találtam, amik nem is fedhették le a mi igényeinket."
+      },
+      "y2023": {
+        "title": "Az ötlet",
+        "text": "Miközben éjszakánként a Lidl raktárában dolgoztam, napközben elkezdtem tanulni programozni. Nem voltam fejlesztő — de apa voltam, és ez elég motiváció volt. Az ötlet egyszerű: egy app, ami mindent tud, magyarul, és nem kerül egy vagyonba."
+      },
+      "y2024": {
+        "title": "Az építés",
+        "text": "Flutter, Dart, AI segítséggel. Először AAC kommunikációs tábla, aztán napirend, érzelmek, kifestő, zeneterápia... A lista egyre csak nőtt, mert egy ASD családnak MINDEZ kell, nem csak egy-egy dolog."
+      },
+      "y2025": {
+        "title": "A Calmika",
+        "text": "Ma a Calmika 30+ modult tartalmaz, 7 nyelven elérhető, és az AAC kommunikáció + Nyugi Sarok örökre ingyenes marad. Mert a kommunikáció alapjog — nem luxus."
+      }
+    },
+    "values": {
+      "sectionTitle": "Értékeink",
+      "sectionSubtitle": "Nem kompromisszumok — alapelvek.",
+      "cards": {
+        "accessibility": {
+          "title": "Akadálymentes kommunikáció",
+          "description": "AAC + Nyugi Sarok mindig ingyenes"
+        },
+        "noAds": {
+          "title": "Nulla reklám",
+          "description": "Gyerekappban reklám? Soha."
+        },
+        "privacy": {
+          "title": "Adatvédelem",
+          "description": "Nincs tracking, nincs adat feltöltés"
+        },
+        "pricing": {
+          "title": "Nyílt árazás",
+          "description": "Nincs rejtett díj, bármikor lemondható"
+        }
+      }
+    },
+    "team": {
+      "sectionTitle": "A \"csapat\"",
+      "description": "A Calmikát egyedül építem, AI segítségével. Nincs mögöttem cég vagy befektető — csak egy apa, aki jobbat akart a gyerekeinek. És ami Alexnek és Oliviának jó, az más ASD családoknak is jó lehet.",
+      "founderTitle": "Alapító, fejlesztő, ASD apuka"
+    },
+    "photos": {
+      "portrait": "Dávid portré",
+      "portraitCaption": "Dávid — alapító",
+      "family": "Calmika familia"
+    }
   }
 }
