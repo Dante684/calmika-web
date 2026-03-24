@@ -409,5 +409,337 @@
       "portraitCaption": "Dávid — alapító",
       "family": "Calmika familia"
     }
+  },
+  "therapists": {
+    "meta": {
+      "title": "Terapeutáknak — Ingyenes Pro hozzáférés | Calmika",
+      "description": "Calmika Pro hozzáférés terapeutáknak, logopédusoknak és gyógypedagógusoknak — ingyenesen."
+    },
+    "hero": {
+      "badge": "Terapeutáknak & Logopédusoknak",
+      "title": "Ingyenes Pro hozzáférés terapeutáknak",
+      "subtitle": "Használd a Calmikát foglalkozásokon — offline, tableten, 7 nyelven"
+    },
+    "value": {
+      "sectionTitle": "Miért válassza a terapeuta a Calmikát?",
+      "cards": {
+        "cost": {
+          "title": "Költséghatékony",
+          "description": "0 Ft a terapeuta számára — a Pro hozzáférés teljesen ingyenes szakembereknek."
+        },
+        "dualLang": {
+          "title": "Kétnyelvű módszer",
+          "description": "Anyanyelv + célnyelv egyszerre — ideális bilingvális terápiához."
+        },
+        "offline": {
+          "title": "Offline működés",
+          "description": "Nincs szükség internetre — terápiás szobában is megbízhatóan működik."
+        },
+        "reports": {
+          "title": "Szülői riportok",
+          "description": "Megosztható statisztikák szülőknek — egy kattintással."
+        }
+      }
+    },
+    "comparison": {
+      "sectionTitle": "Calmika vs. alternatívák",
+      "sectionSubtitle": "Mennyibe kerülnek a többi AAC eszközök?",
+      "colCalmika": "Calmika Pro",
+      "colCalmikaSub": "Terapeutáknak",
+      "highlighted": "Kiemelt ajánlat",
+      "rows": {
+        "price": "Ár",
+        "platform": "Platform",
+        "modules": "Modulok",
+        "hungarian": "Magyar",
+        "offline": "Offline"
+      },
+      "data": {
+        "price": [
+          "INGYENES",
+          "$249",
+          "$300",
+          "$100+"
+        ],
+        "platform": [
+          "Android (+iOS hamarosan)",
+          "Csak iOS",
+          "Csak iOS",
+          "Csak iOS"
+        ],
+        "modules": [
+          "30+ (AAC+edu+szenzoros)",
+          "Csak AAC",
+          "Csak AAC",
+          "Csak PECS"
+        ],
+        "hungarian": [
+          "✅ Natív",
+          "❌",
+          "❌",
+          "❌"
+        ],
+        "offline": [
+          "✅",
+          "✅",
+          "✅",
+          "✅"
+        ]
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "Hogyan működik?",
+      "sectionSubtitle": "3 egyszerű lépés — az egész 2 percet vesz igénybe",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Töltsd ki a regisztrációs formot",
+          "description": "Mindössze 1 percet vesz igénybe — név, email, szervezet."
+        },
+        {
+          "number": "2",
+          "title": "Megkapod az egyedi Pro kódodat",
+          "description": "24 órán belül elküldjük az aktiváló kódot emailen."
+        },
+        {
+          "number": "3",
+          "title": "Használd korlátlanul",
+          "description": "10 eszközön, 1 évig, teljesen ingyen — terápiás foglalkozásokon."
+        }
+      ]
+    },
+    "evidence": {
+      "sectionTitle": "Kutatási háttér",
+      "sectionSubtitle": "A Calmika moduljai tudományos evidenciákon alapulnak",
+      "badges": [
+        "AAC use increases language development in children with ASD (Romski & Sevcik, 2005)",
+        "Visual schedules reduce anxiety and improve transitions (Mesibov et al., 2005)",
+        "Music therapy improves social interaction in ASD (Geretsegger et al., 2014)",
+        "Multi-modal apps support diverse learning needs (Light & McNaughton, 2014)"
+      ]
+    },
+    "form": {
+      "sectionTitle": "Igényelj ingyenes Pro hozzáférést",
+      "sectionSubtitle": "Töltsd ki az alábbi formot — 24 órán belül visszaírunk",
+      "fields": {
+        "name": "Teljes név",
+        "namePlaceholder": "Pl. Kiss Éva",
+        "email": "Email cím",
+        "emailPlaceholder": "terapeuta@intézmény.hu",
+        "organization": "Szervezet / Intézmény",
+        "organizationPlaceholder": "Pl. Budapest Fejlesztő Központ",
+        "role": "Szerep",
+        "rolePlaceholder": "Válassz szerepet",
+        "roles": {
+          "speech": "Logopédus",
+          "special": "Gyógypedagógus",
+          "dev": "Fejlesztő pedagógus",
+          "psychologist": "Pszichológus",
+          "other": "Egyéb"
+        },
+        "message": "Üzenet (opcionális)",
+        "messagePlaceholder": "Írd le, hogyan szeretnéd használni a Calmikát..."
+      },
+      "submit": "Igényelj ingyenes Pro hozzáférést",
+      "submitting": "Küldés...",
+      "successTitle": "Köszönjük a jelentkezést! 🎉",
+      "successMessage": "24 órán belül elküldjük a Pro aktiváló kódodat a megadott email címre.",
+      "disclaimer": "Adataidat kizárólag a Pro hozzáférés kiküldéséhez használjuk. Nincs spam, nincs értékesítési hívás."
+    },
+    "faq": {
+      "sectionTitle": "Gyakori kérdések terapeutáktól",
+      "items": [
+        {
+          "question": "Minden terapeuta kaphat ingyenes hozzáférést?",
+          "answer": "Igen — logopédusok, gyógypedagógusok, fejlesztő pedagógusok és pszichológusok egyaránt jogosultak. Az egyetlen feltétel: igazolhatóan ASD gyerekekkel dolgozol."
+        },
+        {
+          "question": "Meddig érvényes a Pro kód?",
+          "answer": "1 évig, 10 eszközön. Az év lejárta előtt értesítünk, és általában megújítjuk — a cél a hosszú távú, bizalmi együttműködés szakemberekkel."
+        },
+        {
+          "question": "Milyen modulokat tartalmaz a terapeuta Pro?",
+          "answer": "Mindent: AAC kommunikáció (5000+ szó), vizuális napirend, zeneterápia, érzelmek & Zones, szociális történetek, kifestő, kognitív játékok, szótanulás — 30+ modul összesen."
+        }
+      ]
+    }
+  },
+  "beta": {
+    "hero": {
+      "title": "Légy az elsők között",
+      "subtitle": "Segíts formálni a Calmikát, és cserébe korai hozzáférést + ingyenes Pro előfizetést kapsz.",
+      "badge1": "Korlátozott helyek",
+      "badge2": "Hamarosan indul"
+    },
+    "perks": {
+      "title": "Mi jár a béta tagoknak?",
+      "earlyAccess": {
+        "title": "Korai hozzáférés",
+        "desc": "Elsőként próbálhatod ki az új modulokat és funkciókat, mielőtt nyilvánosságra kerülnek."
+      },
+      "proFree": {
+        "title": "Pro ingyen",
+        "desc": "A béta időszak alatt teljeskörű Pro hozzáférés — nulla forint, nulla trükk."
+      },
+      "voice": {
+        "title": "Beleszólás a fejlesztésbe",
+        "desc": "Visszajelzésed közvetlenül befolyásolja, hogy mi kerül be a következő verzióba."
+      }
+    },
+    "roadmap": {
+      "title": "Fejlesztési ütemterv",
+      "s1": "S1 — Alapok",
+      "s2": "S2 — AAC & modulok",
+      "s3": "S3 — Szociális & kognitív",
+      "s4": "S4 — Terapeuta eszközök"
+    },
+    "form": {
+      "title": "Csatlakozz a béta csapathoz",
+      "subtitle": "Korlátozott helyek — töltsd ki a jelentkezést!",
+      "name": "Neved",
+      "namePlaceholder": "pl. Kovács Anna",
+      "email": "E-mail",
+      "emailPlaceholder": "pl. anna@email.com",
+      "asdChild": "Van ASD gyermeked?",
+      "asdYes": "Igen",
+      "asdNo": "Nem",
+      "platform": "Melyik platformot használod?",
+      "android": "Android",
+      "ios": "iOS (iPhone / iPad)",
+      "both": "Mindkettő",
+      "selectPlaceholder": "Válassz...",
+      "submit": "Csatlakozz a béta csapathoz",
+      "submitting": "Küldés...",
+      "successTitle": "Köszönjük a jelentkezést! 🎉",
+      "successDesc": "Hamarosan felvesszük veled a kapcsolatot a béta hozzáféréssel kapcsolatban."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kapcsolat",
+      "subtitle": "Kérdésed, visszajelzésed vagy csak üzenni szeretnél? Írj nekünk!"
+    },
+    "form": {
+      "title": "Küldj üzenetet",
+      "name": "Neved",
+      "namePlaceholder": "pl. Kovács Péter",
+      "email": "E-mail",
+      "emailPlaceholder": "pl. peter@email.com",
+      "subject": "Tárgy",
+      "subjectPlaceholder": "Válassz témát...",
+      "subjectGeneral": "Általános kérdés",
+      "subjectBug": "Hiba bejelentés",
+      "subjectTherapist": "Terapeutai megkeresés",
+      "subjectPress": "Sajtó / média",
+      "subjectOther": "Egyéb",
+      "message": "Üzenet",
+      "messagePlaceholder": "Írd ide az üzeneted...",
+      "submit": "Üzenet küldése",
+      "submitting": "Küldés...",
+      "successTitle": "Üzenet elküldve! ✅",
+      "successDesc": "Köszönjük, hogy írtál. 24 órán belül válaszolunk."
+    },
+    "info": {
+      "responseTitle": "Válaszidő",
+      "responseText": "24 órán belül válaszolunk minden megkeresésre. Hétvégén ez kicsit hosszabb lehet.",
+      "emailTitle": "Közvetlen e-mail",
+      "communityTitle": "Közösség"
+    }
+  },
+  "privacy": {
+    "title": "Adatvédelmi Tájékoztató",
+    "subtitle": "Átlátható, emberi nyelven — nem jogi zsargonban.",
+    "lastUpdated": "Utolsó frissítés: 2026. január 1.",
+    "s1": {
+      "title": "1. Bevezetés",
+      "p1": "Ez az adatvédelmi tájékoztató leírja, hogyan kezeli a Calmika — azaz Kovács Dávid egyéni vállalkozó (székhely: Magyarország) — a személyes adatokat a calmika.com weboldalon és a Calmika mobilalkalmazásban.",
+      "p2": "Az adatkezelés célja kizárólag az alkalmazás és weboldal működtetése, fejlesztése. Adatokat nem adunk el harmadik félnek, és nem használunk célzott hirdetési rendszereket."
+    },
+    "s2": {
+      "title": "2. Milyen adatokat gyűjtünk?",
+      "p1": "Minimális adatot gyűjtünk. Pontosan:",
+      "item1": "E-mail cím — csak ha te magad megadod (pl. béta regisztráció, kapcsolat form)",
+      "item2": "Eszköz típusa — anonim analitika (Vercel Analytics) céljára",
+      "p2": "Semmilyen más személyes adatot nem gyűjtünk automatikusan."
+    },
+    "s3": {
+      "title": "3. Gyerekek adatai — FONTOS",
+      "highlight": "🛡️ NEM gyűjtünk személyes adatot gyerekekről. Az app lokálisan működik, az adatok a készüléken maradnak — soha nem kerülnek szerverre.",
+      "p1": "A gyerekek profil adatai (név, kor, preferenciák), fejlődési adataik és a használati előzmények kizárólag az eszközön tárolódnak, offline módban. Ezeket mi nem látjuk, nem tároljuk, és nem is tudjuk elérni.",
+      "p2": "Ez nem csak jogi kötelezettség (COPPA, GDPR) — ez etikai alapelvünk. Egy gyereknek szánt appban az adatvédelem az első helyen áll."
+    },
+    "s4": {
+      "title": "4. Sütik (cookies)",
+      "p1": "Minimális sütiket használunk:",
+      "item1": "Nyelvi preferencia — hogy emlékezzen a kiválasztott nyelvre",
+      "item2": "Anonim analitika — oldallátogatások száma, Vercel Analytics (nincs személyes adat)"
+    },
+    "s5": {
+      "title": "5. Harmadik felek",
+      "p1": "Két külső szolgáltatót használunk:",
+      "item1": "Vercel Analytics — anonim oldallátogatási statisztikák (IP nem tárolódik)",
+      "item2": "RevenueCat — előfizetés kezelés (fizetési adatokat a Play Store / App Store kezeli, nem mi)",
+      "p2": "Ezeken kívül semmilyen más harmadik fél nem fér hozzá az adatokhoz."
+    },
+    "s6": {
+      "title": "6. Adatok törlése",
+      "p1": "Ha szeretnéd töröltetni az e-mail címedet vagy bármilyen más, nálunk tárolt adatodat, írj nekünk:"
+    },
+    "s7": {
+      "title": "7. Kapcsolat",
+      "p1": "Adatvédelmi kérdésekkel, törlési kérelmekkel fordulj hozzánk:"
+    },
+    "s8": {
+      "title": "8. Módosítások",
+      "p1": "Ha lényegesen módosítjuk ezt a tájékoztatót, e-mailben értesítünk (ha megadtad a címedet), és frissítjük a \"Utolsó frissítés\" dátumát. Az apró, nem érdemi változtatásokat nem jelezzük külön."
+    }
+  },
+  "terms": {
+    "title": "Általános Szerződési Feltételek",
+    "subtitle": "A Calmika alkalmazás és weboldal használatának feltételei.",
+    "lastUpdated": "Utolsó frissítés: 2026. január 1.",
+    "s1": {
+      "title": "1. Bevezetés",
+      "p1": "Üdvözlünk a Calmika alkalmazásban! Ezek az Általános Szerződési Feltételek (ÁSZF) szabályozzák a Calmika mobilalkalmazás és weboldal (calmika.com) használatát.",
+      "p2": "Az alkalmazás letöltésével és használatával elfogadod ezeket a feltételeket. Ha nem értesz egyet, kérjük, ne használd az alkalmazást."
+    },
+    "s2": {
+      "title": "2. Az alkalmazásról",
+      "p1": "A Calmika egy autizmus spektrumzavarral (ASD) élő gyerekeknek fejlesztett oktatási és fejlesztő alkalmazás. Az app AAC kommunikációs eszközöket, vizuális napirendet, zeneterápiát, érzelemfelismerést és más fejlesztő modulokat tartalmaz.",
+      "disclaimer": "⚠️ A Calmika NEM orvosi eszköz, és NEM végez diagnózist. Az app kiegészíti, de nem helyettesíti a szakorvosi vagy terapeutai ellátást. Gyermeked fejlődésével kapcsolatban mindig fordulj képzett szakemberhez."
+    },
+    "s3": {
+      "title": "3. Előfizetés",
+      "p1": "A Calmika kétféle csomagban érhető el:",
+      "item1": "Ingyenes csomag — az AAC Lite és a Nyugi Sarok modul örökre ingyenes",
+      "item2": "Pro csomag — havi vagy éves előfizetés, 14 napos ingyenes próbaidőszakkal (reverse trial, bankkártya nélkül)",
+      "item3": "A próbaidőszak lejártával, ha nem iratkozol fel, automatikusan az Ingyenes csomagra vált vissza",
+      "p2": "Az előfizetés automatikusan megújul minden időszak végén, kivéve ha legalább 24 órával a megújulás előtt lemondod a Google Play Store vagy App Store felületén."
+    },
+    "s4": {
+      "title": "4. Visszatérítés",
+      "p1": "A visszatérítések a Google Play Store és az Apple App Store visszatérítési szabályai szerint történnek. A platformok visszatérítési kérelmeket közvetlenül kezelnek.",
+      "p2": "Ha az első 7 napban nem vagy elégedett az előfizetéssel, fordulj hozzánk közvetlenül a hello@calmika.com e-mail címen — mindent megteszünk, hogy megoldjuk a problémát."
+    },
+    "s5": {
+      "title": "5. Szellemi tulajdon",
+      "p1": "A Calmika márka, logó, alkalmazás kód, AAC szimbolóm-készlet, hanganyagok és minden egyéb tartalom Kovács Dávid szellemi tulajdona. A tartalmak másolása, terjesztése vagy kereskedelmi célú felhasználása tilos az előzetes írásos engedély nélkül."
+    },
+    "s6": {
+      "title": "6. Felelősség korlátozása",
+      "p1": "A Calmika \"ahogy van\" alapon kerül átadásra. Nem vállalunk felelősséget az alkalmazás használatából eredő közvetlen vagy közvetett károkért, beleértve az adatvesztést vagy az elmaradt fejlődési eredményeket. Az alkalmazás kiegészítő eszköz, nem helyettesíti a szakszerű terápiát."
+    },
+    "s7": {
+      "title": "7. Alkalmazandó jog",
+      "p1": "Jelen ÁSZF-re a magyar jog az irányadó. A felek közötti esetleges jogvitákat elsősorban egyeztetés útján kíséreljük meg rendezni; ha ez nem vezet eredményre, a hatáskörrel rendelkező magyar bíróság illetékes."
+    },
+    "s8": {
+      "title": "8. Módosítások",
+      "p1": "Fenntartjuk a jogot jelen ÁSZF módosítására. Lényeges változás esetén e-mailben vagy az alkalmazáson belül értesítünk. A módosított feltételek elfogadásának minősül az alkalmazás folytatólagos használata."
+    },
+    "s9": {
+      "title": "9. Kapcsolat",
+      "p1": "Kérdés vagy észrevétel esetén:"
+    }
   }
 }

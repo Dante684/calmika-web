@@ -409,5 +409,337 @@
       "portraitCaption": "Dávid — founder",
       "family": "The Calmika family"
     }
+  },
+  "therapists": {
+    "meta": {
+      "title": "For Therapists — Free Pro Access | Calmika",
+      "description": "Calmika Pro access for therapists, speech-language pathologists, and special educators — completely free."
+    },
+    "hero": {
+      "badge": "For Therapists & SLPs",
+      "title": "Free Pro access for therapists",
+      "subtitle": "Use Calmika in sessions — offline, on tablets, in 7 languages"
+    },
+    "value": {
+      "sectionTitle": "Why therapists choose Calmika",
+      "cards": {
+        "cost": {
+          "title": "Cost-effective",
+          "description": "$0 for therapists — Pro access is completely free for professionals."
+        },
+        "dualLang": {
+          "title": "Dual language",
+          "description": "Mother tongue + target language simultaneously — ideal for bilingual therapy."
+        },
+        "offline": {
+          "title": "Works offline",
+          "description": "No internet required — works reliably in any therapeutic environment."
+        },
+        "reports": {
+          "title": "Shareable reports",
+          "description": "Statistics for parents — shareable in one click."
+        }
+      }
+    },
+    "comparison": {
+      "sectionTitle": "Calmika vs. alternatives",
+      "sectionSubtitle": "How do other AAC tools compare?",
+      "colCalmika": "Calmika Pro",
+      "colCalmikaSub": "For Therapists",
+      "highlighted": "Best value",
+      "rows": {
+        "price": "Price",
+        "platform": "Platform",
+        "modules": "Modules",
+        "hungarian": "Hungarian",
+        "offline": "Offline"
+      },
+      "data": {
+        "price": [
+          "FREE",
+          "$249",
+          "$300",
+          "$100+"
+        ],
+        "platform": [
+          "Android (+iOS soon)",
+          "iOS only",
+          "iOS only",
+          "iOS only"
+        ],
+        "modules": [
+          "30+ (AAC+edu+sensory)",
+          "AAC only",
+          "AAC only",
+          "PECS only"
+        ],
+        "hungarian": [
+          "✅ Native",
+          "❌",
+          "❌",
+          "❌"
+        ],
+        "offline": [
+          "✅",
+          "✅",
+          "✅",
+          "✅"
+        ]
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "How it works",
+      "sectionSubtitle": "3 simple steps — takes about 2 minutes total",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Fill out the registration form",
+          "description": "Takes about 1 minute — name, email, and organization."
+        },
+        {
+          "number": "2",
+          "title": "Receive your unique Pro code",
+          "description": "We'll send your activation code by email within 24 hours."
+        },
+        {
+          "number": "3",
+          "title": "Use it without limits",
+          "description": "On 10 devices, for 1 year, completely free — in your therapy sessions."
+        }
+      ]
+    },
+    "evidence": {
+      "sectionTitle": "Research background",
+      "sectionSubtitle": "Calmika's modules are grounded in scientific evidence",
+      "badges": [
+        "AAC use increases language development in children with ASD (Romski & Sevcik, 2005)",
+        "Visual schedules reduce anxiety and improve transitions (Mesibov et al., 2005)",
+        "Music therapy improves social interaction in ASD (Geretsegger et al., 2014)",
+        "Multi-modal apps support diverse learning needs (Light & McNaughton, 2014)"
+      ]
+    },
+    "form": {
+      "sectionTitle": "Request free Pro access",
+      "sectionSubtitle": "Fill out the form below — we'll get back to you within 24 hours",
+      "fields": {
+        "name": "Full name",
+        "namePlaceholder": "e.g. Jane Smith",
+        "email": "Email address",
+        "emailPlaceholder": "therapist@institution.com",
+        "organization": "Organization / Institution",
+        "organizationPlaceholder": "e.g. City Development Center",
+        "role": "Role",
+        "rolePlaceholder": "Select your role",
+        "roles": {
+          "speech": "Speech-Language Pathologist",
+          "special": "Special Educator",
+          "dev": "Developmental Educator",
+          "psychologist": "Psychologist",
+          "other": "Other"
+        },
+        "message": "Message (optional)",
+        "messagePlaceholder": "Tell us how you plan to use Calmika..."
+      },
+      "submit": "Request free Pro access",
+      "submitting": "Sending...",
+      "successTitle": "Thank you for your application! 🎉",
+      "successMessage": "We'll send your Pro activation code to the provided email within 24 hours.",
+      "disclaimer": "Your data is used solely to deliver Pro access. No spam, no sales calls."
+    },
+    "faq": {
+      "sectionTitle": "Common questions from therapists",
+      "items": [
+        {
+          "question": "Can every therapist get free access?",
+          "answer": "Yes — speech-language pathologists, special educators, developmental educators, and psychologists are all eligible. The only requirement is that you demonstrably work with children with ASD."
+        },
+        {
+          "question": "How long is the Pro code valid?",
+          "answer": "1 year, on 10 devices. We'll notify you before it expires and typically renew it — our goal is long-term, trust-based collaboration with professionals."
+        },
+        {
+          "question": "What modules are included in the therapist Pro?",
+          "answer": "Everything: AAC communication (5000+ words), visual schedule, music therapy, emotions & Zones, social stories, coloring, cognitive games, vocabulary learning — 30+ modules in total."
+        }
+      ]
+    }
+  },
+  "beta": {
+    "hero": {
+      "title": "Be among the first",
+      "subtitle": "Help shape Calmika and get early access plus a free Pro subscription in return.",
+      "badge1": "Limited spots",
+      "badge2": "Launching soon"
+    },
+    "perks": {
+      "title": "What beta members get",
+      "earlyAccess": {
+        "title": "Early access",
+        "desc": "Be the first to try new modules and features before they go public."
+      },
+      "proFree": {
+        "title": "Pro for free",
+        "desc": "Full Pro access during the beta period — zero cost, zero tricks."
+      },
+      "voice": {
+        "title": "Shape the product",
+        "desc": "Your feedback directly influences what goes into the next version."
+      }
+    },
+    "roadmap": {
+      "title": "Development roadmap",
+      "s1": "S1 — Foundations",
+      "s2": "S2 — AAC & modules",
+      "s3": "S3 — Social & cognitive",
+      "s4": "S4 — Therapist tools"
+    },
+    "form": {
+      "title": "Join the beta team",
+      "subtitle": "Limited spots — fill in the form!",
+      "name": "Your name",
+      "namePlaceholder": "e.g. Anna Smith",
+      "email": "Email",
+      "emailPlaceholder": "e.g. anna@email.com",
+      "asdChild": "Do you have a child with ASD?",
+      "asdYes": "Yes",
+      "asdNo": "No",
+      "platform": "Which platform do you use?",
+      "android": "Android",
+      "ios": "iOS (iPhone / iPad)",
+      "both": "Both",
+      "selectPlaceholder": "Select...",
+      "submit": "Join the beta team",
+      "submitting": "Sending...",
+      "successTitle": "Thank you for signing up! 🎉",
+      "successDesc": "We'll be in touch soon with your beta access details."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Have a question, feedback, or just want to say hello? Write to us!"
+    },
+    "form": {
+      "title": "Send a message",
+      "name": "Your name",
+      "namePlaceholder": "e.g. Peter Smith",
+      "email": "Email",
+      "emailPlaceholder": "e.g. peter@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Choose a topic...",
+      "subjectGeneral": "General question",
+      "subjectBug": "Bug report",
+      "subjectTherapist": "Therapist inquiry",
+      "subjectPress": "Press / media",
+      "subjectOther": "Other",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "successTitle": "Message sent! ✅",
+      "successDesc": "Thanks for reaching out. We'll reply within 24 hours."
+    },
+    "info": {
+      "responseTitle": "Response time",
+      "responseText": "We respond to all inquiries within 24 hours. It may take a little longer on weekends.",
+      "emailTitle": "Direct email",
+      "communityTitle": "Community"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Clear, human language — not legal jargon.",
+    "lastUpdated": "Last updated: January 1, 2026.",
+    "s1": {
+      "title": "1. Introduction",
+      "p1": "This privacy policy describes how Calmika — operated by Dávid Kovács, sole trader (Hungary) — handles personal data on the calmika.com website and in the Calmika mobile app.",
+      "p2": "Data is processed solely for operating and improving the app and website. We do not sell data to third parties, and we do not use targeted advertising systems."
+    },
+    "s2": {
+      "title": "2. What data do we collect?",
+      "p1": "We collect minimal data. Specifically:",
+      "item1": "Email address — only if you provide it yourself (e.g. beta registration, contact form)",
+      "item2": "Device type — for anonymous analytics (Vercel Analytics)",
+      "p2": "We do not automatically collect any other personal data."
+    },
+    "s3": {
+      "title": "3. Children's data — IMPORTANT",
+      "highlight": "🛡️ We do NOT collect personal data about children. The app works locally; data stays on the device — it never reaches our servers.",
+      "p1": "Children's profile data (name, age, preferences), developmental records and usage history are stored exclusively on the device, in offline mode. We cannot see, store, or access this data.",
+      "p2": "This isn't just a legal obligation (COPPA, GDPR) — it's our ethical principle. In an app built for children, privacy comes first."
+    },
+    "s4": {
+      "title": "4. Cookies",
+      "p1": "We use minimal cookies:",
+      "item1": "Language preference — to remember your selected language",
+      "item2": "Anonymous analytics — page visit counts via Vercel Analytics (no personal data)"
+    },
+    "s5": {
+      "title": "5. Third parties",
+      "p1": "We use two external services:",
+      "item1": "Vercel Analytics — anonymous page visit statistics (IP is not stored)",
+      "item2": "RevenueCat — subscription management (payment data is handled by Play Store / App Store, not us)",
+      "p2": "No other third party has access to your data."
+    },
+    "s6": {
+      "title": "6. Data deletion",
+      "p1": "If you'd like to delete your email address or any other data we hold, contact us:"
+    },
+    "s7": {
+      "title": "7. Contact",
+      "p1": "For privacy questions or deletion requests, reach us at:"
+    },
+    "s8": {
+      "title": "8. Changes",
+      "p1": "If we make significant changes to this policy, we'll notify you by email (if you provided your address) and update the \"Last updated\" date. Minor, non-material changes will not be announced separately."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "subtitle": "Terms and conditions for using the Calmika app and website.",
+    "lastUpdated": "Last updated: January 1, 2026.",
+    "s1": {
+      "title": "1. Introduction",
+      "p1": "Welcome to Calmika! These Terms of Service govern the use of the Calmika mobile app and website (calmika.com).",
+      "p2": "By downloading and using the app, you agree to these terms. If you disagree, please do not use the app."
+    },
+    "s2": {
+      "title": "2. About the app",
+      "p1": "Calmika is an educational and developmental app designed for children with Autism Spectrum Disorder (ASD). The app includes AAC communication tools, visual schedules, music therapy, emotion recognition, and other developmental modules.",
+      "disclaimer": "⚠️ Calmika is NOT a medical device and does NOT provide diagnosis. The app supplements but does not replace professional medical or therapeutic care. Always consult a qualified professional regarding your child's development."
+    },
+    "s3": {
+      "title": "3. Subscription",
+      "p1": "Calmika is available in two tiers:",
+      "item1": "Free plan — AAC Lite and Calm Corner are free forever",
+      "item2": "Pro plan — monthly or annual subscription with a 14-day free trial (reverse trial, no credit card required)",
+      "item3": "After the trial, if you don't subscribe, the app automatically reverts to the Free plan",
+      "p2": "The subscription renews automatically each period unless cancelled at least 24 hours before renewal via Google Play Store or App Store."
+    },
+    "s4": {
+      "title": "4. Refunds",
+      "p1": "Refunds are processed according to Google Play Store and Apple App Store refund policies. Platforms handle refund requests directly.",
+      "p2": "If you're unsatisfied within the first 7 days of subscribing, contact us directly at hello@calmika.com — we'll do our best to resolve the issue."
+    },
+    "s5": {
+      "title": "5. Intellectual property",
+      "p1": "The Calmika brand, logo, app code, AAC symbol library, audio content, and all other materials are the intellectual property of Dávid Kovács. Copying, distributing, or commercial use of any content is prohibited without prior written permission."
+    },
+    "s6": {
+      "title": "6. Limitation of liability",
+      "p1": "Calmika is provided \"as is\". We accept no liability for direct or indirect damages arising from the use of the app, including data loss or missed developmental outcomes. The app is a supplementary tool and does not replace professional therapy."
+    },
+    "s7": {
+      "title": "7. Governing law",
+      "p1": "These Terms are governed by Hungarian law. Disputes will first be resolved by mutual agreement; if unsuccessful, the competent Hungarian court shall have jurisdiction."
+    },
+    "s8": {
+      "title": "8. Changes",
+      "p1": "We reserve the right to modify these Terms. For significant changes, we'll notify you by email or in-app. Continued use of the app after changes constitutes acceptance of the updated Terms."
+    },
+    "s9": {
+      "title": "9. Contact",
+      "p1": "For questions or concerns:"
+    }
   }
 }
