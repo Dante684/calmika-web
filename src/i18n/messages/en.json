@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "siteName": "Calmika",
+    "siteDescription": "The only all-in-one autism development app"
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "therapists": "For Therapists",
+    "blog": "Blog",
+    "about": "About",
+    "download": "Download",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "beta": "Beta",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "footer": {
+    "description": "The only all-in-one autism development app.",
+    "features": "Features",
+    "support": "Support",
+    "company": "Calmika",
+    "community": "Community",
+    "copyright": "© 2026 Calmika. All rights reserved."
+  },
+  "common": {
+    "downloadFree": "Download for free",
+    "learnMore": "Learn more",
+    "tryFree": "Try for free",
+    "getStarted": "Get started",
+    "readMore": "Read more",
+    "backToHome": "Back to home",
+    "comingSoon": "Coming soon",
+    "free": "Free",
+    "premium": "Premium",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "lifetime": "Lifetime"
+  }
+}

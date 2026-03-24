@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "siteName": "Calmika",
+    "siteDescription": "Az egyetlen all-in-one autizmus fejlesztő app"
+  },
+  "nav": {
+    "features": "Funkciók",
+    "pricing": "Árazás",
+    "therapists": "Terapeutáknak",
+    "blog": "Blog",
+    "about": "Rólunk",
+    "download": "Letöltés",
+    "contact": "Kapcsolat",
+    "faq": "GYIK",
+    "beta": "Béta",
+    "privacy": "Adatvédelem",
+    "terms": "ÁSZF"
+  },
+  "footer": {
+    "description": "Az egyetlen all-in-one autizmus fejlesztő app.",
+    "features": "Funkciók",
+    "support": "Támogatás",
+    "company": "Calmika",
+    "community": "Közösség",
+    "copyright": "© 2026 Calmika. Minden jog fenntartva."
+  },
+  "common": {
+    "downloadFree": "Töltsd le ingyen",
+    "learnMore": "Tudj meg többet",
+    "tryFree": "Próbáld ki ingyen",
+    "getStarted": "Kezdj hozzá",
+    "readMore": "Bővebben",
+    "backToHome": "Vissza a főoldalra",
+    "comingSoon": "Hamarosan",
+    "free": "Ingyenes",
+    "premium": "Prémium",
+    "monthly": "Havi",
+    "yearly": "Éves",
+    "lifetime": "Lifetime"
+  }
+}
