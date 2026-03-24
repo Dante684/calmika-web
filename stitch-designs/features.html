@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calmika - Features</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface": "#1a1c1b",
+                        "surface-container-low": "#f4f4f2",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#4c3700",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e2e3e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#005048",
+                        "on-primary-container": "#00423b",
+                        "on-surface-variant": "#3c4947",
+                        "surface-dim": "#dadad8",
+                        "on-secondary-fixed": "#00201c",
+                        "tertiary": "#795900",
+                        "surface-bright": "#f9f9f7",
+                        "outline-variant": "#bbcac6",
+                        "on-secondary-fixed-variant": "#1f4e47",
+                        "primary-fixed": "#71f8e4",
+                        "inverse-primary": "#4fdbc8",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "background": "#f9f9f7",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#006b5f",
+                        "on-background": "#1a1c1b",
+                        "inverse-surface": "#2f3130",
+                        "secondary-container": "#b9e9e0",
+                        "surface": "#f9f9f7",
+                        "secondary": "#38665f",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-secondary-container": "#3d6b63",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeeeec",
+                        "primary-fixed-dim": "#4fdbc8",
+                        "tertiary-container": "#d09c00",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#bbece2",
+                        "primary-container": "#14b8a6",
+                        "on-primary-fixed": "#00201c",
+                        "surface-container-high": "#e8e8e6",
+                        "secondary-fixed-dim": "#a0d0c6",
+                        "outline": "#6c7a77",
+                        "on-tertiary-fixed": "#261a00",
+                        "primary": "#006b5f",
+                        "tertiary-fixed": "#ffdf9f",
+                        "surface-variant": "#e2e3e1",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, minmax(280px, auto));
+            gap: 1.5rem;
+        }
+        @media (max-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f7]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#14B8A6] font-headline">Calmika</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#14B8A6] font-bold border-b-2 border-[#14B8A6] pb-1 font-headline text-sm tracking-tight" href="#">Features</a>
+<a class="text-slate-600 hover:text-[#14B8A6] font-headline text-sm tracking-tight transition-opacity duration-300" href="#">Stories</a>
+<a class="text-slate-600 hover:text-[#14B8A6] font-headline text-sm tracking-tight transition-opacity duration-300" href="#">Resources</a>
+<a class="text-slate-600 hover:text-[#14B8A6] font-headline text-sm tracking-tight transition-opacity duration-300" href="#">About</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-headline text-sm font-bold hover:opacity-80 transition-opacity duration-300">Get Started</button>
+</div>
+<div class="h-px w-full bg-[#eeeeec]/30"></div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Section Header -->
+<header class="mb-16 text-center md:text-left max-w-2xl">
+<span class="text-primary font-label font-bold tracking-[0.05em] uppercase text-xs mb-4 block">Our Ecosystem</span>
+<h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-6 leading-[1.1]">What can Calmika do?</h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed font-body">
+                Designed with neurodiversity at its core, explore <span class="text-primary font-bold">30+ modules</span> crafted to foster independence, communication, and joy in every learner.
+            </p>
+</header>
+<!-- Bento Grid Features -->
+<div class="bento-grid">
+<!-- Card 1: AAC Communication (Large) -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5">
+<div class="flex justify-between items-start mb-8">
+<div class="w-14 h-14 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="chat_bubble">chat_bubble</span>
+</div>
+<span class="bg-primary-container/10 text-primary font-label text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">5000+ Words</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-3">AAC Communication</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 max-w-sm">Empower non-verbal learners with a robust, intuitive symbol-based communication system designed for daily expression.</p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm group/link" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Visual Schedule -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_today">calendar_today</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Visual Schedule</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-4">Predictability leads to peace. Build routines with visual anchors and timers.</p>
+<a class="text-primary group/link" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover/link:translate-x-1" data-icon="east">east</span></a>
+</div>
+</div>
+<!-- Card 3: Emotions & Zones -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="mood">mood</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Emotions &amp; Zones</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-4">Self-regulation tools that help identify feelings and find calm centers.</p>
+<a class="text-primary group/link" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover/link:translate-x-1" data-icon="east">east</span></a>
+</div>
+</div>
+<!-- Card 4: Social Stories -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="menu_book">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Social Stories</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-4">Navigate new situations through personalized, visual storytelling modules.</p>
+<a class="text-primary group/link" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover/link:translate-x-1" data-icon="east">east</span></a>
+</div>
+</div>
+<!-- Card 5: Vocabulary & ABC (Medium) -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5">
+<div class="flex flex-col gap-4 mb-4">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl" data-icon="abc">abc</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-on-surface-variant font-label text-[9px] font-bold px-2 py-0.5 rounded-full">757 Words</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label text-[9px] font-bold px-2 py-0.5 rounded-full">Bilingual</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Vocabulary &amp; ABC</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-4">Multisensory learning that connects phonics with real-world objects.</p>
+<a class="text-primary group/link" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover/link:translate-x-1" data-icon="east">east</span></a>
+</div>
+</div>
+<!-- Card 6: Music Therapy -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="music_note">music_note</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Music Therapy</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-4">15 digital instruments optimized for auditory sensory exploration.</p>
+<a class="text-primary group/link" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover/link:translate-x-1" data-icon="east">east</span></a>
+</div>
+</div>
+<!-- Card 7: Coloring & Calm Corner (Horizontal Pair) -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(0,0,0,0.02)] flex flex-col justify-between group hover:shadow-lg transition-all duration-500 border border-outline-variant/5 relative overflow-hidden">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-tertiary-fixed-dim/20 rounded-full blur-2xl"></div>
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-primary-container mb-6 relative z-10">
+<span class="material-symbols-outlined text-2xl" data-icon="palette">palette</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Coloring</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed mb-4">110+ sensory-rich images designed to soothe and spark creativity.</p>
+<a class="text-primary group/link" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover/link:translate-x-1" data-icon="east">east</span></a>
+</div>
+</div>
+<!-- Card 8: Calm Corner (Free Feature) -->
+<div class="md:col-span-1 bg-[#14B8A6] p-8 rounded-xl shadow-[0_40px_60px_rgba(20,184,166,0.15)] flex flex-col justify-between group hover:shadow-xl transition-all duration-500">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="spa">spa</span>
+</div>
+<span class="text-white/80 font-label text-[9px] font-bold border border-white/30 px-2 py-0.5 rounded-full uppercase">Always Free</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-white mb-2">Calm Corner</h3>
+<p class="text-white/80 text-xs leading-relaxed mb-4">A dedicated safe space within the app for quick de-escalation and focus.</p>
+<a class="text-white flex items-center gap-2 font-bold text-xs" href="#">
+                        Open Now <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Call to Action Footer -->
+<div class="mt-24 text-center">
+<div class="inline-flex items-center gap-4 p-2 pl-6 bg-surface-container rounded-full border border-outline-variant/10 shadow-sm">
+<p class="text-on-surface-variant font-medium text-sm">Ready to start the journey with your child?</p>
+<button class="bg-primary text-white px-6 py-2 rounded-full font-headline text-sm font-bold shadow-md hover:bg-primary-container transition-colors duration-300">Join Calmika Plus</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 bg-[#eeeeec]">
+<div class="flex flex-col md:flex-row justify-between items-center px-10 max-w-7xl mx-auto gap-6 font-body text-sm leading-relaxed">
+<div class="text-xl font-bold text-[#14B8A6] font-headline">Calmika</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 hover:text-[#14B8A6] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#14B8A6] transition-colors duration-300" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#14B8A6] transition-colors duration-300" href="#">Accessibility</a>
+<a class="text-slate-500 hover:text-[#14B8A6] transition-colors duration-300" href="#">Contact Us</a>
+</div>
+<div class="text-slate-500">© 2024 Calmika. A Sanctuary for Growth.</div>
+</div>
+</footer>
+</body></html>

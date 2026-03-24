@@ -124,14 +124,17 @@
     "sectionTitle": "Why Calmika?",
     "quote": "My twin sons, Alex and Olivia, were diagnosed with autism at age 2. As a parent, the first months are the hardest — everyone says something different, apps are expensive, and most don't even support Hungarian. That's why I started building Calmika: so that one app can provide everything an ASD family needs.",
     "author": "Dávid, founder of Calmika",
-    "ctaReadMore": "Read the full story"
+    "ctaReadMore": "Read the full story",
+    "overline": "Our Story",
+    "photoPlaceholder": "Photo coming soon"
   },
   "ctaBottom": {
     "title": "Try Calmika — 14 days free, full Pro access",
     "subtitle": "No credit card required. Download now.",
     "playStore": "Google Play",
     "appStore": "App Store",
-    "appStoreComingSoon": "Coming soon"
+    "appStoreComingSoon": "Coming soon",
+    "badge": "Free to start"
   },
   "features": {
     "sectionTitle": "What can Calmika do?",
@@ -168,7 +171,10 @@
     "nyugi-sarok": {
       "name": "Calm Corner",
       "desc": "Breathing, bubbles, calming sounds — ALWAYS FREE"
-    }
+    },
+    "overline": "Our Ecosystem",
+    "ctaLabel": "Ready to start the journey?",
+    "ctaButton": "Download Calmika"
   },
   "socialProof": {
     "sectionTitle": "Why do parents choose Calmika?",
@@ -193,14 +199,20 @@
       "title": "Parents say",
       "placeholder": "Beta tester reviews coming soon...",
       "name": "Beta Tester"
-    }
+    },
+    "overline": "By the numbers"
   },
   "hero": {
     "badge": "30+ modules • 7 languages • Free AAC",
     "title": "Help your child find their voice ✨",
     "subtitle": "The only all-in-one autism development app — AAC communication, visual schedules, music therapy and 30+ modules. Free to start.",
     "ctaPrimary": "Download for free",
-    "ctaSecondary": "Explore features"
+    "ctaSecondary": "Explore features",
+    "titleLine1": "Help your child",
+    "titleLine2": "find their voice ✨",
+    "mockupAlt": "Calmika app home screen showing learning modules",
+    "trustRated": "Top Rated 2024",
+    "trustValidated": "Clinically Validated"
   },
   "download": {
     "hero": {

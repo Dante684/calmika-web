@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { BlurFade } from '@/components/magicui/blur-fade';
 
 // Play Store SVG icon (simplified)
 function PlayStoreIcon() {
@@ -31,54 +32,88 @@ function AppleIcon() {
 }
 
 /**
- * CtaBottomSection — újrahasználható alsó CTA szekcó
- * Használat: <CtaBottomSection /> bármely oldalon
+ * CtaBottomSection — Stitch-style, cream bg, tonal design
  */
 export function CtaBottomSection() {
   const t = useTranslations('ctaBottom');
-  const tCommon = useTranslations('common');
 
   return (
-    <section className="py-20 text-center bg-gradient-to-r from-calmika-teal-500 to-calmika-teal-600">
-      <div className="container mx-auto px-4 max-w-3xl">
-        {/* Headline */}
-        <h2 className="text-3xl md:text-4xl font-nunito font-bold text-white mb-4">
-          {t('title')}
-        </h2>
+    <section className="py-24 relative overflow-hidden" style={{ backgroundColor: '#eeeeec' }}>
+      {/* Decorative blobs */}
+      <div
+        className="absolute -top-20 -right-20 w-72 h-72 rounded-full pointer-events-none"
+        style={{ backgroundColor: '#f9bd22', filter: 'blur(100px)', opacity: 0.15 }}
+        aria-hidden
+      />
+      <div
+        className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full pointer-events-none"
+        style={{ backgroundColor: '#14b8a6', filter: 'blur(100px)', opacity: 0.10 }}
+        aria-hidden
+      />
 
-        {/* Subtitle */}
-        <p className="text-white/80 text-lg mb-10">
-          {t('subtitle')}
-        </p>
-
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          {/* Play Store */}
-          <a
-            href="https://play.google.com/store/apps/details?id=com.magicworlds.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border-2 border-white text-white rounded-full px-8 py-3 font-semibold hover:bg-white hover:text-calmika-teal-600 transition-colors duration-200"
+      <div className="max-w-4xl mx-auto px-6 md:px-8 text-center relative z-10">
+        <BlurFade inView delay={0}>
+          {/* Badge */}
+          <div
+            className="inline-flex items-center px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8"
+            style={{ backgroundColor: '#b9e9e0', color: '#006b5f' }}
           >
-            <PlayStoreIcon />
-            {t('playStore')}
-          </a>
-
-          {/* App Store (coming soon) */}
-          <div className="relative inline-flex">
-            <span
-              className="inline-flex items-center gap-2 border-2 border-white text-white rounded-full px-8 py-3 font-semibold opacity-70 cursor-not-allowed"
-              aria-disabled="true"
-            >
-              <AppleIcon />
-              {t('appStore')}
-            </span>
-            {/* Badge */}
-            <span className="absolute -top-3 -right-2 bg-calmika-gold-400 text-calmika-dark text-xs font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
-              {t('appStoreComingSoon')}
-            </span>
+            {t('badge')}
           </div>
-        </div>
+
+          {/* Headline */}
+          <h2
+            className="text-4xl md:text-5xl font-nunito font-extrabold tracking-tight mb-5"
+            style={{ color: '#1a1c1b' }}
+          >
+            {t('title')}
+          </h2>
+
+          {/* Subtitle */}
+          <p
+            className="text-lg mb-12 max-w-xl mx-auto leading-relaxed"
+            style={{ color: '#3c4947' }}
+          >
+            {t('subtitle')}
+          </p>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Play Store */}
+            <a
+              href="https://play.google.com/store/apps/details?id=com.magicworlds.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-bold text-base text-white transition-all duration-300 hover:scale-105 active:scale-95"
+              style={{
+                background: 'linear-gradient(135deg, #006b5f 0%, #14b8a6 100%)',
+                boxShadow: '0 20px 40px rgba(20,184,166,0.25)',
+              }}
+            >
+              <PlayStoreIcon />
+              {t('playStore')}
+            </a>
+
+            {/* App Store (coming soon) */}
+            <div className="relative inline-flex">
+              <span
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-bold text-base opacity-60 cursor-not-allowed"
+                style={{ backgroundColor: '#ffffff', color: '#3c4947' }}
+                aria-disabled="true"
+              >
+                <AppleIcon />
+                {t('appStore')}
+              </span>
+              {/* Badge */}
+              <span
+                className="absolute -top-3 -right-2 text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap"
+                style={{ backgroundColor: '#f9bd22', color: '#3c4947' }}
+              >
+                {t('appStoreComingSoon')}
+              </span>
+            </div>
+          </div>
+        </BlurFade>
       </div>
     </section>
   );

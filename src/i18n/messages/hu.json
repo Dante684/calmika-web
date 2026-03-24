@@ -124,14 +124,17 @@
     "sectionTitle": "Miért Calmika?",
     "quote": "Két fiamnak, Alexnek és Oliviának 2 évesen diagnosztizálták az autizmust. Szülőként az első hónapok a legnehezebbek — mindenki mást mond, az appok drágák, és a legtöbb nem is magyar. Ezért kezdtem el építeni a Calmikát: hogy egyetlen appban meglegyen minden, amire egy ASD család szüksége van.",
     "author": "Dávid, a Calmika alapítója",
-    "ctaReadMore": "Olvasd el a teljes történetet"
+    "ctaReadMore": "Olvasd el a teljes történetet",
+    "overline": "A történetünk",
+    "photoPlaceholder": "Fotó hamarosan"
   },
   "ctaBottom": {
     "title": "Próbáld ki a Calmikát — 14 nap ingyen, teljes Pro",
     "subtitle": "Nincs bankkártya szükség. Töltsd le most.",
     "playStore": "Google Play",
     "appStore": "App Store",
-    "appStoreComingSoon": "Hamarosan"
+    "appStoreComingSoon": "Hamarosan",
+    "badge": "Ingyenesen elérhető"
   },
   "features": {
     "sectionTitle": "Mit tud a Calmika?",
@@ -168,7 +171,10 @@
     "nyugi-sarok": {
       "name": "Nyugi Sarok",
       "desc": "Lélegzés, buborékok, nyugtató hangok — MINDIG INGYENES"
-    }
+    },
+    "overline": "Az ökoszisztémánk",
+    "ctaLabel": "Készen állsz a kalandra?",
+    "ctaButton": "Töltsd le a Calmikát"
   },
   "socialProof": {
     "sectionTitle": "Miért választják a szülők?",
@@ -193,14 +199,20 @@
       "title": "Szülők mondják",
       "placeholder": "Hamarosan béta tesztelői vélemények...",
       "name": "Béta tesztelő"
-    }
+    },
+    "overline": "Számokban"
   },
   "hero": {
     "badge": "30+ modul • 7 nyelv • Ingyenes AAC",
     "title": "Segítsd gyermeked megtalálni a hangját ✨",
     "subtitle": "Az egyetlen all-in-one autizmus fejlesztő app — AAC kommunikáció, vizuális napirend, zeneterápia és 30+ modul. Ingyenesen.",
     "ctaPrimary": "Töltsd le ingyen",
-    "ctaSecondary": "Nézd meg a funkciókat"
+    "ctaSecondary": "Nézd meg a funkciókat",
+    "titleLine1": "Segítsd gyermeked megtalálni",
+    "titleLine2": "a hangját ✨",
+    "mockupAlt": "Calmika alkalmazás főoldal tanulási modulokkal",
+    "trustRated": "Legjobb értékelés 2024",
+    "trustValidated": "Klinikailag validált"
   },
   "download": {
     "hero": {
