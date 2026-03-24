@@ -6,6 +6,25 @@ import { Link } from '@/i18n/navigation';
 import { Separator } from '@/components/ui/separator';
 import { features } from '@/lib/features-data';
 
+function FooterWave() {
+  return (
+    <div className="w-full overflow-hidden leading-[0] pointer-events-none" aria-hidden>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 60"
+        preserveAspectRatio="none"
+        className="w-full h-[48px] md:h-[60px]"
+        style={{ display: 'block' }}
+      >
+        <path
+          d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z"
+          fill="#1a1c1b"
+        />
+      </svg>
+    </div>
+  );
+}
+
 export default function Footer() {
   const t = useTranslations();
   const locale = useLocale();
@@ -19,6 +38,8 @@ export default function Footer() {
   ] as const;
 
   return (
+    <>
+    <FooterWave />
     <footer className="bg-calmika-dark text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
@@ -152,5 +173,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

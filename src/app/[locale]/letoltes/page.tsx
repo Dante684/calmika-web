@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Download, UserPlus, Play, Smartphone, HardDrive, Wifi, Monitor, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 // ── SVG icons ──────────────────────────────────────────────────────────────
 
@@ -241,18 +242,37 @@ export default function LetoltesPage() {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center">
-            {Array.from({ length: 6 }).map((_, i) => (
+            {[
+              { src: "/images/screenshots/01-home.png", alt: "Calmika főoldal" },
+              { src: "/images/screenshots/10-kommunikacio.png", alt: "AAC kommunikációs tábla" },
+              { src: "/images/screenshots/13-kifesto.png", alt: "Kifestő modul" },
+              { src: "/images/screenshots/14-zene.png", alt: "Zeneterápia" },
+              { src: "/images/screenshots/15-erzelmek.png", alt: "Érzelmek modul" },
+              { src: "/images/screenshots/16-napirend.png", alt: "Vizuális napirend" },
+            ].map((shot, i) => (
               <div
                 key={i}
-                className="w-[120px] lg:w-full aspect-[9/16] max-h-[320px] rounded-xl bg-gray-200 flex items-center justify-center text-gray-400 text-xs font-medium"
-                aria-hidden="true"
+                className="relative w-[120px] lg:w-full rounded-2xl overflow-hidden shadow-md"
+                style={{ aspectRatio: "9/19.5" }}
               >
-                {i + 1}
+                {/* Phone frame */}
+                <div
+                  className="absolute inset-0 rounded-2xl z-10 pointer-events-none"
+                  style={{
+                    boxShadow: "inset 0 0 0 3px rgba(0,0,0,0.15)",
+                  }}
+                  aria-hidden
+                />
+                <Image
+                  src={shot.src}
+                  alt={shot.alt}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 120px, (max-width: 1024px) 33vw, 16vw"
+                />
               </div>
             ))}
           </div>
-
-          <p className="text-center text-gray-400 text-sm mt-6">{t('screenshots.placeholder')}</p>
         </div>
       </section>
 

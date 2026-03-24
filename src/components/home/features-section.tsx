@@ -6,19 +6,47 @@ import { useTranslations } from "next-intl"
 import { BlurFade } from "@/components/magicui/blur-fade"
 import { cn } from "@/lib/utils"
 
+// ─── Wave SVG Divider ─────────────────────────────────────────────────────────
+
+function WaveDivider({ flip = false, color = "#f9f9f7" }: { flip?: boolean; color?: string }) {
+  return (
+    <div
+      className="w-full overflow-hidden leading-[0] pointer-events-none"
+      style={{ transform: flip ? "rotate(180deg)" : undefined }}
+      aria-hidden
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 60"
+        preserveAspectRatio="none"
+        className="w-full h-[48px] md:h-[60px]"
+      >
+        <path
+          d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z"
+          fill={color}
+        />
+      </svg>
+    </div>
+  )
+}
+
 // ─── Feature definitions ──────────────────────────────────────────────────────
 
 interface FeatureItem {
   key: string
   href: string
-  screenshot: string
-  screenshotAlt: string
+  screenshot?: string
+  screenshotAlt?: string
   icon: string
   /** bento grid span class */
   gridClass?: string
   /** calm corner special styling */
   isHighlight?: boolean
   badge?: string
+  /** Card accent color (for background tint) */
+  accentColor?: string
+  /** No screenshot — use emoji icon display */
+  noScreenshot?: boolean
 }
 
 const FEATURES: FeatureItem[] = [
@@ -30,6 +58,7 @@ const FEATURES: FeatureItem[] = [
     icon: "💬",
     gridClass: "md:col-span-2",
     badge: "5000+ Words",
+    accentColor: "rgba(20,184,166,0.06)",
   },
   {
     key: "napirend",
@@ -37,6 +66,7 @@ const FEATURES: FeatureItem[] = [
     screenshot: "/images/screenshots/16-napirend.png",
     screenshotAlt: "Vizuális napirend modul",
     icon: "📅",
+    accentColor: "rgba(249,189,34,0.06)",
   },
   {
     key: "erzelmek",
@@ -44,6 +74,7 @@ const FEATURES: FeatureItem[] = [
     screenshot: "/images/screenshots/15-erzelmek.png",
     screenshotAlt: "Érzelmek modul",
     icon: "🌈",
+    accentColor: "rgba(239,68,68,0.05)",
   },
   {
     key: "zeneterpia",
@@ -51,6 +82,7 @@ const FEATURES: FeatureItem[] = [
     screenshot: "/images/screenshots/14-zene.png",
     screenshotAlt: "Zeneterápia 4 almodul",
     icon: "🎵",
+    accentColor: "rgba(139,92,246,0.06)",
   },
   {
     key: "kifesto",
@@ -58,15 +90,15 @@ const FEATURES: FeatureItem[] = [
     screenshot: "/images/screenshots/13-kifesto.png",
     screenshotAlt: "Kifestő kategóriák",
     icon: "🎨",
+    accentColor: "rgba(249,115,22,0.05)",
   },
   {
     key: "nyugi-sarok",
     href: "/funkciok/nyugi-sarok",
-    screenshot: "/images/screenshots/01-home.png",
-    screenshotAlt: "Calmika alkalmazás Nyugi Sarok",
     icon: "🌿",
     isHighlight: true,
     badge: "ALWAYS FREE",
+    noScreenshot: true,
   },
 ]
 
@@ -81,39 +113,111 @@ interface CardProps {
 function FeatureCard({ feature, name, desc }: CardProps) {
   const isHighlight = feature.isHighlight
 
+  if (isHighlight) {
+    // Special calm corner card — gradient bg, no screenshot
+    return (
+      <Link
+        href={feature.href}
+        className="group relative flex flex-col rounded-[2rem] overflow-hidden h-full transition-all duration-500 hover:scale-[1.02]"
+        style={{
+          background: "linear-gradient(135deg, #14b8a6 0%, #0e8a78 50%, #065f52 100%)",
+          boxShadow: "0 40px 60px rgba(20,184,166,0.20)",
+          minHeight: 280,
+        }}
+      >
+        {/* Decorative blobs inside */}
+        <div
+          className="absolute -top-8 -right-8 w-40 h-40 rounded-full pointer-events-none"
+          style={{ backgroundColor: "rgba(255,255,255,0.08)", filter: "blur(30px)" }}
+          aria-hidden
+        />
+        <div
+          className="absolute -bottom-8 -left-8 w-40 h-40 rounded-full pointer-events-none"
+          style={{ backgroundColor: "rgba(249,189,34,0.12)", filter: "blur(40px)" }}
+          aria-hidden
+        />
+
+        {/* Dot pattern overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px)",
+            backgroundSize: "20px 20px",
+          }}
+          aria-hidden
+        />
+
+        <div className="relative z-10 p-6 flex flex-col gap-4 h-full">
+          {/* Badge */}
+          <span
+            className="self-start text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
+            style={{ color: "rgba(255,255,255,0.9)", backgroundColor: "rgba(255,255,255,0.2)" }}
+          >
+            {feature.badge}
+          </span>
+
+          {/* Icon */}
+          <div
+            className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl"
+            style={{ backgroundColor: "rgba(255,255,255,0.15)" }}
+          >
+            {feature.icon}
+          </div>
+
+          {/* Text */}
+          <div className="flex-1">
+            <h3 className="font-nunito font-bold text-2xl mb-2 text-white">
+              {name}
+            </h3>
+            <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
+              {desc}
+            </p>
+          </div>
+
+          {/* CTA */}
+          <div className="flex items-center gap-1.5 text-sm font-semibold text-white transition-all duration-300 group-hover:translate-x-1">
+            Open Now →
+          </div>
+        </div>
+      </Link>
+    )
+  }
+
+  // Normal card — screenshot on top, text below
   return (
     <Link
       href={feature.href}
       className={cn(
         "group relative flex flex-col rounded-[2rem] overflow-hidden h-full",
-        "transition-all duration-500",
+        "transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl",
       )}
       style={{
-        backgroundColor: isHighlight ? "#14b8a6" : "#ffffff",
-        boxShadow: isHighlight
-          ? "0 40px 60px rgba(20,184,166,0.15)"
-          : "0 40px 60px rgba(0,0,0,0.03)",
+        backgroundColor: "#ffffff",
+        backgroundImage: feature.accentColor
+          ? `radial-gradient(circle at 80% 20%, ${feature.accentColor} 0%, transparent 60%)`
+          : undefined,
+        boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
       }}
     >
       {/* Screenshot */}
-      <div className="relative overflow-hidden" style={{ height: 200 }}>
-        <Image
-          src={feature.screenshot}
-          alt={feature.screenshotAlt}
-          fill
-          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-        {/* Overlay gradient */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: isHighlight
-              ? "linear-gradient(to bottom, transparent 40%, rgba(20,184,166,0.85) 100%)"
-              : "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.95) 100%)",
-          }}
-        />
-      </div>
+      {feature.screenshot && (
+        <div className="relative overflow-hidden" style={{ height: 200 }}>
+          <Image
+            src={feature.screenshot}
+            alt={feature.screenshotAlt ?? name}
+            fill
+            className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+          {/* Overlay gradient */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.95) 100%)",
+            }}
+          />
+        </div>
+      )}
 
       {/* Content */}
       <div className="relative p-6 flex flex-col gap-3 flex-1">
@@ -121,11 +225,7 @@ function FeatureCard({ feature, name, desc }: CardProps) {
         {feature.badge && (
           <span
             className="absolute top-4 right-4 text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
-            style={
-              isHighlight
-                ? { color: "rgba(255,255,255,0.9)", backgroundColor: "rgba(255,255,255,0.2)" }
-                : { color: "#006b5f", backgroundColor: "rgba(20,184,166,0.12)" }
-            }
+            style={{ color: "#006b5f", backgroundColor: "rgba(20,184,166,0.12)" }}
           >
             {feature.badge}
           </span>
@@ -134,7 +234,7 @@ function FeatureCard({ feature, name, desc }: CardProps) {
         {/* Icon badge */}
         <div
           className="w-10 h-10 rounded-xl flex items-center justify-center text-lg"
-          style={{ backgroundColor: isHighlight ? "rgba(255,255,255,0.2)" : "#b9e9e0" }}
+          style={{ backgroundColor: "#b9e9e0" }}
         >
           {feature.icon}
         </div>
@@ -143,13 +243,13 @@ function FeatureCard({ feature, name, desc }: CardProps) {
         <div>
           <h3
             className="font-nunito font-bold text-xl mb-1"
-            style={{ color: isHighlight ? "#ffffff" : "#1a1c1b" }}
+            style={{ color: "#1a1c1b" }}
           >
             {name}
           </h3>
           <p
             className="text-sm leading-relaxed"
-            style={{ color: isHighlight ? "rgba(255,255,255,0.8)" : "#3c4947" }}
+            style={{ color: "#3c4947" }}
           >
             {desc}
           </p>
@@ -158,9 +258,9 @@ function FeatureCard({ feature, name, desc }: CardProps) {
         {/* CTA */}
         <div
           className="flex items-center gap-1.5 text-sm font-semibold mt-auto pt-2 transition-all duration-300 group-hover:translate-x-1"
-          style={{ color: isHighlight ? "#ffffff" : "#006b5f" }}
+          style={{ color: "#006b5f" }}
         >
-          {isHighlight ? "Open Now" : "Learn more"} →
+          Learn more →
         </div>
       </div>
     </Link>
@@ -173,81 +273,125 @@ export function FeaturesSection() {
   const t = useTranslations("features")
 
   return (
-    <section className="py-24" style={{ backgroundColor: "#f9f9f7" }}>
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
+    <div className="relative">
+      {/* Wave top divider */}
+      <WaveDivider flip color="#f9f9f7" />
 
-        {/* Header */}
-        <BlurFade inView delay={0}>
-          <div className="mb-16 max-w-2xl">
-            <span
-              className="block text-xs font-bold uppercase tracking-[0.08em] mb-4"
-              style={{ color: "#006b5f" }}
-            >
-              {t("overline")}
-            </span>
-            <h2
-              className="font-nunito text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6"
-              style={{ color: "#1a1c1b" }}
-            >
-              {t("sectionTitle")}
-            </h2>
-            <p
-              className="text-lg md:text-xl leading-relaxed"
-              style={{ color: "#3c4947" }}
-            >
-              {t("sectionSubtitle")}
-            </p>
-          </div>
-        </BlurFade>
-
-        {/* Bento Grid */}
+      <section
+        className="py-20 relative overflow-hidden"
+        style={{ backgroundColor: "#f9f9f7" }}
+      >
+        {/* Subtle dot pattern background */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            gridTemplateRows: "auto",
+            backgroundImage: "radial-gradient(circle, rgba(20,184,166,0.04) 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
           }}
-        >
-          {FEATURES.map((feature, index) => (
-            <BlurFade
-              key={feature.key}
-              inView
-              delay={0.05 * index}
-              className={cn("flex flex-col", feature.gridClass)}
-            >
-              <FeatureCard
-                feature={feature}
-                name={t(`${feature.key}.name`)}
-                desc={t(`${feature.key}.desc`)}
-              />
-            </BlurFade>
-          ))}
-        </div>
+          aria-hidden
+        />
+        {/* Radial gradient blobs */}
+        <div
+          className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none"
+          style={{
+            background: "radial-gradient(circle at 80% 10%, rgba(20,184,166,0.05) 0%, transparent 60%)",
+          }}
+          aria-hidden
+        />
+        <div
+          className="absolute bottom-0 left-0 w-[500px] h-[500px] pointer-events-none"
+          style={{
+            background: "radial-gradient(circle at 20% 90%, rgba(249,189,34,0.04) 0%, transparent 60%)",
+          }}
+          aria-hidden
+        />
 
-        {/* Bottom CTA */}
-        <BlurFade inView delay={0.4}>
-          <div className="mt-20 text-center">
-            <div
-              className="inline-flex items-center gap-4 py-2 pl-6 pr-2 rounded-full"
-              style={{
-                backgroundColor: "#eeeeec",
-                boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
-              }}
-            >
-              <p className="text-sm font-medium" style={{ color: "#3c4947" }}>
-                {t("ctaLabel")}
-              </p>
-              <Link
-                href="/letoltes"
-                className="px-6 py-2 rounded-full font-bold text-sm text-white transition-all duration-300 hover:opacity-90"
-                style={{ backgroundColor: "#006b5f" }}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+
+          {/* Header */}
+          <BlurFade delay={0}>
+            <div className="mb-16 max-w-2xl">
+              <span
+                className="block text-xs font-bold uppercase tracking-[0.08em] mb-4"
+                style={{ color: "#006b5f" }}
               >
-                {t("ctaButton")}
-              </Link>
+                {t("overline")}
+              </span>
+              <h2
+                className="font-nunito text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-4"
+                style={{ color: "#1a1c1b" }}
+              >
+                {t("sectionTitle")}
+              </h2>
+              {/* Decorative teal line */}
+              <div
+                className="rounded-full mb-6"
+                style={{
+                  width: 80,
+                  height: 3,
+                  background: "linear-gradient(90deg, #14b8a6 0%, #006b5f 100%)",
+                }}
+              />
+              <p
+                className="text-lg md:text-xl leading-relaxed"
+                style={{ color: "#3c4947" }}
+              >
+                {t("sectionSubtitle")}
+              </p>
             </div>
+          </BlurFade>
+
+          {/* Bento Grid */}
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+            style={{
+              gridTemplateRows: "auto",
+            }}
+          >
+            {FEATURES.map((feature, index) => (
+              <BlurFade
+                key={feature.key}
+                delay={0.05 * index}
+                className={cn("flex flex-col", feature.gridClass)}
+              >
+                <FeatureCard
+                  feature={feature}
+                  name={t(`${feature.key}.name`)}
+                  desc={t(`${feature.key}.desc`)}
+                />
+              </BlurFade>
+            ))}
           </div>
-        </BlurFade>
-      </div>
-    </section>
+
+          {/* Bottom CTA */}
+          <BlurFade delay={0.4}>
+            <div className="mt-20 text-center">
+              <div
+                className="inline-flex items-center gap-4 py-2 pl-6 pr-2 rounded-full"
+                style={{
+                  backgroundColor: "#eeeeec",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
+                }}
+              >
+                <p className="text-sm font-medium" style={{ color: "#3c4947" }}>
+                  {t("ctaLabel")}
+                </p>
+                <Link
+                  href="/letoltes"
+                  className="px-6 py-2 rounded-full font-bold text-sm text-white transition-all duration-300 hover:opacity-90"
+                  style={{ backgroundColor: "#006b5f" }}
+                >
+                  {t("ctaButton")}
+                </Link>
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+      {/* Wave bottom divider — before footer */}
+      <WaveDivider color="#1a1c1b" />
+    </div>
   )
 }
 
