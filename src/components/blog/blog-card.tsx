@@ -53,7 +53,9 @@ export function BlogCard({
   readingTimeLabel,
 }: BlogCardProps) {
   const colors = getCategoryColor(category);
-  const label = readingTimeLabel ?? `${readingTime} perc`;
+  const label = readingTimeLabel && !readingTimeLabel.includes('blog.') 
+    ? readingTimeLabel 
+    : `${readingTime} min`;
 
   return (
     <Link
@@ -63,32 +65,10 @@ export function BlogCard({
         boxShadow: '0 8px 40px rgba(0,0,0,0.04)',
       }}
     >
-      {/* Image placeholder */}
-      <div
-        className="relative aspect-video w-full overflow-hidden rounded-t-2xl flex items-center justify-center"
-        style={{ background: 'linear-gradient(135deg, #b9e9e0 0%, #e0f7f4 100%)' }}
-      >
-        {image && !image.includes('placeholder') ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={image}
-            alt={title}
-            className="h-full w-full object-cover"
-          />
-        ) : (
-          <div className="flex flex-col items-center gap-2 opacity-40">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#006b5f" strokeWidth="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="m21 15-5-5L5 21" />
-            </svg>
-            <span className="text-xs font-medium" style={{ color: '#006b5f' }}>Calmika Blog</span>
-          </div>
-        )}
-
-        {/* Category badge over image */}
+      {/* Category badge */}
+      <div className="px-5 pt-5">
         <span
-          className="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-bold"
+          className="inline-block rounded-full px-3 py-1 text-xs font-bold"
           style={{ backgroundColor: colors.bg, color: colors.text }}
         >
           {category}
