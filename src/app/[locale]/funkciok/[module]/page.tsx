@@ -37,8 +37,7 @@ interface Props {
 }
 
 export default async function ModulePage({ params }: Props) {
-  const { module: moduleKey } = await params;
-  const locale = await getLocale();
+  const { module: moduleKey, locale } = await params;
   const isHu = locale === 'hu';
 
   const data = moduleData[moduleKey as ModuleKey];
