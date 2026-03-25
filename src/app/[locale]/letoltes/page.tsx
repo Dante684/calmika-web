@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { getScreenshots } from '@/lib/screenshots';
 import { Download, UserPlus, Play, Smartphone, HardDrive, Wifi, Monitor, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -85,6 +86,8 @@ function BetaAccordion({ t }: { t: ReturnType<typeof useTranslations> }) {
 
 export default function LetoltesPage() {
   const t = useTranslations('download');
+  const locale = useLocale();
+  const screenshots = getScreenshots(locale);
 
   const steps = [
     {
@@ -243,12 +246,12 @@ export default function LetoltesPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center">
             {[
-              { src: "/images/screenshots/01-home.png", alt: "Calmika főoldal" },
-              { src: "/images/screenshots/10-kommunikacio.png", alt: "AAC kommunikációs tábla" },
-              { src: "/images/screenshots/13-kifesto.png", alt: "Kifestő modul" },
-              { src: "/images/screenshots/14-zene.png", alt: "Zeneterápia" },
-              { src: "/images/screenshots/15-erzelmek.png", alt: "Érzelmek modul" },
-              { src: "/images/screenshots/16-napirend.png", alt: "Vizuális napirend" },
+              { src: screenshots.home, alt: "Calmika főoldal" },
+              { src: screenshots.aac, alt: "AAC kommunikációs tábla" },
+              { src: screenshots.coloring, alt: "Kifestő modul" },
+              { src: screenshots.music, alt: "Zeneterápia" },
+              { src: screenshots.emotions, alt: "Érzelmek modul" },
+              { src: screenshots.schedule, alt: "Vizuális napirend" },
             ].map((shot, i) => (
               <div
                 key={i}

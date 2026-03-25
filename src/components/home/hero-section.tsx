@@ -2,9 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { BlurFade } from "@/components/magicui/blur-fade"
 import { cn } from "@/lib/utils"
+import { getScreenshots } from "@/lib/screenshots"
 
 // ─── Star Particles ───────────────────────────────────────────────────────────
 const PARTICLES = [
@@ -60,6 +61,8 @@ function StarParticles() {
 
 function PhoneFan() {
   const t = useTranslations("hero")
+  const locale = useLocale()
+  const screenshots = getScreenshots(locale)
 
   return (
     <div className="relative w-full flex items-center justify-center" style={{ minHeight: 380 }}>
@@ -106,7 +109,7 @@ function PhoneFan() {
             style={{ backgroundColor: "#1a1c1b" }}
           />
           <Image
-            src="/images/screenshots/10-kommunikacio.png"
+            src={screenshots.aac}
             alt="AAC tábla"
             width={155}
             height={335}
@@ -140,7 +143,7 @@ function PhoneFan() {
             style={{ backgroundColor: "#1a1c1b" }}
           />
           <Image
-            src="/images/screenshots/14-zene.png"
+            src={screenshots.music}
             alt="Zeneterápia"
             width={155}
             height={335}
@@ -165,7 +168,7 @@ function PhoneFan() {
             style={{ backgroundColor: "#1a1c1b" }}
           />
           <Image
-            src="/images/screenshots/01-home.png"
+            src={screenshots.home}
             alt={t("mockupAlt")}
             width={204}
             height={441}

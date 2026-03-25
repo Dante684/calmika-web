@@ -2,9 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { BlurFade } from "@/components/magicui/blur-fade"
 import { cn } from "@/lib/utils"
+import { getScreenshots } from "@/lib/screenshots"
 
 // ─── Wave SVG Divider ─────────────────────────────────────────────────────────
 
@@ -49,58 +50,60 @@ interface FeatureItem {
   noScreenshot?: boolean
 }
 
-const FEATURES: FeatureItem[] = [
-  {
-    key: "aac",
-    href: "/funkciok/aac",
-    screenshot: "/images/screenshots/10-kommunikacio.png",
-    screenshotAlt: "AAC kommunikációs tábla Fitzgerald Key színkódolással",
-    icon: "💬",
-    gridClass: "md:col-span-2",
-    badge: "5000+ Words",
-    accentColor: "rgba(20,184,166,0.06)",
-  },
-  {
-    key: "napirend",
-    href: "/funkciok/napirend",
-    screenshot: "/images/screenshots/16-napirend.png",
-    screenshotAlt: "Vizuális napirend modul",
-    icon: "📅",
-    accentColor: "rgba(249,189,34,0.06)",
-  },
-  {
-    key: "erzelmek",
-    href: "/funkciok/erzelmek",
-    screenshot: "/images/screenshots/15-erzelmek.png",
-    screenshotAlt: "Érzelmek modul",
-    icon: "🌈",
-    accentColor: "rgba(239,68,68,0.05)",
-  },
-  {
-    key: "zeneterpia",
-    href: "/funkciok/zeneterpia",
-    screenshot: "/images/screenshots/14-zene.png",
-    screenshotAlt: "Zeneterápia 4 almodul",
-    icon: "🎵",
-    accentColor: "rgba(139,92,246,0.06)",
-  },
-  {
-    key: "kifesto",
-    href: "/funkciok/kifesto",
-    screenshot: "/images/screenshots/13-kifesto.png",
-    screenshotAlt: "Kifestő kategóriák",
-    icon: "🎨",
-    accentColor: "rgba(249,115,22,0.05)",
-  },
-  {
-    key: "nyugi-sarok",
-    href: "/funkciok/nyugi-sarok",
-    icon: "🌿",
-    isHighlight: true,
-    badge: "ALWAYS FREE",
-    noScreenshot: true,
-  },
-]
+function getFeatures(screenshots: ReturnType<typeof getScreenshots>): FeatureItem[] {
+  return [
+    {
+      key: "aac",
+      href: "/funkciok/aac",
+      screenshot: screenshots.aac,
+      screenshotAlt: "AAC kommunikációs tábla Fitzgerald Key színkódolással",
+      icon: "💬",
+      gridClass: "md:col-span-2",
+      badge: "5000+ Words",
+      accentColor: "rgba(20,184,166,0.06)",
+    },
+    {
+      key: "napirend",
+      href: "/funkciok/napirend",
+      screenshot: screenshots.schedule,
+      screenshotAlt: "Vizuális napirend modul",
+      icon: "📅",
+      accentColor: "rgba(249,189,34,0.06)",
+    },
+    {
+      key: "erzelmek",
+      href: "/funkciok/erzelmek",
+      screenshot: screenshots.emotions,
+      screenshotAlt: "Érzelmek modul",
+      icon: "🌈",
+      accentColor: "rgba(239,68,68,0.05)",
+    },
+    {
+      key: "zeneterpia",
+      href: "/funkciok/zeneterpia",
+      screenshot: screenshots.music,
+      screenshotAlt: "Zeneterápia 4 almodul",
+      icon: "🎵",
+      accentColor: "rgba(139,92,246,0.06)",
+    },
+    {
+      key: "kifesto",
+      href: "/funkciok/kifesto",
+      screenshot: screenshots.coloring,
+      screenshotAlt: "Kifestő kategóriák",
+      icon: "🎨",
+      accentColor: "rgba(249,115,22,0.05)",
+    },
+    {
+      key: "nyugi-sarok",
+      href: "/funkciok/nyugi-sarok",
+      icon: "🌿",
+      isHighlight: true,
+      badge: "ALWAYS FREE",
+      noScreenshot: true,
+    },
+  ]
+}
 
 // ─── Card Components ───────────────────────────────────────────────────────────
 
@@ -279,6 +282,8 @@ function FeatureCard({ feature, name, desc }: CardProps) {
 
 export function FeaturesSection() {
   const t = useTranslations("features")
+  const locale = useLocale()
+  const FEATURES = getFeatures(getScreenshots(locale))
 
   return (
     <div className="relative">
