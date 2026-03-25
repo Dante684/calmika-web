@@ -82,9 +82,9 @@ function PhoneFan() {
         aria-hidden
       />
 
-      {/* Left phone — rotated -15deg, behind */}
+      {/* Left phone — rotated -15deg, behind — hidden on mobile */}
       <div
-        className="absolute"
+        className="absolute hidden md:block"
         style={{
           transform: "rotate(-15deg) translateX(-60px) translateY(20px)",
           zIndex: 1,
@@ -116,9 +116,9 @@ function PhoneFan() {
         </div>
       </div>
 
-      {/* Right phone — rotated +15deg, behind */}
+      {/* Right phone — rotated +15deg, behind — hidden on mobile */}
       <div
-        className="absolute"
+        className="absolute hidden md:block"
         style={{
           transform: "rotate(15deg) translateX(60px) translateY(20px)",
           zIndex: 1,

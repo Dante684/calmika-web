@@ -234,62 +234,115 @@ function ComparisonTable() {
         </table>
       </div>
 
-      {/* Mobile cards */}
-      <div className="md:hidden grid grid-cols-1 gap-4">
-        {competitors.map((c) => (
-          <div
-            key={c.name}
-            className="rounded-[1.5rem] p-5"
-            style={
-              c.isCalmika
-                ? {
-                    backgroundColor: "#006b5f",
-                    boxShadow: "0 20px 40px rgba(0,107,95,0.25)",
-                  }
-                : {
-                    backgroundColor: "#ffffff",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
-                  }
-            }
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h4
-                className="text-lg font-bold font-nunito"
-                style={{ color: c.isCalmika ? "#ffffff" : "#1a1c1b" }}
-              >
-                {c.name}
-              </h4>
-              {c.isCalmika && (
+      {/* Mobile: feature-row cards — one card per feature */}
+      <div className="block md:hidden space-y-3">
+        {/* Price row card */}
+        <div
+          className="rounded-[1.5rem] p-5"
+          style={{ backgroundColor: "#ffffff", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}
+        >
+          <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "#6c7a77" }}>
+            {t("price")}
+          </p>
+          <div className="space-y-2">
+            {competitors.map((c) => (
+              <div key={c.name} className="flex items-center justify-between text-sm">
                 <span
-                  className="text-xs rounded-full px-2.5 py-1 font-bold"
-                  style={{ backgroundColor: "#14b8a6", color: "#ffffff" }}
+                  className="font-semibold"
+                  style={{ color: c.isCalmika ? "#006b5f" : "#3c4947" }}
                 >
-                  Recommended
+                  {c.name}{c.isCalmika ? " ★" : ""}
                 </span>
-              )}
-            </div>
-            <dl className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <dt style={{ color: c.isCalmika ? "rgba(255,255,255,0.7)" : "#6c7a77" }}>{t("price")}</dt>
-                <dd className="font-semibold" style={{ color: c.isCalmika ? "#ffffff" : "#1a1c1b" }}>{c.price}</dd>
+                <span
+                  className="font-bold"
+                  style={{ color: c.isCalmika ? "#006b5f" : "#1a1c1b" }}
+                >
+                  {c.price}
+                </span>
               </div>
-              <div className="flex justify-between">
-                <dt style={{ color: c.isCalmika ? "rgba(255,255,255,0.7)" : "#6c7a77" }}>{t("platform")}</dt>
-                <dd className="text-right max-w-[60%]" style={{ color: c.isCalmika ? "#ffffff" : "#3c4947" }}>{c.platform}</dd>
+            ))}
+          </div>
+        </div>
+
+        {/* Platform row card */}
+        <div
+          className="rounded-[1.5rem] p-5"
+          style={{ backgroundColor: "#ffffff", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}
+        >
+          <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "#6c7a77" }}>
+            {t("platform")}
+          </p>
+          <div className="space-y-2">
+            {competitors.map((c) => (
+              <div key={c.name} className="flex items-center justify-between text-sm">
+                <span
+                  className="font-semibold"
+                  style={{ color: c.isCalmika ? "#006b5f" : "#3c4947" }}
+                >
+                  {c.name}{c.isCalmika ? " ★" : ""}
+                </span>
+                <span
+                  className="text-right max-w-[55%] text-xs"
+                  style={{ color: c.isCalmika ? "#006b5f" : "#3c4947" }}
+                >
+                  {c.platform}
+                </span>
               </div>
-              <div className="flex justify-between">
-                <dt style={{ color: c.isCalmika ? "rgba(255,255,255,0.7)" : "#6c7a77" }}>{t("aacWords")}</dt>
-                <dd className="font-semibold" style={{ color: c.isCalmika ? "#ffffff" : "#1a1c1b" }}>{c.aacWords}</dd>
+            ))}
+          </div>
+        </div>
+
+        {/* AAC Words row card */}
+        <div
+          className="rounded-[1.5rem] p-5"
+          style={{ backgroundColor: "#ffffff", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}
+        >
+          <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "#6c7a77" }}>
+            {t("aacWords")}
+          </p>
+          <div className="space-y-2">
+            {competitors.map((c) => (
+              <div key={c.name} className="flex items-center justify-between text-sm">
+                <span
+                  className="font-semibold"
+                  style={{ color: c.isCalmika ? "#006b5f" : "#3c4947" }}
+                >
+                  {c.name}{c.isCalmika ? " ★" : ""}
+                </span>
+                <span
+                  className="font-bold"
+                  style={{ color: c.isCalmika ? "#006b5f" : "#1a1c1b" }}
+                >
+                  {c.aacWords}
+                </span>
               </div>
-              {checkFeatures.map(({ key, label }) => (
-                <div key={key} className="flex justify-between items-center">
-                  <dt style={{ color: c.isCalmika ? "rgba(255,255,255,0.7)" : "#6c7a77" }}>{label}</dt>
-                  <dd>
-                    <CheckIcon status={c[key]} />
-                  </dd>
+            ))}
+          </div>
+        </div>
+
+        {/* Check feature cards */}
+        {checkFeatures.map(({ key, label }) => (
+          <div
+            key={key}
+            className="rounded-[1.5rem] p-5"
+            style={{ backgroundColor: "#ffffff", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}
+          >
+            <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "#6c7a77" }}>
+              {label}
+            </p>
+            <div className="space-y-2">
+              {competitors.map((c) => (
+                <div key={c.name} className="flex items-center justify-between text-sm">
+                  <span
+                    className="font-semibold"
+                    style={{ color: c.isCalmika ? "#006b5f" : "#3c4947" }}
+                  >
+                    {c.name}{c.isCalmika ? " ★" : ""}
+                  </span>
+                  <CheckIcon status={c[key]} />
                 </div>
               ))}
-            </dl>
+            </div>
           </div>
         ))}
       </div>

@@ -183,12 +183,14 @@ function FeatureCard({ feature, name, desc }: CardProps) {
     )
   }
 
-  // Normal card — screenshot on top, text below
+  // Normal card — responsive layout:
+  // Mobile: flex-col (screenshot on top, centered, bigger 160×320)
+  // Desktop: flex-row (text left, screenshot right)
   return (
     <Link
       href={feature.href}
       className={cn(
-        "group relative flex flex-col rounded-[2rem] overflow-hidden h-full",
+        "group relative flex flex-col md:flex-row md:items-center rounded-[2rem] overflow-hidden h-full",
         "transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl",
       )}
       style={{
@@ -199,32 +201,6 @@ function FeatureCard({ feature, name, desc }: CardProps) {
         boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
       }}
     >
-      {/* Screenshot in phone frame */}
-      {feature.screenshot && (
-        <div className="flex justify-center pt-5 pb-2">
-          <div
-            className="relative overflow-hidden rounded-[1.2rem]"
-            style={{
-              width: 120,
-              height: 240,
-              backgroundColor: "#1a1c1b",
-              padding: 4,
-              boxShadow: "0 8px 30px rgba(0,0,0,0.15)",
-            }}
-          >
-            <div className="relative w-full h-full rounded-[1rem] overflow-hidden bg-white">
-              <Image
-                src={feature.screenshot}
-                alt={feature.screenshotAlt ?? name}
-                fill
-                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                sizes="120px"
-              />
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Content */}
       <div className="relative p-6 flex flex-col gap-3 flex-1">
         {/* Badge */}
@@ -269,6 +245,32 @@ function FeatureCard({ feature, name, desc }: CardProps) {
           Learn more →
         </div>
       </div>
+
+      {/* Screenshot in phone frame */}
+      {feature.screenshot && (
+        <div className="flex justify-center md:justify-end pt-2 pb-5 md:py-5 md:pr-5 md:pl-0 shrink-0">
+          {/* Mobile: 160×320, Desktop: 120×240 */}
+          <div
+            className="relative overflow-hidden rounded-[1.2rem] w-[160px] h-[320px] md:w-[120px] md:h-[240px]"
+            style={{
+              backgroundColor: "#1a1c1b",
+              padding: 4,
+              boxShadow: "0 8px 30px rgba(0,0,0,0.15)",
+            }}
+          >
+            <div className="relative w-full h-full rounded-[1rem] overflow-hidden bg-white">
+              <Image
+                src={feature.screenshot}
+                alt={feature.screenshotAlt ?? name}
+                width={360}
+                height={800}
+                loading="eager"
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </Link>
   )
 }
