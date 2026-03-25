@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import { getLocale } from 'next-intl/server';
 import Link from 'next/link';
 import {
   MessageSquare,
@@ -268,5 +267,8 @@ export default async function ModulePage({ params }: Props) {
 }
 
 export function generateStaticParams() {
-  return Object.keys(moduleData).map((key) => ({ module: key }));
+  const locales = ['hu', 'en'];
+  return locales.flatMap((locale) =>
+    Object.keys(moduleData).map((key) => ({ locale, module: key }))
+  );
 }
