@@ -62,7 +62,7 @@ function PhoneFan() {
   const t = useTranslations("hero")
 
   return (
-    <div className="relative w-full flex items-center justify-center" style={{ minHeight: 520 }}>
+    <div className="relative w-full flex items-center justify-center" style={{ minHeight: 380 }}>
       {/* Glow blob behind the fan */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -151,7 +151,7 @@ function PhoneFan() {
       </div>
 
       {/* Center phone — main, front */}
-      <div className="relative z-10 mx-auto" style={{ width: 220 }}>
+      <div className="relative z-10 mx-auto w-[180px] md:w-[220px]">
         <div
           className="relative p-3 rounded-[3rem] overflow-hidden"
           style={{
@@ -175,9 +175,9 @@ function PhoneFan() {
           />
         </div>
 
-        {/* Floating card – Progress */}
+        {/* Floating card – Progress — hidden on mobile */}
         <div
-          className="absolute -left-16 top-1/4 flex items-center gap-3 p-3.5 rounded-2xl"
+          className="absolute -left-16 top-1/4 hidden md:flex items-center gap-3 p-3.5 rounded-2xl"
           style={{
             backgroundColor: "#ffffff",
             boxShadow: "0 20px 40px rgba(0,0,0,0.10)",
@@ -199,9 +199,9 @@ function PhoneFan() {
           </div>
         </div>
 
-        {/* Floating card – AAC */}
+        {/* Floating card – AAC — hidden on mobile */}
         <div
-          className="absolute -right-10 bottom-1/4 flex items-center gap-3 p-3.5 rounded-2xl"
+          className="absolute -right-10 bottom-1/4 hidden md:flex items-center gap-3 p-3.5 rounded-2xl"
           style={{
             backgroundColor: "#ffffff",
             boxShadow: "0 20px 40px rgba(0,0,0,0.10)",
