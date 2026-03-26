@@ -258,6 +258,14 @@
     "screenshots": {
       "title": "Képernyőképek",
       "placeholder": "Valódi képernyőképek hamarosan érkeznek."
+    },
+    "screenshotAlts": {
+      "home": "Calmika főoldal",
+      "aac": "AAC kommunikációs tábla",
+      "coloring": "Kifestő modul",
+      "music": "Zeneterápia",
+      "emotions": "Érzelmek modul",
+      "schedule": "Vizuális napirend"
     }
   },
   "common": {
@@ -277,7 +285,9 @@
   "pricing": {
     "title": "Egyszerű, átlátható árazás",
     "subtitle": "14 nap ingyen teljes Pro — nincs bankkártya szükség",
+    "overline": "Egyszerű árazás",
     "free": {
+      "overline": "Alapcsomag",
       "name": "Ingyenes",
       "price": "0 Ft",
       "period": "Örökre ingyenes",
@@ -291,6 +301,7 @@
       ]
     },
     "pro_monthly": {
+      "overline": "Pro hozzáférés",
       "name": "Pro Havi",
       "badge": "Legnépszerűbb",
       "price_hu": "1 990 Ft/hó",
@@ -308,6 +319,7 @@
       ]
     },
     "pro_yearly": {
+      "overline": "Legjobb ajánlat",
       "name": "Pro Éves",
       "badge": "Legjobb ajánlat",
       "savings": "2 hónap ingyen",
@@ -371,6 +383,9 @@
       "subtitle": "Egy ASD ikrek apukája által készített app — nem nagyvállalati termék, hanem szülői szívvel."
     },
     "timeline": {
+      "overline": "Utunk",
+      "heroTitle1": "A diagnózistól",
+      "heroTitle2": "a mindennapokig",
       "sectionTitle": "Hogyan jutottunk idáig",
       "y2022": {
         "title": "A diagnózis",
@@ -757,6 +772,8 @@
   "blog": {
     "title": "Blog",
     "subtitle": "ASD szülői tudástár — tippek, kutatások, app frissítések",
+    "ctaTitle": "Próbáld ki a Calmikát",
+    "ctaDescription": "Az egyetlen all-in-one autizmus fejlesztő app — offline, reklám nélkül, 30+ modullal.",
     "categories": {
       "all": "Mind",
       "parents": "Szülőknek",

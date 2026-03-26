@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import {
   MessageSquare,
   Calendar,
@@ -48,8 +48,8 @@ export default async function ModulePage({ params }: Props) {
   const features = isHu ? data.huFeatures : data.enFeatures;
   const steps = isHu ? data.huSteps : data.enSteps;
   const { competitors } = data;
-  const basePath = isHu ? '/funkciok' : '/features';
-  const downloadPath = isHu ? '/letoltes' : '/download';
+  const basePath = '/funkciok';
+  const downloadPath = '/letoltes';
 
   const categoryColorMap: Record<string, string> = {
     communication: 'from-teal-500 via-teal-400 to-teal-300',
@@ -69,7 +69,7 @@ export default async function ModulePage({ params }: Props) {
             <div className="flex-1 text-center md:text-left">
               {/* Back link */}
               <Link
-                href={basePath}
+                href={basePath as any}
                 className="inline-flex items-center gap-1 text-white/80 hover:text-white text-sm mb-6 transition-colors"
               >
                 ← {isHu ? 'Vissza a funkciókhoz' : 'Back to features'}
@@ -91,7 +91,7 @@ export default async function ModulePage({ params }: Props) {
 
               <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
                 <Link
-                  href={downloadPath}
+                  href={downloadPath as any}
                   className="inline-flex items-center gap-2 bg-white text-calmika-teal-600 font-bold px-6 py-3 rounded-full shadow hover:shadow-lg transition-all hover:scale-105"
                 >
                   <Download className="w-4 h-4" />
@@ -215,7 +215,7 @@ export default async function ModulePage({ params }: Props) {
             : '14 days free Pro — no credit card required.'}
         </p>
         <Link
-          href={downloadPath}
+          href={downloadPath as any}
           className="inline-flex items-center gap-2 bg-calmika-teal-500 hover:bg-calmika-teal-600 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 text-lg"
         >
           <Download className="w-5 h-5" />
@@ -239,7 +239,7 @@ export default async function ModulePage({ params }: Props) {
               return (
                 <Link
                   key={relKey}
-                  href={`${basePath}/${relKey}`}
+                  href={`${basePath}/${relKey}` as any}
                   className="group bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-calmika-teal-300 transition-all p-5 flex flex-col gap-3"
                 >
                   <div className="w-10 h-10 bg-calmika-teal-50 text-calmika-teal-600 rounded-xl flex items-center justify-center">

@@ -1,5 +1,15 @@
+import { getTranslations } from 'next-intl/server';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.pricing' });
+  return {
+    title: `${t('title')} — Calmika`,
+    description: t('description'),
+  };
+}
 import { Check, X, ChevronRight, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {

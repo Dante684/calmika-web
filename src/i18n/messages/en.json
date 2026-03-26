@@ -258,6 +258,14 @@
     "screenshots": {
       "title": "Screenshots",
       "placeholder": "Real screenshots coming soon."
+    },
+    "screenshotAlts": {
+      "home": "Calmika home screen",
+      "aac": "AAC communication board",
+      "coloring": "Coloring module",
+      "music": "Music therapy",
+      "emotions": "Emotions module",
+      "schedule": "Visual schedule"
     }
   },
   "common": {
@@ -277,7 +285,9 @@
   "pricing": {
     "title": "Simple, transparent pricing",
     "subtitle": "14 days free full Pro — no credit card required",
+    "overline": "Simple Pricing",
     "free": {
+      "overline": "Essential",
       "name": "Free",
       "price": "$0",
       "period": "Free forever",
@@ -291,6 +301,7 @@
       ]
     },
     "pro_monthly": {
+      "overline": "Pro Access",
       "name": "Pro Monthly",
       "badge": "Most Popular",
       "price_hu": "1,990 HUF/mo",
@@ -308,6 +319,7 @@
       ]
     },
     "pro_yearly": {
+      "overline": "Best Value",
       "name": "Pro Yearly",
       "badge": "Best value",
       "savings": "2 months free",
@@ -371,6 +383,9 @@
       "subtitle": "Built by a dad of autistic twins — not a corporate product, but made with a parent's heart."
     },
     "timeline": {
+      "overline": "Our Journey",
+      "heroTitle1": "From Diagnosis to",
+      "heroTitle2": "Daily Support",
       "sectionTitle": "How We Got Here",
       "y2022": {
         "title": "The Diagnosis",
@@ -757,6 +772,8 @@
   "blog": {
     "title": "Blog",
     "subtitle": "ASD parenting knowledge base — tips, research, app updates",
+    "ctaTitle": "Try Calmika",
+    "ctaDescription": "The only all-in-one autism development app — offline, ad-free, with 30+ modules.",
     "categories": {
       "all": "All",
       "parents": "For Parents",
