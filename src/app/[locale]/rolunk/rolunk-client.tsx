@@ -179,19 +179,18 @@ export default function RolunkClient() {
 
             {/* Right: image card + quote */}
             <div className="relative">
-              {/* Rotated card placeholder */}
+              {/* Hero illustration */}
               <div
                 className="rounded-3xl overflow-hidden aspect-square rotate-3"
                 style={{
-                  backgroundColor: '#eeeeec',
                   boxShadow: '0 40px 80px -20px rgba(0,107,95,0.18)',
                 }}
               >
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-base font-medium" style={{ color: '#6c7a77' }}>
-                    Calmika familia
-                  </span>
-                </div>
+                <img
+                  src="/images/about-hero.png"
+                  alt={t('photos.family')}
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Gold quote card */}
               <div
@@ -339,17 +338,19 @@ export default function RolunkClient() {
                   className="flex items-center gap-4 pt-7"
                   style={{ borderTop: '1px solid rgba(0,107,95,0.1)' }}
                 >
-                  {/* Photo placeholder */}
+                  {/* Founder avatar */}
                   <div
-                    className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center font-bold font-nunito text-lg"
+                    className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0"
                     style={{
-                      backgroundColor: '#eeeeec',
                       outline: '2px solid #14b8a6',
                       outlineOffset: '2px',
-                      color: '#006b5f',
                     }}
                   >
-                    D
+                    <img
+                      src="/images/founder-avatar.png"
+                      alt="Dávid"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p
@@ -365,17 +366,18 @@ export default function RolunkClient() {
                 </div>
               </div>
 
-              {/* Image placeholder */}
+              {/* About illustration */}
               <div
-                className="rounded-2xl overflow-hidden aspect-square flex items-center justify-center"
+                className="rounded-2xl overflow-hidden aspect-square"
                 style={{
-                  backgroundColor: '#eeeeec',
                   boxShadow: '0 40px 80px -20px rgba(0,107,95,0.12)',
                 }}
               >
-                <span className="text-sm font-medium" style={{ color: '#6c7a77' }}>
-                  {t('photos.family')}
-                </span>
+                <img
+                  src="/images/about-hero.png"
+                  alt={t('photos.family')}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
