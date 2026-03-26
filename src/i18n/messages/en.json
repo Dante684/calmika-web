@@ -356,10 +356,21 @@
         "reports": "Parent reports",
         "dualLang": "Dual language",
         "offline": "Offline mode"
+      },
+      "values": {
+        "val_80core": "80 core",
+        "val_3img": "3 images",
+        "val_5words": "5 words",
+        "val_basic": "Basic",
+        "val_music_pro": "6 sub-modules, 15 instruments",
+        "val_schedule_pro": "Full + templates",
+        "val_86templates": "86 templates",
+        "val_3lang": "✅ 3 languages (HU/EN/PL)"
       }
     },
     "ethics": {
-      "text": "🤝 AAC communication and Calm Corner will ALWAYS remain free. Communication is a human right."
+      "text": "AAC and Calm Corner are ALWAYS FREE. We believe every child deserves the right to express themselves — regardless of financial situation.",
+      "title": "Communication is a fundamental human right."
     },
     "therapists": {
       "title": "For Therapists & Schools",

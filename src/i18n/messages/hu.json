@@ -356,10 +356,21 @@
         "reports": "Szülői riportok",
         "dualLang": "Dual language",
         "offline": "Offline mód"
+      },
+      "values": {
+        "val_80core": "80 core",
+        "val_3img": "3 kép",
+        "val_5words": "5 szó",
+        "val_basic": "Alap",
+        "val_music_pro": "6 almodul, 15 hangszer",
+        "val_schedule_pro": "Teljes + sablonok",
+        "val_86templates": "86 sablon",
+        "val_3lang": "✅ 3 nyelv (HU/EN/PL)"
       }
     },
     "ethics": {
-      "text": "🤝 AAC kommunikáció és Nyugi Sarok MINDIG INGYENES marad. A kommunikáció alapjog."
+      "text": "AAC és Nyugi Sarok MINDIG INGYENES. Hisszük, hogy minden gyereknek joga van kifejezni magát — anyagi helyzettől függetlenül.",
+      "title": "A kommunikáció alapvető emberi jog."
     },
     "therapists": {
       "title": "Terapeutáknak és iskoláknak",

@@ -20,23 +20,23 @@ import {
 } from '@/components/ui/accordion';
 import { CtaBottomSection } from '@/components/shared/cta-bottom-section';
 
-// ─── Feature comparison data ───────────────────────────────────────────────────
+// ─── Feature comparison data (i18n keys for text values) ──────────────────────
 const comparisonRows = [
-  { key: 'aac',       free: '80 core', pro: '5000+' },
-  { key: 'coloring',  free: '3 kép',   pro: '110+' },
-  { key: 'vocab',     free: '5 szó',   pro: '757' },
-  { key: 'music',     free: 'Alap',    pro: '6 almodul, 15 hangszer' },
-  { key: 'schedule',  free: 'Alap',    pro: 'Teljes + sablonok' },
+  { key: 'aac',       free: 'val_80core', pro: '5000+' },
+  { key: 'coloring',  free: 'val_3img',   pro: '110+' },
+  { key: 'vocab',     free: 'val_5words',  pro: '757' },
+  { key: 'music',     free: 'val_basic',   pro: 'val_music_pro' },
+  { key: 'schedule',  free: 'val_basic',   pro: 'val_schedule_pro' },
   { key: 'emotions',  free: null,      pro: true },
   { key: 'social',    free: null,      pro: true },
   { key: 'cognitive', free: null,      pro: true },
-  { key: 'printable', free: null,      pro: '86 sablon' },
+  { key: 'printable', free: null,      pro: 'val_86templates' },
   { key: 'reports',   free: null,      pro: true },
-  { key: 'dualLang',  free: null,      pro: '✅ 3 nyelv (HU/EN/PL)' },
+  { key: 'dualLang',  free: null,      pro: 'val_3lang' },
   { key: 'offline',   free: true,      pro: true },
 ] as const;
 
-function FeatureCell({ value }: { value: string | boolean | null }) {
+function FeatureCell({ value, t }: { value: string | boolean | null; t: ReturnType<typeof useTranslations> }) {
   if (value === null || value === false) {
     return (
       <td className="p-5 text-center">
@@ -51,9 +51,11 @@ function FeatureCell({ value }: { value: string | boolean | null }) {
       </td>
     );
   }
+  // i18n key (starts with val_) or plain number
+  const display = value.startsWith('val_') ? t(`comparison.values.${value}`) : value;
   return (
     <td className="p-5 text-center text-sm font-medium" style={{ color: '#3c4947' }}>
-      {value}
+      {display}
     </td>
   );
 }
@@ -331,12 +333,10 @@ export default function ArazasPage() {
           {/* Text */}
           <div className="relative z-10 text-center md:text-left">
             <h2 className="font-nunito text-2xl md:text-3xl font-extrabold text-white mb-3">
-              A kommunikáció alapvető emberi jog.
+              {t('ethics.title')}
             </h2>
             <p className="text-white/90 text-base md:text-lg leading-relaxed max-w-2xl">
-              AAC és Nyugi Sarok{' '}
-              <strong className="text-[#71f8e4]">MINDIG INGYENES</strong>. Hisszük,
-              hogy minden gyereknek joga van kifejezni magát — anyagi helyzettől függetlenül.
+              {t('ethics.text')}
             </p>
           </div>
         </div>
@@ -386,8 +386,8 @@ export default function ArazasPage() {
                   <td className="p-5 font-medium text-sm" style={{ color: '#1a1c1b' }}>
                     {t(`comparison.rows.${row.key}`)}
                   </td>
-                  <FeatureCell value={row.free} />
-                  <FeatureCell value={row.pro} />
+                  <FeatureCell value={row.free} t={t} />
+                  <FeatureCell value={row.pro} t={t} />
                 </tr>
               ))}
             </tbody>
