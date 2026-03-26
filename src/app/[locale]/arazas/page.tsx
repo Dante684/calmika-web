@@ -95,7 +95,7 @@ export default function ArazasPage() {
             className="inline-block text-xs font-bold tracking-widest uppercase mb-5"
             style={{ color: '#006b5f', letterSpacing: '0.2em' }}
           >
-            Simple Pricing
+            {t('overline')}
           </span>
           <h1
             className="font-nunito text-4xl md:text-6xl font-extrabold tracking-tight mb-5 leading-tight"
@@ -126,7 +126,7 @@ export default function ArazasPage() {
                 className="text-xs font-bold tracking-widest uppercase block mb-2"
                 style={{ color: '#6c7a77' }}
               >
-                Essential
+                {t('free.overline')}
               </span>
               <h3
                 className="font-nunito text-2xl font-bold"
@@ -192,7 +192,7 @@ export default function ArazasPage() {
                 className="text-xs font-bold tracking-widest uppercase block mb-2"
                 style={{ color: '#006b5f' }}
               >
-                Pro Access
+                {t('pro_monthly.overline')}
               </span>
               <h3
                 className="font-nunito text-2xl font-bold"
@@ -262,7 +262,7 @@ export default function ArazasPage() {
                 className="text-xs font-bold tracking-widest uppercase block mb-2"
                 style={{ color: '#6c7a77' }}
               >
-                Best Value
+                {t('pro_yearly.overline')}
               </span>
               <h3
                 className="font-nunito text-2xl font-bold"

@@ -1,6 +1,6 @@
 import { getBlogPosts } from '@/lib/blog';
 
-const SITE_URL = 'https://calmika.app';
+const SITE_URL = 'https://calmika.com';
 
 function escapeXml(str: string): string {
   return str

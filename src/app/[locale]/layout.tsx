@@ -23,6 +23,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Calmika',
   description: 'Calmika – Autism-friendly educational app for children',
+  openGraph: {
+    title: 'Calmika — Autism-friendly educational app',
+    description: 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
+    url: 'https://calmika.com',
+    siteName: 'Calmika',
+    locale: 'hu_HU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Calmika',
+    description: 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
+  },
 };
 
 type Props = {

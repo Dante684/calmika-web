@@ -114,6 +114,7 @@ interface CardProps {
 }
 
 function FeatureCard({ feature, name, desc }: CardProps) {
+  const t = useTranslations("features")
   const isHighlight = feature.isHighlight
 
   if (isHighlight) {
@@ -179,7 +180,7 @@ function FeatureCard({ feature, name, desc }: CardProps) {
 
           {/* CTA */}
           <div className="flex items-center gap-1.5 text-sm font-semibold text-white transition-all duration-300 group-hover:translate-x-1">
-            Open Now →
+            {t("learnMore")} →
           </div>
         </div>
       </Link>
@@ -245,7 +246,7 @@ function FeatureCard({ feature, name, desc }: CardProps) {
           className="flex items-center gap-1.5 text-sm font-semibold mt-auto pt-2 transition-all duration-300 group-hover:translate-x-1"
           style={{ color: "#006b5f" }}
         >
-          Learn more →
+          {t("learnMore")} →
         </div>
       </div>
 

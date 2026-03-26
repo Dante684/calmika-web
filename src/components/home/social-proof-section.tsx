@@ -28,7 +28,7 @@ const competitors: CompetitorData[] = [
     name: "Calmika",
     isCalmika: true,
     price: "€5,99",
-    platform: "Android + iOS",
+    platform: "Android (iOS hamarosan)",
     aacWords: "5000+",
     education: "yes",
     dualLang: "yes",

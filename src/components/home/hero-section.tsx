@@ -348,21 +348,6 @@ export function HeroSection() {
                 </Link>
               </div>
 
-              {/* Trusted by row */}
-              <div
-                className="flex items-center justify-center md:justify-start gap-2 mt-4"
-                style={{ color: "#6c7a77" }}
-              >
-                <span className="text-base">👨‍👩‍👧</span>
-                <span className="text-base">🧩</span>
-                <span className="text-base">⭐</span>
-                <span
-                  className="text-sm font-semibold ml-1"
-                  style={{ fontFamily: "var(--font-inter, Inter, sans-serif)" }}
-                >
-                  Trusted by 100+ families
-                </span>
-              </div>
             </BlurFade>
 
             {/* Trust badges */}

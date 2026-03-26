@@ -232,10 +232,10 @@ export default async function BlogPostPage({ params }: Props) {
                 aria-hidden
               />
               <h3 className="font-nunito text-2xl md:text-3xl font-extrabold text-white mb-3">
-                Próbáld ki a Calmikát
+                {t('ctaTitle')}
               </h3>
               <p className="text-white/80 mb-8 max-w-md mx-auto">
-                Az egyetlen all-in-one autizmus fejlesztő app — offline, reklám nélkül, 30+ modullal.
+                {t('ctaDescription')}
               </p>
               <a
                 href="https://play.google.com/store/apps/details?id=com.magicworlds.app"
