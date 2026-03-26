@@ -108,7 +108,7 @@ function StatsRow() {
   const stats = [
     { value: 5000, suffix: "+", label: t("words") },
     { value: 30, suffix: "+", label: t("modules") },
-    { value: 7, suffix: "", label: t("languages") },
+    { value: 3, suffix: "", label: t("languages") },
     { value: 0, suffix: "", label: t("ads") },
   ]
 

@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Check, X, ChevronRight, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -22,7 +22,7 @@ const comparisonRows = [
   { key: 'cognitive', free: null,      pro: true },
   { key: 'printable', free: null,      pro: '86 sablon' },
   { key: 'reports',   free: null,      pro: true },
-  { key: 'dualLang',  free: null,      pro: '✅ 7 nyelv' },
+  { key: 'dualLang',  free: null,      pro: '✅ 3 nyelv (HU/EN/PL)' },
   { key: 'offline',   free: true,      pro: true },
 ] as const;
 
@@ -49,8 +49,30 @@ function FeatureCell({ value }: { value: string | boolean | null }) {
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+// ─── Locale-based pricing helper ──────────────────────────────────────────────
+function useRegionPricing(t: ReturnType<typeof useTranslations>) {
+  const locale = useLocale();
+  const isHu = locale === 'hu';
+
+  return {
+    monthly: {
+      primary: isHu ? `🇭🇺 ${t('pro_monthly.price_hu')}` : `🇪🇺 ${t('pro_monthly.price_eu')}`,
+      secondary: isHu
+        ? `🇪🇺 ${t('pro_monthly.price_eu')} · 🇺🇸 ${t('pro_monthly.price_us')}`
+        : `🇭🇺 ${t('pro_monthly.price_hu')} · 🇺🇸 ${t('pro_monthly.price_us')}`,
+    },
+    yearly: {
+      primary: isHu ? `🇭🇺 ${t('pro_yearly.price_hu')}` : `🇪🇺 ${t('pro_yearly.price_eu')}`,
+      secondary: isHu
+        ? `🇪🇺 ${t('pro_yearly.price_eu')} · 🇺🇸 ${t('pro_yearly.price_us')}`
+        : `🇭🇺 ${t('pro_yearly.price_hu')} · 🇺🇸 ${t('pro_yearly.price_us')}`,
+    },
+  };
+}
+
 export default function ArazasPage() {
   const t = useTranslations('pricing');
+  const prices = useRegionPricing(t);
 
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#f9f9f7' }}>
@@ -175,11 +197,11 @@ export default function ArazasPage() {
                   className="font-nunito text-4xl font-extrabold"
                   style={{ color: '#006b5f' }}
                 >
-                  🇭🇺 {t('pro_monthly.price_hu')}
+                  {prices.monthly.primary}
                 </span>
               </div>
               <p className="text-xs mt-1.5" style={{ color: '#6c7a77' }}>
-                🇪🇺 {t('pro_monthly.price_eu')} &nbsp;·&nbsp; 🇺🇸 {t('pro_monthly.price_us')}
+                {prices.monthly.secondary}
               </p>
             </div>
             <ul className="space-y-3 mb-9 flex-grow">
@@ -245,11 +267,11 @@ export default function ArazasPage() {
                   className="font-nunito text-4xl font-extrabold"
                   style={{ color: '#1a1c1b' }}
                 >
-                  🇭🇺 {t('pro_yearly.price_hu')}
+                  {prices.yearly.primary}
                 </span>
               </div>
               <p className="text-xs mt-1.5" style={{ color: '#6c7a77' }}>
-                🇪🇺 {t('pro_yearly.price_eu')} &nbsp;·&nbsp; 🇺🇸 {t('pro_yearly.price_us')}
+                {prices.yearly.secondary}
               </p>
             </div>
             <ul className="space-y-3 mb-9 flex-grow">

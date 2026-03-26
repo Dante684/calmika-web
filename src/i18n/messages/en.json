@@ -12,7 +12,7 @@
     },
     "general": {
       "q1": "What is Calmika?",
-      "a1": "Calmika is an all-in-one autism development app for children aged 2–7. It includes 30+ modules — from AAC communication and visual schedules to music therapy and coloring — available in 7 languages, and works fully offline.",
+      "a1": "Calmika is an all-in-one autism development app for children aged 2–7. It includes 30+ modules — from AAC communication and visual schedules to music therapy and coloring — available in 3 languages (HU/EN/PL), and works fully offline.",
       "q2": "Who is it for?",
       "a2": "Calmika is designed for parents of children with ASD (Autism Spectrum Disorder), therapists, and speech-language pathologists. It also helps any child experiencing speech delays or communication difficulties.",
       "q3": "What devices does it run on?",
@@ -20,7 +20,7 @@
       "q4": "Does it contain ads?",
       "a4": "No, and it never will. Advertising in a children's app is unacceptable — this is our ethical principle, not a marketing pitch.",
       "q5": "What languages are available?",
-      "a5": "Currently 7 languages: Hungarian, English, Polish, German, Spanish, French, and Italian. Dual language mode lets children learn in two languages simultaneously."
+      "a5": "Currently fully available in 3 languages: Hungarian, English, and Polish (AAC + UI). Partial UI support (93%) for German, Spanish, French, and Italian. Dual language mode lets children learn in two languages simultaneously."
     },
     "pricing": {
       "q1": "How much does it cost?",
@@ -203,7 +203,7 @@
     "overline": "By the numbers"
   },
   "hero": {
-    "badge": "30+ modules • 7 languages • Free AAC",
+    "badge": "30+ modules • 3 languages (HU/EN/PL) • Free AAC",
     "title": "Help your child find their voice ✨",
     "subtitle": "The only all-in-one autism development app — AAC communication, visual schedules, music therapy and 30+ modules. Free to start.",
     "ctaPrimary": "Download for free",
@@ -211,8 +211,8 @@
     "titleLine1": "Help your child",
     "titleLine2": "find their voice ✨",
     "mockupAlt": "Calmika app home screen showing learning modules",
-    "trustRated": "Top Rated 2024",
-    "trustValidated": "Clinically Validated"
+    "trustRated": "30+ modules, offline",
+    "trustValidated": "Evidence-based methods"
   },
   "download": {
     "hero": {
@@ -301,7 +301,7 @@
       "features": [
         "ALL modules (30+)",
         "5000+ AAC words",
-        "Dual language (7 languages)",
+        "Dual language (3 languages)",
         "Offline mode",
         "Parent reports",
         "Printable templates (86)"
@@ -319,7 +319,7 @@
       "features": [
         "ALL modules (30+)",
         "5000+ AAC words",
-        "Dual language (7 languages)",
+        "Dual language (3 languages)",
         "Offline mode",
         "Parent reports",
         "Printable templates (86)"
@@ -386,7 +386,7 @@
       },
       "y2025": {
         "title": "Calmika",
-        "text": "Today Calmika has 30+ modules, is available in 7 languages, and AAC communication + Calm Corner will remain free forever. Because communication is a basic right — not a luxury."
+        "text": "Today Calmika has 30+ modules, is fully available in 3 languages (HU/EN/PL), and AAC communication + Calm Corner will remain free forever. Because communication is a basic right — not a luxury."
       }
     },
     "values": {
@@ -430,7 +430,7 @@
     "hero": {
       "badge": "For Therapists & SLPs",
       "title": "Free Pro access for therapists",
-      "subtitle": "Use Calmika in sessions — offline, on tablets, in 7 languages"
+      "subtitle": "Use Calmika in sessions — offline, on tablets, in 3 languages"
     },
     "value": {
       "sectionTitle": "Why therapists choose Calmika",

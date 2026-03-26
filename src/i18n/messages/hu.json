@@ -12,7 +12,7 @@
     },
     "general": {
       "q1": "Mi az a Calmika?",
-      "a1": "A Calmika egy all-in-one autizmus fejlesztő alkalmazás 2–7 éves gyerekeknek. 30+ modult tartalmaz — AAC kommunikációtól a vizuális napirendig, zeneterápiától a kifestőig —, 7 nyelven érhető el, és teljesen offline is működik.",
+      "a1": "A Calmika egy all-in-one autizmus fejlesztő alkalmazás 2–7 éves gyerekeknek. 30+ modult tartalmaz — AAC kommunikációtól a vizuális napirendig, zeneterápiától a kifestőig —, 3 nyelven érhető el (magyar, angol, lengyel), és teljesen offline is működik.",
       "q2": "Kinek készült?",
       "a2": "A Calmikát ASD (autizmus spektrum zavarral élő) gyerekek szüleinek, terapeutáknak és logopédusoknak terveztük, de minden olyan gyereknek segíthet, akinél beszédfejlődési késés vagy kommunikációs nehézség figyelhető meg.",
       "q3": "Milyen eszközökön működik?",
@@ -20,7 +20,7 @@
       "q4": "Van benne reklám?",
       "a4": "Nincs, és soha nem is lesz. Gyerekeknek szóló alkalmazásban a reklám elfogadhatatlan — ez etikai alapelvünk, nem marketingfogás.",
       "q5": "Milyen nyelveken érhető el?",
-      "a5": "Jelenleg 7 nyelven: magyarul, angolul, lengyelül, németül, spanyolul, franciául és olaszul. A dual language mód lehetővé teszi, hogy a gyerek egyszerre két nyelven tanuljon."
+      "a5": "Jelenleg 3 nyelven teljes: magyarul, angolul és lengyelül (AAC + UI). A felület emellett részlegesen elérhető németül, spanyolul, franciául és olaszul (93%). A dual language mód lehetővé teszi, hogy a gyerek egyszerre két nyelven tanuljon."
     },
     "pricing": {
       "q1": "Mennyibe kerül?",
@@ -203,7 +203,7 @@
     "overline": "Számokban"
   },
   "hero": {
-    "badge": "30+ modul • 7 nyelv • Ingyenes AAC",
+    "badge": "30+ modul • 3 nyelv (HU/EN/PL) • Ingyenes AAC",
     "title": "Segítsd gyermeked megtalálni a hangját ✨",
     "subtitle": "Az egyetlen all-in-one autizmus fejlesztő app — AAC kommunikáció, vizuális napirend, zeneterápia és 30+ modul. Ingyenesen.",
     "ctaPrimary": "Töltsd le ingyen",
@@ -211,8 +211,8 @@
     "titleLine1": "Segítsd gyermeked megtalálni",
     "titleLine2": "a hangját ✨",
     "mockupAlt": "Calmika alkalmazás főoldal tanulási modulokkal",
-    "trustRated": "Legjobb értékelés 2024",
-    "trustValidated": "Klinikailag validált"
+    "trustRated": "30+ modul, offline",
+    "trustValidated": "Kutatás-alapú módszertan"
   },
   "download": {
     "hero": {
@@ -301,7 +301,7 @@
       "features": [
         "MINDEN modul (30+)",
         "5000+ AAC szó",
-        "Dual language (7 nyelv)",
+        "Dual language (3 nyelv)",
         "Offline mód",
         "Szülői riportok",
         "Nyomtatható sablonok (86 db)"
@@ -319,7 +319,7 @@
       "features": [
         "MINDEN modul (30+)",
         "5000+ AAC szó",
-        "Dual language (7 nyelv)",
+        "Dual language (3 nyelv)",
         "Offline mód",
         "Szülői riportok",
         "Nyomtatható sablonok (86 db)"
@@ -386,7 +386,7 @@
       },
       "y2025": {
         "title": "A Calmika",
-        "text": "Ma a Calmika 30+ modult tartalmaz, 7 nyelven elérhető, és az AAC kommunikáció + Nyugi Sarok örökre ingyenes marad. Mert a kommunikáció alapjog — nem luxus."
+        "text": "Ma a Calmika 30+ modult tartalmaz, 3 nyelven teljes (HU/EN/PL), és az AAC kommunikáció + Nyugi Sarok örökre ingyenes marad. Mert a kommunikáció alapjog — nem luxus."
       }
     },
     "values": {
@@ -430,7 +430,7 @@
     "hero": {
       "badge": "Terapeutáknak & Logopédusoknak",
       "title": "Ingyenes Pro hozzáférés terapeutáknak",
-      "subtitle": "Használd a Calmikát foglalkozásokon — offline, tableten, 7 nyelven"
+      "subtitle": "Használd a Calmikát foglalkozásokon — offline, tableten, 3 nyelven"
     },
     "value": {
       "sectionTitle": "Miért válassza a terapeuta a Calmikát?",
