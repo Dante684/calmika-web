@@ -69,7 +69,7 @@ export default async function BlogPostPage({ params }: Props) {
   const headings = extractHeadings(post.content);
   const htmlContent = markdownToHtml(post.content);
   const catStyle = categoryStyle(post.category);
-  const postUrl = `https://calmika.app/${locale}/blog/${slug}`;
+  const postUrl = `https://calmika.com/${locale}/blog/${slug}`;
 
   const readingLabel = t('readingTime').replace('{minutes}', String(post.readingTime));
 

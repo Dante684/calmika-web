@@ -293,7 +293,7 @@ export default function Header() {
               {/* Language Switcher */}
               <div className="flex items-center gap-2 px-3 py-2">
                 <span className="text-sm" style={{ color: '#6c7a77' }}>
-                  Nyelv:
+                  {t('language')}:
                 </span>
                 <div
                   className="flex items-center rounded-full overflow-hidden"
