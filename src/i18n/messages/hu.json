@@ -405,11 +405,11 @@
       },
       "y2023": {
         "title": "Az ötlet",
-        "text": "Miközben éjszakánként a Lidl raktárában dolgoztam, napközben elkezdtem tanulni programozni. Nem voltam fejlesztő — de apa voltam, és ez elég motiváció volt. Az ötlet egyszerű: egy app, ami mindent tud, magyarul, és nem kerül egy vagyonba."
+        "text": "Miközben éjszakánként dolgoztam, napközben elkezdtem tanulni programozni. Nem voltam fejlesztő — de apa voltam, és ez elég motiváció volt. Az ötlet egyszerű: egy app, ami mindent tud, magyarul, és nem kerül egy vagyonba."
       },
       "y2024": {
         "title": "Az építés",
-        "text": "Flutter, Dart, AI segítséggel. Először AAC kommunikációs tábla, aztán napirend, érzelmek, kifestő, zeneterápia... A lista egyre csak nőtt, mert egy ASD családnak MINDEZ kell, nem csak egy-egy dolog."
+        "text": "Flutter, Dart, rengeteg tanulás. Először AAC kommunikációs tábla, aztán napirend, érzelmek, kifestő, zeneterápia... A lista egyre csak nőtt, mert egy ASD családnak MINDEZ kell, nem csak egy-egy dolog."
       },
       "y2025": {
         "title": "A Calmika",
@@ -440,7 +440,7 @@
     },
     "team": {
       "sectionTitle": "A \"csapat\"",
-      "description": "A Calmikát egyedül építem, AI segítségével. Nincs mögöttem cég vagy befektető — csak egy apa, aki jobbat akart a gyerekeinek. És ami Alexnek és Oliviának jó, az más ASD családoknak is jó lehet.",
+      "description": "A Calmikát egyedül építem, szabad időmben. Nincs mögöttem cég vagy befektető — csak egy apa, aki jobbat akart a gyerekeinek. És ami Alexnek és Oliviának jó, az más ASD családoknak is jó lehet.",
       "founderTitle": "Alapító, fejlesztő, ASD apuka"
     },
     "photos": {
