@@ -1,34 +1,44 @@
 export interface BlogPost {
   slug: string
   slugEn: string
+  slugPl: string
   title: string
   titleEn: string
+  titlePl: string
   description: string
   descriptionEn: string
+  descriptionPl: string
   date: string
   author: string
   category: string
   categoryEn: string
+  categoryPl: string
   readingTime: number
   image?: string
   contentHu: string // HTML string
   contentEn: string // HTML string
+  contentPl: string // HTML string
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: 'mi-az-aac',
     slugEn: 'what-is-aac',
+    slugPl: 'czym-jest-aac',
     title: 'Mi az AAC és miért fontos az autista gyerekek számára?',
     titleEn: 'What Is AAC and Why Does It Matter for Autistic Children?',
+    titlePl: 'Czym jest AAC i dlaczego jest ważne dla dzieci autystycznych?',
     description:
       'Az AAC (Augmentatív és Alternatív Kommunikáció) megnyithatja a világot azoknak a gyerekeknek, akik nehezen fejezik ki magukat szóban. Megtudod, hogyan működik, mikor érdemes elkezdeni, és hogyan segít a Calmika.',
     descriptionEn:
       'AAC (Augmentative and Alternative Communication) can open up the world for children who struggle to express themselves verbally. Learn how it works, when to start, and how Calmika helps.',
+    descriptionPl:
+      'AAC (Augmentatywna i Alternatywna Komunikacja) może otworzyć świat dla dzieci, które mają trudności z werbalnym wyrażaniem się. Dowiedz się, jak działa, kiedy zacząć i jak pomaga Calmika.',
     date: '2025-03-25',
     author: 'Kovács Dávid',
     category: 'Szülőknek',
     categoryEn: 'For Parents',
+    categoryPl: 'Dla rodziców',
     readingTime: 8,
     contentHu: `
 <h2>Mi az AAC?</h2>
@@ -150,20 +160,85 @@ export const blogPosts: BlogPost[] = [
 <p>No need to commit right away. Calmika is free to download, and you can explore all the features at the start. No risk — just a chance to give your child the voice that was always there inside them.</p>
 <p><a href="/letoltes"><strong>Download Calmika for free →</strong></a></p>
 `,
+    contentPl: `
+<h2>Czym jest AAC?</h2>
+<p><strong>AAC</strong> — Augmentatywna i Alternatywna Komunikacja — to termin zbiorczy. Obejmuje wszystkie narzędzia, metody i strategie, które pozwalają komuś <em>uzupełniać lub zastępować</em> mowę werbalną. To nie jest jedno konkretne urządzenie — to filozofia: każdy komunikuje się, czasem tylko innymi narzędziami.</p>
+<p>Wyróżniamy trzy główne rodzaje AAC:</p>
+<ul>
+  <li><strong>AAC bez pomocy technicznych:</strong> język migowy, gesty, mimika, spojrzenie</li>
+  <li><strong>AAC niskotech:</strong> karty obrazkowe (np. PECS), tablice komunikacyjne, drukowane systemy symboli</li>
+  <li><strong>AAC wysokotech:</strong> aplikacje na tabletach lub smartfonach, dedykowane urządzenia generujące mowę</li>
+</ul>
+<p>Calmika należy do tej ostatniej kategorii — nowoczesny, węgiersko-angielski cyfrowy system AAC zaprojektowany specjalnie dla dzieci z ASD (zaburzeniami ze spektrum autyzmu) i innymi trudnościami komunikacyjnymi.</p>
+
+<h2>Dlaczego AAC jest ważne dla dzieci autystycznych?</h2>
+<p>Jedną z najczęstszych cech zaburzeń ze spektrum autyzmu jest <strong>opóźnienie rozwoju mowy</strong> lub trudności z komunikacją werbalną. Szacuje się, że 25–30% dzieci autystycznych pozostaje minimalnie werbalnych — używa mniej niż 30 funkcjonalnych słów przez całe życie. To nie znaczy, że nie mają nic do powiedzenia. Wręcz przeciwnie.</p>
+<p>ASHA (American Speech-Language-Hearing Association) jest w tej kwestii jednoznaczna: <strong>komunikacja jest podstawowym prawem człowieka</strong>. Każde dziecko ma prawo wyrażać ból, radość, głód, strach i pragnienia. Jeśli nie może tego zrobić werbalnie, AAC daje mu ten głos.</p>
+<p>Badania potwierdzają, że AAC nie hamuje rozwoju mowy werbalnej — wręcz przeciwnie, u wielu dzieci <em>ją wspiera</em>. Metaanaliza Romski & Sevcik (2005) wykazała, że dzieci korzystające z AAC wykazywały znaczącą poprawę komunikacji werbalnej w trakcie programu.</p>
+
+<h2>Jak działa AAC w praktyce?</h2>
+<p>Wyobraź sobie: twoje dziecko otwiera aplikację i widzi symbole — ludzi, przedmioty, emocje, czynności. Dotyka jednego: <em>„jeść"</em>. Potem drugiego: <em>„jabłko"</em>. Aplikacja mówi: <em>„jeść jabłko"</em>. Proste, ale to zdanie. To komunikacja.</p>
+<p>Nowoczesne systemy AAC idą znacznie dalej:</p>
+<ul>
+  <li><strong>Przewidywanie słów:</strong> aplikacja uczy się przyzwyczajeń dziecka i sugeruje prawdopodobne słowa</li>
+  <li><strong>Budowanie zdań:</strong> łączenie symboli tworzy pełne zdania</li>
+  <li><strong>Klucz Fitzgeralda:</strong> system kodowania kolorami organizujący słowa według kategorii — niebieski dla osób, zielony dla czasowników, żółty dla rzeczowników — pomagający dziecku szybciej nawigować</li>
+  <li><strong>Wyjście głosowe:</strong> system odczytuje wybrane słowa na głos, dając dziecku prawdziwy „głos"</li>
+</ul>
+<p>System <a href="/funkciok/aac">Calmika AAC</a> zawiera ponad 5000 symboli obejmujących niemal każdy obszar codziennego życia — posiłki, szkołę, emocje, zabawę, zdrowie i wiele więcej.</p>
+
+<h2>Kiedy zacząć? Nigdy nie jest za wcześnie.</h2>
+<p>To jedno z najczęściej zadawanych pytań, a odpowiedź jest zawsze taka sama: <strong>im wcześniej, tym lepiej</strong>. Utrzymuje się mit, że AAC należy wprowadzać dopiero wtedy, gdy komunikacja werbalna jest „całkowicie wykluczona". Dzisiejsze badania zdecydowanie odrzucają takie podejście „poczekajmy i zobaczmy".</p>
+<blockquote>
+  <p><em>"There is no evidence that AAC inhibits speech development. On the contrary, the evidence suggests it can facilitate it."</em> — Romski & Sevcik, 2005</p>
+</blockquote>
+<p>AAC można wprowadzać już od 12–18 miesiąca życia, gdy u dziecka obserwowane są opóźnienia komunikacyjne. Im wcześniej, tym więcej czasu ma dziecko na opanowanie systemu, tym mniejsza frustracja komunikacyjna i tym skuteczniejsze zapobieganie trudnościom behawioralnym — które często wynikają z niezaspokojonych potrzeb, których nie można wyrazić werbalnie.</p>
+
+<h2>Wskazówki dla rodziców: wprowadzanie AAC w domu</h2>
+<p>Wiem, że na początku może to wydawać się przytłaczające. Sam tak to odczuwałem. Ale kilka prostych kroków ułatwia start:</p>
+<ul>
+  <li><strong>Modeluj sam:</strong> Ty też używaj AAC! Kiedy mówisz „jabłko", wskazuj lub dotykaj symbolu. Dzieci uczą się przez naśladowanie.</li>
+  <li><strong>Niskie oczekiwania, wysoka cierpliwość:</strong> W pierwszych tygodniach nie oczekuj pełnych zdań. Dotknięcie jednego symbolu to już sukces.</li>
+  <li><strong>Podążaj za motywacją:</strong> Zacznij od słów, które są najważniejsze dla twojego dziecka — ulubione jedzenie, zabawki, aktywności.</li>
+  <li><strong>Zachowaj konsekwencję:</strong> AAC powinno być dostępne wszędzie — w domu, w szkole, u dziadków. Im częściej używane, tym szybciej się uczy.</li>
+  <li><strong>Poproś o wsparcie specjalisty:</strong> Wykwalifikowany logopeda może pomóc przy pierwszej konfiguracji i personalizacji programu.</li>
+</ul>
+
+<h2>Jak pomaga Calmika?</h2>
+<p>Calmika to nie tylko biblioteka symboli. To starannie zaprojektowany system AAC stworzony dla środowisk węgierskich i dwujęzycznych:</p>
+<ul>
+  <li><strong>5000+ symboli</strong> — wszechstronne pokrycie codziennego życia</li>
+  <li><strong>Klucz Fitzgeralda</strong> — międzynarodowo uznany system kodowania kolorami ułatwiający nawigację</li>
+  <li><strong>Tryb dwujęzyczny</strong> — jeśli twoja rodzina komunikuje się po węgiersku i angielsku, Calmika wspiera oba języki</li>
+  <li><strong>Przewidywanie słów i konstruktor zdań</strong> — dostosowuje się do tempa twojego dziecka</li>
+  <li><strong>Dostęp offline</strong> — nie potrzebujesz internetu; aplikacja działa wszędzie</li>
+  <li><strong>Ustawienia przyjazne dla rodziców</strong> — łatwe do dostosowania do indywidualnych potrzeb dziecka</li>
+</ul>
+<p>Możesz dowiedzieć się więcej o <a href="/funkciok/aac">funkcji AAC</a>, a jeśli chcesz zobaczyć, co zawiera Calmika, sprawdź naszą <a href="/arazas">stronę cennika</a>.</p>
+
+<h2>Wypróbuj za darmo</h2>
+<p>Nie musisz od razu podejmować decyzji. Calmika jest bezpłatna do pobrania, a na początku możesz odkrywać wszystkie funkcje. Bez ryzyka — tylko szansa, by dać swojemu dziecku głos, który zawsze w nim był.</p>
+<p><a href="/letoltes"><strong>Pobierz Calmika za darmo →</strong></a></p>
+`,
   },
   {
     slug: 'vizualis-napirend',
     slugEn: 'visual-schedule',
+    slugPl: 'plan-wizualny',
     title: 'Vizuális napirend készítése ASD gyerekeknek — Gyakorlati útmutató',
     titleEn: 'Creating a Visual Schedule for Children with ASD — A Practical Guide',
+    titlePl: 'Tworzenie planu wizualnego dla dzieci z ASD — Praktyczny poradnik',
     description:
       'A vizuális napirend csökkenti a szorongást, előreláthatóságot teremt és segíti a napi rutint autizmussal élő gyerekeknél. Mutatjuk, hogyan készíts egyet — lépésről lépésre.',
     descriptionEn:
       "A visual schedule reduces anxiety, creates predictability, and supports daily routines for children with autism. Here's how to create one — step by step.",
+    descriptionPl:
+      'Plan wizualny zmniejsza lęk, tworzy przewidywalność i wspiera codzienną rutynę u dzieci z autyzmem. Pokazujemy, jak go stworzyć — krok po kroku.',
     date: '2025-03-25',
     author: 'Kovács Dávid',
     category: 'Szülőknek',
     categoryEn: 'For Parents',
+    categoryPl: 'Dla rodziców',
     readingTime: 6,
     contentHu: `
 <h2>Miért fontos a vizuális napirend?</h2>
@@ -277,20 +352,81 @@ export const blogPosts: BlogPost[] = [
 <p>If you're looking for a digital solution, try Calmika — all features are available for free during the first period.</p>
 <p><a href="/letoltes"><strong>Download Calmika for free →</strong></a></p>
 `,
+    contentPl: `
+<h2>Dlaczego plan wizualny jest ważny?</h2>
+<p>Jeśli wychowujesz dziecko z autyzmem, znasz to uczucie: nieoczekiwana zmiana — odwołana wycieczka, zmieniona kolejność porannej rutyny — i cały dzień może się posypać. To nie jest nieposłuszeństwo. To nie jest złe zachowanie. Dla autystycznych mózgów <strong>przewidywalność równa się bezpieczeństwu</strong>, a niespodzianki powodują prawdziwy stres.</p>
+<p>Plan wizualny bezpośrednio odpowiada na tę potrzebę. Poprzez obrazki, symbole lub krótki tekst pokazuje dziecku, <em>co będzie dalej</em>. Pomaga mu:</p>
+<ul>
+  <li>Rozumieć upływ czasu i strukturę dnia</li>
+  <li>Przygotować się na przejścia (np. z zabawy do kolacji)</li>
+  <li>Zmniejszyć lęk związany z pytaniem „co będzie potem?"</li>
+  <li>Budować samodzielność — potrzeba mniej werbalnych instrukcji</li>
+</ul>
+<p>Badania Mesibova, Shea & Schoplera (2005) pokazują, że strukturalne, wizualnie wspierane środowiska należą do najskuteczniejszych narzędzi dla dzieci z ASD — to też podstawa metody TEACCH.</p>
+
+<h2>Rodzaje planów wizualnych</h2>
+<p>Nie wszystkie plany wyglądają tak samo — i nie muszą. Wybierz to, co najlepiej pasuje do twojego dziecka:</p>
+<ul>
+  <li><strong>Plan obrazkowy:</strong> Sekwencja zdjęć lub symboli pokazujących wydarzenia dnia. Najlepszy dla młodszych dzieci i tych, które nie czytają.</li>
+  <li><strong>Plan pisemny:</strong> Lista krótkich zdań lub słów. Sprawdza się u starszych dzieci, które czytają.</li>
+  <li><strong>Tablica Najpierw-Potem:</strong> Najprostszy format — tylko dwa kroki: <em>„Najpierw to, potem tamto."</em> Świetna jako wprowadzenie lub przy nieoczekiwanych zmianach.</li>
+  <li><strong>Kalendarz dzienny / tygodniowy:</strong> Pokazuje dłuższy horyzont czasowy — przydatny dla dzieci w wieku szkolnym.</li>
+</ul>
+
+<h2>5 praktycznych wskazówek dotyczących wprowadzania planu wizualnego</h2>
+
+<h3>1. Zacznij prosto — 3 do 5 elementów</h3>
+<p>Nie próbuj od razu planować całego dnia. Zacznij od porannej rutyny: wstanie → łazienka → śniadanie → ubieranie się → szkoła. Pięć kroków. Gdy to zacznie działać, możesz rozszerzać.</p>
+
+<h3>2. Używaj prawdziwych zdjęć lub wyraźnych ikon</h3>
+<p>Najlepszy symbol to taki, który dziecko rozpoznaje natychmiast. Jeśli nie przyciągają go generyczne ikony, spróbuj prawdziwych zdjęć — jak zdjęcie ich własnej łazienki. Znajome obrazy często działają lepiej niż abstrakcyjne.</p>
+
+<h3>3. Uczyń go interaktywnym — ruchome elementy</h3>
+<p>Plan nie powinien tylko wisieć na ścianie. Daj dziecku aktywną rolę: gdy skończy zadanie, niech samo zdejmie obrazek lub przełoży go do kieszonki „zrobione". Ten mały fizyczny gest wzmacnia: <em>„tak, zrobiłem to."</em></p>
+
+<h3>4. Konsekwencja to wszystko</h3>
+<p>Plan działa tylko wtedy, gdy jest zawsze obecny i zawsze wygląda tak samo. Przeglądaj go każdego ranka i zapowiadaj jutrzejszy dzień każdego wieczoru. Jeśli coś się zmienia, sygnalizuj to z wyprzedzeniem — nawet czerwona karta „zmiana" może pomóc.</p>
+
+<h3>5. Wbuduj nagrody</h3>
+<p>Jeśli twoje dziecko jest motywowane przez coś — ulubioną aktywność, ulubioną przekąskę, gwiazdkę na tablicy — wbuduj to na końcu planu. Nagroda nie tylko motywuje, ale też pokazuje, że dzień ma koniec i czeka na nim coś dobrego.</p>
+
+<h2>Cyfrowy czy papierowy — co wybrać?</h2>
+<p>Oba mają swoje zalety:</p>
+<ul>
+  <li><strong>Papierowy:</strong> Tani, zawsze do zrobienia, nie wymaga zasilania. Wada: trudniejszy do edycji i łatwy do zgubienia.</li>
+  <li><strong>Cyfrowy:</strong> Łatwy do aktualizacji, zawsze pod ręką (telefon/tablet), może wysyłać przypomnienia. Moduł harmonogramu Calmika działa też offline.</li>
+</ul>
+<p>Wielu rodziców łączy oba: cyfrowy w podróży i w domu, drukowana wersja w szkole. Nie ma złej odpowiedzi — tylko to, co nie działa dla twojego dziecka.</p>
+
+<h2>Jak pomaga Calmika?</h2>
+<p>Moduł <a href="/funkciok/napirend">planu wizualnego Calmika</a> pozwala ci samemu zbudować harmonogram dziecka — używając własnych obrazków lub wybierając z 5000+ wbudowanych symboli. W kilku kliknięciach możesz stworzyć poranną, szkolną lub wieczorną rutynę, którą dziecko śledzi na własnym tablecie.</p>
+<p>Plan jest też ściśle połączony z <a href="/funkciok/aac">systemem AAC</a> — jeśli dziecko ma pytanie lub prośbę dotyczącą któregoś punktu planu, może od razu się komunikować.</p>
+<p>Aplikacja działa <strong>offline</strong>, więc nie musisz martwić się o Wi-Fi — plan jest zawsze dostępny.</p>
+
+<h2>Zacznij dziś</h2>
+<p>Nie musi być idealne. Trzy obrazki narysowane na kartce papieru to już plan. Chodzi o to, żeby zacząć — i być konsekwentnym. Twoje dziecko poczuje, że otacza je coś przewidywalnego i bezpiecznego. To fundament wszystkiego.</p>
+<p>Jeśli szukasz cyfrowego rozwiązania, wypróbuj Calmika — wszystkie funkcje są dostępne za darmo przez pierwszy okres.</p>
+<p><a href="/letoltes"><strong>Pobierz Calmika za darmo →</strong></a></p>
+`,
   },
   {
     slug: 'ketnyelvuseg-autizmus',
     slugEn: 'bilingual-autism',
+    slugPl: 'dwujezycznosc-autyzm',
     title: 'Kétnyelvű fejlesztés autizmussal — Mit mond a kutatás?',
     titleEn: 'Bilingualism and Autism — What Does the Research Say?',
+    titlePl: 'Dwujęzyczność i autyzm — co mówią badania?',
     description:
       'Sokan hiszik, hogy autista gyereknek elég egy nyelv. A kutatások mást mutatnak. Megvizsgáljuk, mit mond a tudomány a kétnyelvű fejlesztésről, és hogyan segít a Calmika dual language AAC rendszere.',
     descriptionEn:
       "Many believe one language is enough for an autistic child. Research says otherwise. We look at what science tells us about bilingual development — and how Calmika's dual language AAC system helps.",
+    descriptionPl:
+      'Wielu uważa, że dziecku autystycznemu wystarczy jeden język. Badania mówią co innego. Sprawdzamy, co nauka mówi o dwujęzycznym rozwoju i jak pomaga system AAC Calmika w trybie dwujęzycznym.',
     date: '2025-03-25',
     author: 'Kovács Dávid',
     category: 'Kutatás',
     categoryEn: 'Research',
+    categoryPl: 'Badania',
     readingTime: 7,
     contentHu: `
 <h2>A tévhit: "Egy autista gyereknek elég egy nyelv"</h2>
@@ -399,6 +535,60 @@ export const blogPosts: BlogPost[] = [
 <p>The research sends a clear message: <strong>bilingualism is not the enemy</strong>. It doesn't take away developmental opportunities, doesn't worsen autism symptoms, and doesn't create extra burden — when surrounded by appropriate support. Quite the opposite: it can bring benefits precisely where the challenges are greatest.</p>
 <p>If your autistic child is growing up in a bilingual family, don't give up on the second language. Seek the right support, use good tools — and trust the research.</p>
 <p><a href="/letoltes"><strong>Try Calmika's dual language AAC for free →</strong></a></p>
+`,
+    contentPl: `
+<h2>Mit: „Dziecku autystycznemu wystarczy jeden język"</h2>
+<p>Jeśli wychowujesz autystyczne dziecko w dwujęzycznym domu, pewnie to słyszałeś: <em>„Skup się tylko na jednym języku. Dwa będą mylące. Niech najpierw opanuje jeden, a potem może drugi."</em> Życzliwa rada. Ale błędna.</p>
+<p>Logika często wydaje się rozsądna: jeśli ktoś ma trudności z jednym językiem, po co obciążać go dwoma? Problem polega na tym, że to założenie <strong>nigdy nie było poparte rzetelnymi badaniami</strong>. Wręcz przeciwnie — dwie dekady badań wskazują w przeciwnym kierunku.</p>
+
+<h2>Co mówią badania?</h2>
+<p>Hambly & Fombonne (2012) przebadali 75 dzieci z diagnozą ASD w Kanadzie — zarówno z jednojęzycznych, jak i dwujęzycznych środowisk. Wyniki zaskoczyły wielu rodziców i specjalistów: nie było <strong>żadnej istotnej różnicy</strong> w rozwoju słownictwa, zdolnościach komunikacyjnych ani nasileniu objawów autyzmu między grupami jednojęzycznymi i dwujęzycznymi.</p>
+<p>Petersen et al. (2012) doszedł do podobnych wniosków: dwujęzyczne dzieci z ASD <em>nie radziły sobie gorzej</em> niż ich jednojęzyczni rówieśnicy w zadaniach komunikacyjnych i poznawczych. Innymi słowy: drugi język nie „kradnie" pojemności od pierwszego.</p>
+<p>Metaanaliza Kay-Raining Bird et al. (2012) wzmocniła ten obraz: żadne z badanych studiów nie wykazało, że dwujęzyczność jest szkodliwa dla dzieci z autyzmem. Wręcz przeciwnie — zidentyfikowano kilka korzyści.</p>
+
+<h2>Korzyści: dlaczego warto rozwijać dwujęzyczność?</h2>
+
+<h3>Elastyczność poznawcza</h3>
+<p>Dwujęzyczność <strong>wzmacnia funkcje wykonawcze</strong> — zdolności mózgu do planowania, przełączania uwagi i kontroli impulsów. Bialystok (2011) stwierdził, że te zdolności są bardziej rozwinięte u dwujęzycznych dzieci. W ASD są to właśnie najbardziej dotknięte obszary — dwujęzyczność może więc potencjalnie pomagać tam, gdzie wyzwania są największe.</p>
+
+<h3>Tożsamość kulturowa</h3>
+<p>Jeśli dziadkowie mówią innym językiem, jeśli rodzina żyje między dwiema kulturami — drugi język nie jest „dodatkowym ciężarem". To nić łącząca dziecko ze społecznością, krewnymi i korzeniami. Tej więzi nie warto poświęcać dla niepotwierdzonego założenia.</p>
+
+<h3>Komunikacja rodzinna</h3>
+<p>Rodzice najlepiej mogą wspierać swoje dziecko, komunikując się z nim w <em>swoim ojczystym języku</em>. Jeśli jedno z rodziców mówi po węgiersku, a drugie po angielsku, i tylko jeden język jest „dozwolony" — tworzy to dystans komunikacyjny z drugim rodzicem. To nie jest idealne dla nikogo.</p>
+
+<h2>Wyzwania i rozwiązania</h2>
+<p>Dwujęzyczny rozwój nie jest automatycznie łatwy. Oto prawdziwe wyzwania i sposoby ich rozwiązania:</p>
+<ul>
+  <li><strong>Przełączanie kodu (mieszanie języków):</strong> Normalne zjawisko u dwujęzycznych dzieci. To nie jest zamieszanie — to mózg zarządzający dwoma systemami jednocześnie. Z czasem się wyrównuje.</li>
+  <li><strong>Wolniejszy początkowo rozwój w jednym języku:</strong> Może się zdarzyć, że dziecko zna początkowo mniej słów w danym języku. Ale całkowite słownictwo (oba języki razem) jest zazwyczaj na równi z jednojęzycznymi rówieśnikami.</li>
+  <li><strong>Brak konsekwencji:</strong> Największe prawdziwe wyzwanie. Zasada „jeden rodzic — jeden język" bardzo pomaga: każda osoba konsekwentnie mówi do dziecka w swoim ojczystym języku.</li>
+</ul>
+
+<h2>Dwujęzyczność w AAC — jak robi to Calmika</h2>
+<p>Tradycyjne systemy AAC są jednojęzyczne. Calmika myśli inaczej: <strong>tryb dwujęzyczny</strong> pozwala dziecku komunikować się w obu językach — na tym samym urządzeniu, przez ten sam interfejs.</p>
+<p>Oto jak to działa w praktyce:</p>
+<ul>
+  <li><a href="/funkciok/aac">Symbole AAC</a> są oznaczone w obu językach — dziecko może usłyszeć słowo po węgiersku i po angielsku</li>
+  <li>W <a href="/funkciok/szotanulas">module nauki słownictwa</a> słowa pojawiają się dwujęzycznie — język ojczysty i docelowy obok siebie</li>
+  <li>Rodzice mogą ustawić, który język jest „podstawowy", a który „dodatkowy"</li>
+  <li>System kodowania kolorami Klucza Fitzgeralda jest identyczny w obu językach — struktura pozostaje stabilna, zmieniają się tylko słowa</li>
+</ul>
+<p>To ważne, ponieważ badania pokazują, że dzieci z ASD <strong>uczą się lepiej ze stabilnych struktur wizualnych</strong>. Jeśli symbol jest ten sam, a zmienia się tylko słowo, przejście między językami jest znacznie płynniejsze.</p>
+
+<h2>Praktyczne wskazówki dla dwujęzycznych rodzin z ASD</h2>
+<ul>
+  <li><strong>Jeden rodzic — jeden język:</strong> Każda osoba mówi do dziecka w swoim ojczystym języku. Konsekwentnie.</li>
+  <li><strong>Nie mieszaj celowo:</strong> Jeśli ktoś zaczyna zdanie w jednym języku, kończ je w tym samym języku. Naturalne mieszanie pojawi się samo — nie trzeba go wymuszać.</li>
+  <li><strong>Modeluj AAC w obu językach:</strong> Jeśli używacie Calmika, używaj jej w obu językach. Pokaż dziecku, jak szukać słów w innym języku.</li>
+  <li><strong>Bądź cierpliwy:</strong> Dwujęzyczny rozwój zaczyna się trochę wolniej — ale nie zostaje w tyle. Daj czas.</li>
+  <li><strong>Znajdź dwujęzycznego specjalistę:</strong> Szukając logopedy lub pedagoga specjalnego, zapytaj, czy mają doświadczenie z dwujęzycznymi dziećmi z ASD. Coraz więcej specjalistów jest w tym zakresie przeszkolonych.</li>
+</ul>
+
+<h2>Podsumowanie</h2>
+<p>Badania wysyłają jasny komunikat: <strong>dwujęzyczność nie jest wrogiem</strong>. Nie odbiera możliwości rozwojowych, nie pogarsza objawów autyzmu i nie tworzy dodatkowego obciążenia — gdy jest otoczona odpowiednim wsparciem. Wręcz przeciwnie: może przynosić korzyści właśnie tam, gdzie wyzwania są największe.</p>
+<p>Jeśli twoje autystyczne dziecko dorasta w dwujęzycznej rodzinie, nie rezygnuj z drugiego języka. Poszukaj odpowiedniego wsparcia, używaj dobrych narzędzi — i ufaj badaniom.</p>
+<p><a href="/letoltes"><strong>Wypróbuj dwujęzyczne AAC Calmika za darmo →</strong></a></p>
 `,
   },
 ]
