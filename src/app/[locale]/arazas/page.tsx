@@ -64,21 +64,29 @@ function FeatureCell({ value, t }: { value: string | boolean | null; t: ReturnTy
 // ─── Locale-based pricing helper ──────────────────────────────────────────────
 function useRegionPricing(t: ReturnType<typeof useTranslations>) {
   const locale = useLocale();
-  const isHu = locale === 'hu';
+
+  const getPricing = (tier: 'pro_monthly' | 'pro_yearly') => {
+    if (locale === 'hu') {
+      return {
+        primary: `🇭🇺 ${t(`${tier}.price_hu`)}`,
+        secondary: `🇪🇺 ${t(`${tier}.price_eu`)} · 🇺🇸 ${t(`${tier}.price_us`)}`,
+      };
+    }
+    if (locale === 'pl') {
+      return {
+        primary: `🇵🇱 ${t(`${tier}.price_pl`)}`,
+        secondary: `🇪🇺 ${t(`${tier}.price_eu`)} · 🇺🇸 ${t(`${tier}.price_us`)}`,
+      };
+    }
+    return {
+      primary: `🇪🇺 ${t(`${tier}.price_eu`)}`,
+      secondary: `🇭🇺 ${t(`${tier}.price_hu`)} · 🇺🇸 ${t(`${tier}.price_us`)}`,
+    };
+  };
 
   return {
-    monthly: {
-      primary: isHu ? `🇭🇺 ${t('pro_monthly.price_hu')}` : `🇪🇺 ${t('pro_monthly.price_eu')}`,
-      secondary: isHu
-        ? `🇪🇺 ${t('pro_monthly.price_eu')} · 🇺🇸 ${t('pro_monthly.price_us')}`
-        : `🇭🇺 ${t('pro_monthly.price_hu')} · 🇺🇸 ${t('pro_monthly.price_us')}`,
-    },
-    yearly: {
-      primary: isHu ? `🇭🇺 ${t('pro_yearly.price_hu')}` : `🇪🇺 ${t('pro_yearly.price_eu')}`,
-      secondary: isHu
-        ? `🇪🇺 ${t('pro_yearly.price_eu')} · 🇺🇸 ${t('pro_yearly.price_us')}`
-        : `🇭🇺 ${t('pro_yearly.price_hu')} · 🇺🇸 ${t('pro_yearly.price_us')}`,
-    },
+    monthly: getPricing('pro_monthly'),
+    yearly: getPricing('pro_yearly'),
   };
 }
 

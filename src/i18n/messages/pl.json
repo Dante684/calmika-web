@@ -1,0 +1,810 @@
+{
+  "faq": {
+    "header": {
+      "title": "Często Zadawane Pytania",
+      "subtitle": "Odpowiedzi na najczęstsze pytania"
+    },
+    "categories": {
+      "general": "Ogólne",
+      "pricing": "Cennik",
+      "therapists": "Dla Terapeutów",
+      "privacy": "Prywatność"
+    },
+    "general": {
+      "q1": "Czym jest Calmika?",
+      "a1": "Calmika to kompleksowa aplikacja wspierająca rozwój dzieci z autyzmem w wieku 2–7 lat. Zawiera ponad 30 modułów — od komunikacji AAC i planów wizualnych po muzykoterapię i kolorowanki — dostępna w 3 językach (HU/EN/PL) i działa w pełni offline.",
+      "q2": "Dla kogo jest przeznaczona?",
+      "a2": "Calmika jest przeznaczona dla rodziców dzieci z ASD (Zaburzeniami ze Spektrum Autyzmu), terapeutów i logopedów. Pomaga również każdemu dziecku z opóźnieniem mowy lub trudnościami w komunikacji.",
+      "q3": "Na jakich urządzeniach działa?",
+      "a3": "Dostępna na Androidzie 8.0 (Oreo) i nowszych telefonach i tabletach. Wersja na iOS (iPhone / iPad) jest w trakcie tworzenia — już wkrótce!",
+      "q4": "Czy zawiera reklamy?",
+      "a4": "Nie, i nigdy nie będzie. Reklamy w aplikacji dla dzieci są niedopuszczalne — to nasza zasada etyczna, a nie chwyt marketingowy.",
+      "q5": "Jakie języki są dostępne?",
+      "a5": "Obecnie w pełni dostępna w 3 językach: węgierskim, angielskim i polskim (AAC + interfejs). Częściowe wsparcie interfejsu (93%) dla niemieckiego, hiszpańskiego, francuskiego i włoskiego. Tryb dwujęzyczny pozwala dzieciom uczyć się jednocześnie w dwóch językach."
+    },
+    "pricing": {
+      "q1": "Ile to kosztuje?",
+      "a1": "Wersja podstawowa jest całkowicie bezpłatna. Subskrypcja Pro: 39,99 zł/mies. (Polska) | €5,99/mies. (UE) | $7,99/mies. (USA). Zaoszczędź przy rozliczeniu rocznym: 399,99 zł | €49,99 | $59,99.",
+      "q2": "Czy jest bezpłatny okres próbny?",
+      "a2": "Tak! Uzyskaj 14 dni pełnego dostępu Pro — bez karty kredytowej. Żadnych ukrytych warunków, po prostu wypróbuj wszystko.",
+      "q3": "Co pozostaje bezpłatne na zawsze?",
+      "a3": "Pakiet AAC Lite (80 podstawowych słów) i moduł Spokojny Kącik są na zawsze bezpłatne. To nasza zasada etyczna: każde dziecko zasługuje na bezpłatny dostęp do podstawowych narzędzi komunikacji.",
+      "q4": "Jak anulować subskrypcję?",
+      "a4": "Anuluj w dowolnym momencie przez menedżera subskrypcji Google Play Store lub App Store jednym kliknięciem. Żadnych opłat za anulowanie, żadnych skomplikowanych procedur."
+    },
+    "therapists": {
+      "q1": "Jak uzyskać bezpłatny dostęp jako terapeuta?",
+      "a1": "Odwiedź stronę /terapeutaknak i wypełnij formularz rejestracyjny. Wyślemy Ci kod aktywacyjny Pro w ciągu 24 godzin — ważny na 10 urządzeniach przez 1 rok, całkowicie bezpłatnie.",
+      "q2": "Czy mogę używać Calmiki podczas sesji terapeutycznych?",
+      "a2": "Tak, właśnie do tego została zaprojektowana! Calmika działa w pełni offline i jest zoptymalizowana pod tablety — idealna do środowisk terapeutycznych bez dostępu do internetu."
+    },
+    "privacy": {
+      "q1": "Jakie dane zbieracie?",
+      "a1": "Minimalne dane. Nie zbieramy żadnych danych osobowych dzieci — dane rozwojowe są przechowywane wyłącznie na Twoim urządzeniu, offline. Aby uzyskać pełne informacje, odwiedź stronę /adatvedelem z polityką prywatności.",
+      "q2": "Czy Calmika jest zgodna z COPPA / RODO?",
+      "a2": "Tak. Na interfejsie dziecięcym Calmiki nie ma śledzenia ani analityki firm trzecich. Przestrzegamy przepisów COPPA (USA) i RODO (UE)."
+    },
+    "contact": {
+      "notFound": "Nie znalazłeś odpowiedzi, której szukasz?",
+      "contactLink": "Skontaktuj się z nami"
+    }
+  },
+  "meta": {
+    "siteName": "Calmika",
+    "siteDescription": "Jedyna kompleksowa aplikacja wspierająca rozwój dzieci z autyzmem"
+  },
+  "nav": {
+    "features": "Funkcje",
+    "pricing": "Cennik",
+    "therapists": "Dla Terapeutów",
+    "blog": "Blog",
+    "about": "O nas",
+    "download": "Pobierz",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "beta": "Beta",
+    "privacy": "Prywatność",
+    "terms": "Regulamin",
+    "language": "Język"
+  },
+  "footer": {
+    "description": "Jedyna kompleksowa aplikacja wspierająca rozwój dzieci z autyzmem.",
+    "features": "Funkcje",
+    "support": "Wsparcie",
+    "company": "Calmika",
+    "community": "Społeczność",
+    "copyright": "© 2026 Calmika. Wszelkie prawa zastrzeżone."
+  },
+  "pages": {
+    "features": {
+      "title": "Funkcje",
+      "description": "Ponad 30 modułów dla dzieci z ASD"
+    },
+    "pricing": {
+      "title": "Cennik",
+      "description": "Od bezpłatnego do premium"
+    },
+    "about": {
+      "title": "O nas",
+      "description": "Historia Calmiki"
+    },
+    "therapists": {
+      "title": "Dla Terapeutów",
+      "description": "Bezpłatny dostęp Pro"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Baza wiedzy dla rodziców dzieci z ASD"
+    },
+    "download": {
+      "title": "Pobierz",
+      "description": "Pobierz Calmikę"
+    },
+    "beta": {
+      "title": "Program Beta",
+      "description": "Bądź wśród pierwszych"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się z nami"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Często zadawane pytania"
+    },
+    "privacy": {
+      "title": "Polityka Prywatności",
+      "description": "Informacje o prywatności"
+    },
+    "terms": {
+      "title": "Regulamin",
+      "description": "Warunki korzystania z usługi"
+    }
+  },
+  "story": {
+    "sectionTitle": "Dlaczego Calmika?",
+    "quote": "Moi synowie bliźniacy, Alex i Olivia, zostali zdiagnozowani z autyzmem w wieku 2 lat. Jako rodzic, pierwsze miesiące są najtrudniejsze — każdy mówi coś innego, aplikacje są drogie, a większość nawet nie obsługuje języka węgierskiego. Dlatego zacząłem budować Calmikę: żeby jedna aplikacja mogła zapewnić wszystko, czego potrzebuje rodzina z ASD.",
+    "author": "Dávid, założyciel Calmiki",
+    "ctaReadMore": "Przeczytaj całą historię",
+    "overline": "Nasza Historia",
+    "photoPlaceholder": "Zdjęcie wkrótce"
+  },
+  "ctaBottom": {
+    "title": "Wypróbuj Calmikę — 14 dni bezpłatnie, pełny dostęp Pro",
+    "subtitle": "Karta kredytowa nie jest wymagana. Pobierz teraz.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "appStoreComingSoon": "Już wkrótce",
+    "badge": "Zacznij bezpłatnie"
+  },
+  "features": {
+    "sectionTitle": "Co potrafi Calmika?",
+    "sectionSubtitle": "Ponad 30 modułów w jednej aplikacji",
+    "learnMore": "Dowiedz się więcej",
+    "aac": {
+      "name": "Komunikacja AAC",
+      "desc": "Ponad 5000 słów, pasek przewidywania, edycja przeciągnij i upuść"
+    },
+    "napirend": {
+      "name": "Plan Wizualny",
+      "desc": "Codzienne rutyny wizualnie, działa też offline"
+    },
+    "erzelmek": {
+      "name": "Emocje i Strefy",
+      "desc": "Rozpoznawanie emocji i Strefy Regulacji"
+    },
+    "szocialis": {
+      "name": "Historie Społeczne",
+      "desc": "Ilustrowane historyjki z zasadami i wskazówkami"
+    },
+    "szotanulas": {
+      "name": "Słownictwo i ABC",
+      "desc": "757 słów, tryb dwujęzyczny, interaktywne ABC"
+    },
+    "zeneterpia": {
+      "name": "Muzykoterapia",
+      "desc": "6 podmodułów, 15 instrumentów, gry rytmiczne"
+    },
+    "kifesto": {
+      "name": "Kolorowanki",
+      "desc": "Ponad 110 obrazów, świat sensoryczny, uspokajające kolorowanie"
+    },
+    "nyugi-sarok": {
+      "name": "Spokojny Kącik",
+      "desc": "Oddychanie, bąbelki, uspokajające dźwięki — ZAWSZE BEZPŁATNY"
+    },
+    "overline": "Nasz Ekosystem",
+    "ctaLabel": "Gotowy, żeby rozpocząć tę podróż?",
+    "ctaButton": "Pobierz Calmikę"
+  },
+  "socialProof": {
+    "sectionTitle": "Dlaczego rodzice wybierają Calmikę?",
+    "stats": {
+      "words": "Słów AAC",
+      "modules": "Modułów",
+      "languages": "Języki",
+      "ads": "Reklam"
+    },
+    "comparison": {
+      "title": "Porównanie",
+      "feature": "Funkcja",
+      "price": "Cena/mies.",
+      "platform": "Platforma",
+      "aacWords": "Słowa AAC",
+      "education": "Edukacja",
+      "dualLang": "Tryb dwujęzyczny",
+      "freeTier": "Bezpłatna wersja",
+      "hungarian": "Język węgierski"
+    },
+    "testimonials": {
+      "title": "Rodzice mówią",
+      "placeholder": "Opinie beta testerów wkrótce...",
+      "name": "Beta Tester"
+    },
+    "overline": "Liczby mówią same za siebie"
+  },
+  "hero": {
+    "badge": "Ponad 30 modułów • 3 języki (HU/EN/PL) • Bezpłatne AAC",
+    "title": "Pomóż swojemu dziecku odnaleźć głos ✨",
+    "subtitle": "Jedyna kompleksowa aplikacja wspierająca rozwój dzieci z autyzmem — komunikacja AAC, plany wizualne, muzykoterapia i ponad 30 modułów. Zacznij bezpłatnie.",
+    "ctaPrimary": "Pobierz bezpłatnie",
+    "ctaSecondary": "Odkryj funkcje",
+    "titleLine1": "Pomóż swojemu dziecku",
+    "titleLine2": "odnaleźć głos ✨",
+    "mockupAlt": "Ekran główny aplikacji Calmika z modułami edukacyjnymi",
+    "trustRated": "Ponad 30 modułów, offline",
+    "trustValidated": "Metody oparte na dowodach"
+  },
+  "download": {
+    "hero": {
+      "title": "Pobierz Calmikę",
+      "subtitle": "Bezpłatnie. Bez reklam. 14 dni pełnego dostępu Pro."
+    },
+    "store": {
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "comingSoon": "Już wkrótce"
+    },
+    "qr": {
+      "label": "Zeskanuj telefonem"
+    },
+    "steps": {
+      "title": "Jak zacząć",
+      "step1": {
+        "title": "Pobierz ze Sklepu Play",
+        "desc": "Znajdź Calmikę w Google Play i zainstaluj bezpłatnie."
+      },
+      "step2": {
+        "title": "Utwórz profil dziecka",
+        "desc": "Stwórz profil dla swojego dziecka, ustaw wiek i preferencje."
+      },
+      "step3": {
+        "title": "Zacznij odkrywać!",
+        "desc": "Odkryj ponad 30 modułów: AAC, plany wizualne, muzykoterapię i wiele więcej."
+      }
+    },
+    "requirements": {
+      "title": "Wymagania systemowe",
+      "android": "Android 8.0+ (API 26)",
+      "storage": "~93 MB wolnego miejsca",
+      "offline": "Działa offline",
+      "tablet": "Zoptymalizowana pod tablety"
+    },
+    "beta": {
+      "title": "Pobierz wersję deweloperską",
+      "warning": "To jest wersja beta i może zawierać błędy. Zalecana wyłącznie do celów testowych.",
+      "downloadApk": "Pobierz APK (GitHub Releases)",
+      "hint": "Aby zainstalować, włącz opcję 'Nieznane źródła' w ustawieniach urządzenia."
+    },
+    "screenshots": {
+      "title": "Zrzuty ekranu",
+      "placeholder": "Prawdziwe zrzuty ekranu wkrótce."
+    },
+    "screenshotAlts": {
+      "home": "Ekran główny Calmiki",
+      "aac": "Tablica komunikacji AAC",
+      "coloring": "Moduł kolorowanek",
+      "music": "Muzykoterapia",
+      "emotions": "Moduł emocji",
+      "schedule": "Plan wizualny"
+    }
+  },
+  "common": {
+    "downloadFree": "Pobierz bezpłatnie",
+    "learnMore": "Dowiedz się więcej",
+    "tryFree": "Wypróbuj bezpłatnie",
+    "getStarted": "Zacznij teraz",
+    "readMore": "Czytaj więcej",
+    "backToHome": "Powrót do strony głównej",
+    "comingSoon": "Już wkrótce",
+    "free": "Bezpłatny",
+    "premium": "Premium",
+    "monthly": "Miesięcznie",
+    "yearly": "Rocznie",
+    "lifetime": "Dożywotnio"
+  },
+  "pricing": {
+    "title": "Prosta, przejrzysta cena",
+    "subtitle": "14 dni bezpłatnego pełnego dostępu Pro — karta kredytowa nie jest wymagana",
+    "overline": "Prosty Cennik",
+    "free": {
+      "overline": "Podstawowy",
+      "name": "Bezpłatny",
+      "price": "0 zł",
+      "period": "Bezpłatny na zawsze",
+      "cta": "Zacznij bezpłatnie",
+      "features": [
+        "AAC Lite (80 podstawowych słów)",
+        "Spokojny Kącik (pełny)",
+        "3 obrazy do kolorowania",
+        "5 słów słownictwa",
+        "Podstawowy plan"
+      ]
+    },
+    "pro_monthly": {
+      "overline": "Dostęp Pro",
+      "name": "Pro Miesięcznie",
+      "badge": "Najpopularniejszy",
+      "price_hu": "1 990 HUF/mies.",
+      "price_pl": "39,99 zł/mies.",
+      "price_eu": "€5,99/mies.",
+      "price_us": "$7,99/mies.",
+      "period": "miesięcznie",
+      "cta": "Wypróbuj 14 dni bezpłatnie",
+      "features": [
+        "WSZYSTKIE moduły (30+)",
+        "Ponad 5000 słów AAC",
+        "Tryb dwujęzyczny (3 języki)",
+        "Tryb offline",
+        "Raporty dla rodziców",
+        "Szablony do druku (86)"
+      ]
+    },
+    "pro_yearly": {
+      "overline": "Najlepsza Wartość",
+      "name": "Pro Rocznie",
+      "badge": "Najlepsza wartość",
+      "savings": "2 miesiące gratis",
+      "price_hu": "14 990 HUF/rok",
+      "price_pl": "399,99 zł/rok",
+      "price_eu": "€49,99/rok",
+      "price_us": "$59,99/rok",
+      "period": "rocznie",
+      "cta": "Wybierz plan roczny",
+      "features": [
+        "WSZYSTKIE moduły (30+)",
+        "Ponad 5000 słów AAC",
+        "Tryb dwujęzyczny (3 języki)",
+        "Tryb offline",
+        "Raporty dla rodziców",
+        "Szablony do druku (86)"
+      ]
+    },
+    "comparison": {
+      "title": "Co zawiera każdy plan?",
+      "feature": "Funkcja",
+      "free": "Bezpłatny",
+      "pro": "Pro",
+      "rows": {
+        "aac": "Słowa AAC",
+        "coloring": "Kolorowanki",
+        "vocab": "Słownictwo",
+        "music": "Muzykoterapia",
+        "schedule": "Plan wizualny",
+        "emotions": "Emocje",
+        "social": "Historie społeczne",
+        "cognitive": "Gry poznawcze",
+        "printable": "Szablony do druku",
+        "reports": "Raporty dla rodziców",
+        "dualLang": "Tryb dwujęzyczny",
+        "offline": "Tryb offline"
+      },
+      "values": {
+        "val_80core": "80 podstawowych",
+        "val_3img": "3 obrazy",
+        "val_5words": "5 słów",
+        "val_basic": "Podstawowy",
+        "val_music_pro": "6 podmodułów, 15 instrumentów",
+        "val_schedule_pro": "Pełny + szablony",
+        "val_86templates": "86 szablonów",
+        "val_3lang": "✅ 3 języki (HU/EN/PL)"
+      }
+    },
+    "ethics": {
+      "text": "AAC i Spokojny Kącik są ZAWSZE BEZPŁATNE. Wierzymy, że każde dziecko zasługuje na prawo do wyrażania siebie — niezależnie od sytuacji finansowej.",
+      "title": "Komunikacja to podstawowe prawo człowieka."
+    },
+    "therapists": {
+      "title": "Dla Terapeutów i Szkół",
+      "subtitle": "Specjalne plany dla instytucji, terapeutów i nauczycieli.",
+      "cta": "Dowiedz się więcej"
+    },
+    "faq": {
+      "title": "Często Zadawane Pytania",
+      "q1": "Kiedy zostanę obciążony/a opłatą?",
+      "a1": "Po zakończeniu 14-dniowego bezpłatnego okresu próbnego. Karta kredytowa nie jest wymagana do rejestracji — tylko jeśli zdecydujesz się kontynuować.",
+      "q2": "Jak anulować?",
+      "a2": "W dowolnym momencie, jednym kliknięciem na koncie Google Play. Żadnych ukrytych warunków.",
+      "q3": "Co się stanie po 14 dniach?",
+      "a3": "Jeśli nie wykupisz subskrypcji, automatycznie powrócisz do planu bezpłatnego. AAC i Spokojny Kącik pozostają — są bezpłatne na zawsze.",
+      "q4": "Czy jest gwarancja zwrotu pieniędzy?",
+      "a4": "Tak. Jeśli nie jesteś zadowolony/a w ciągu pierwszych 7 dni od subskrypcji, zwrócimy pieniądze. Napisz na hello@calmika.com."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Historia Calmiki",
+      "subtitle": "Zbudowana przez tatę autystycznych bliźniaków — nie korporacyjny produkt, ale stworzona z sercem rodzica."
+    },
+    "timeline": {
+      "overline": "Nasza Droga",
+      "heroTitle1": "Od Diagnozy do",
+      "heroTitle2": "Codziennego Wsparcia",
+      "sectionTitle": "Jak tu trafiliśmy",
+      "y2022": {
+        "title": "Diagnoza",
+        "text": "Moje bliźniaki, Alex i Olivia, zostały zdiagnozowane z autyzmem w wieku dwóch lat. Pierwsze miesiące były kompletnym chaosem — bieganie od jednego lekarza do drugiego, każdy mówił coś innego. W internecie znajdowałem tylko drogie anglojęzyczne aplikacje, które nawet nie spełniały naszych potrzeb."
+      },
+      "y2023": {
+        "title": "Pomysł",
+        "text": "Pracując na nocnych zmianach w magazynie Lidl, zacząłem uczyć się programowania w ciągu dnia. Nie byłem deweloperem — ale byłem tatą, i to wystarczyło jako motywacja. Pomysł był prosty: jedna aplikacja, która robi wszystko, w naszym języku, bez fortuny."
+      },
+      "y2024": {
+        "title": "Budowanie",
+        "text": "Flutter, Dart, z pomocą AI. Najpierw tablica komunikacji AAC, potem plany wizualne, emocje, kolorowanki, muzykoterapia... Lista wciąż rosła, bo rodzina z ASD potrzebuje TEGO WSZYSTKIEGO — nie tylko jednego elementu układanki."
+      },
+      "y2025": {
+        "title": "Calmika",
+        "text": "Dziś Calmika ma ponad 30 modułów, jest w pełni dostępna w 3 językach (HU/EN/PL), a komunikacja AAC + Spokojny Kącik pozostaną bezpłatne na zawsze. Bo komunikacja to podstawowe prawo — nie luksus."
+      }
+    },
+    "values": {
+      "sectionTitle": "Nasze Wartości",
+      "sectionSubtitle": "Nie kompromisy — zasady.",
+      "cards": {
+        "accessibility": {
+          "title": "Dostępna Komunikacja",
+          "description": "AAC + Spokojny Kącik zawsze bezpłatne"
+        },
+        "noAds": {
+          "title": "Zero Reklam",
+          "description": "Reklamy w aplikacji dla dzieci? Nigdy."
+        },
+        "privacy": {
+          "title": "Prywatność Przede Wszystkim",
+          "description": "Bez śledzenia, bez przesyłania danych"
+        },
+        "pricing": {
+          "title": "Przejrzysty Cennik",
+          "description": "Żadnych ukrytych opłat, anuluj w każdej chwili"
+        }
+      }
+    },
+    "team": {
+      "sectionTitle": "\"Zespół\"",
+      "description": "Buduję Calmikę sam, z pomocą AI. Nie ma za mną żadnej firmy ani inwestora — tylko tata, który chciał czegoś lepszego dla swoich dzieci. A to, co jest dobre dla Alexa i Olivii, może być dobre dla innych rodzin z ASD.",
+      "founderTitle": "Założyciel, deweloper, tata dziecka z ASD"
+    },
+    "photos": {
+      "portrait": "Portret Dávida",
+      "portraitCaption": "Dávid — założyciel",
+      "family": "Rodzina Calmiki"
+    }
+  },
+  "therapists": {
+    "meta": {
+      "title": "Dla Terapeutów — Bezpłatny Dostęp Pro | Calmika",
+      "description": "Dostęp Pro do Calmiki dla terapeutów, logopedów i pedagogów specjalnych — całkowicie bezpłatnie."
+    },
+    "hero": {
+      "badge": "Dla Terapeutów i Logopedów",
+      "title": "Bezpłatny dostęp Pro dla terapeutów",
+      "subtitle": "Używaj Calmiki podczas sesji — offline, na tabletach, w 3 językach"
+    },
+    "value": {
+      "sectionTitle": "Dlaczego terapeuci wybierają Calmikę",
+      "cards": {
+        "cost": {
+          "title": "Ekonomiczne rozwiązanie",
+          "description": "0 zł dla terapeutów — dostęp Pro jest całkowicie bezpłatny dla specjalistów."
+        },
+        "dualLang": {
+          "title": "Tryb dwujęzyczny",
+          "description": "Język ojczysty + docelowy jednocześnie — idealny do terapii dwujęzycznej."
+        },
+        "offline": {
+          "title": "Działa offline",
+          "description": "Bez internetu — działa niezawodnie w każdym środowisku terapeutycznym."
+        },
+        "reports": {
+          "title": "Udostępnialne raporty",
+          "description": "Statystyki dla rodziców — udostępnij jednym kliknięciem."
+        }
+      }
+    },
+    "comparison": {
+      "sectionTitle": "Calmika vs. alternatywy",
+      "sectionSubtitle": "Jak wypadają inne narzędzia AAC?",
+      "colCalmika": "Calmika Pro",
+      "colCalmikaSub": "Dla Terapeutów",
+      "highlighted": "Najlepsza wartość",
+      "rows": {
+        "price": "Cena",
+        "platform": "Platforma",
+        "modules": "Moduły",
+        "hungarian": "Język węgierski",
+        "offline": "Offline"
+      },
+      "data": {
+        "price": [
+          "BEZPŁATNA",
+          "$249",
+          "$300",
+          "$100+"
+        ],
+        "platform": [
+          "Android (+iOS wkrótce)",
+          "Tylko iOS",
+          "Tylko iOS",
+          "Tylko iOS"
+        ],
+        "modules": [
+          "30+ (AAC+edukacja+sensoryczne)",
+          "Tylko AAC",
+          "Tylko AAC",
+          "Tylko PECS"
+        ],
+        "hungarian": [
+          "✅ Natywny",
+          "❌",
+          "❌",
+          "❌"
+        ],
+        "offline": [
+          "✅",
+          "✅",
+          "✅",
+          "✅"
+        ]
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "Jak to działa",
+      "sectionSubtitle": "3 proste kroki — zajmuje łącznie około 2 minuty",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Wypełnij formularz rejestracyjny",
+          "description": "Zajmuje około 1 minuty — imię i nazwisko, e-mail i organizacja."
+        },
+        {
+          "number": "2",
+          "title": "Otrzymaj unikalny kod Pro",
+          "description": "Wyślemy Twój kod aktywacyjny e-mailem w ciągu 24 godzin."
+        },
+        {
+          "number": "3",
+          "title": "Używaj bez ograniczeń",
+          "description": "Na 10 urządzeniach, przez 1 rok, całkowicie bezpłatnie — podczas sesji terapeutycznych."
+        }
+      ]
+    },
+    "evidence": {
+      "sectionTitle": "Podstawy naukowe",
+      "sectionSubtitle": "Moduły Calmiki opierają się na dowodach naukowych",
+      "badges": [
+        "AAC use increases language development in children with ASD (Romski & Sevcik, 2005)",
+        "Visual schedules reduce anxiety and improve transitions (Mesibov et al., 2005)",
+        "Music therapy improves social interaction in ASD (Geretsegger et al., 2014)",
+        "Multi-modal apps support diverse learning needs (Light & McNaughton, 2014)"
+      ]
+    },
+    "form": {
+      "sectionTitle": "Poproś o bezpłatny dostęp Pro",
+      "sectionSubtitle": "Wypełnij formularz poniżej — odpiszemy w ciągu 24 godzin",
+      "fields": {
+        "name": "Imię i nazwisko",
+        "namePlaceholder": "np. Anna Kowalska",
+        "email": "Adres e-mail",
+        "emailPlaceholder": "terapeuta@instytucja.pl",
+        "organization": "Organizacja / Instytucja",
+        "organizationPlaceholder": "np. Centrum Rozwoju Dziecka",
+        "role": "Stanowisko",
+        "rolePlaceholder": "Wybierz stanowisko",
+        "roles": {
+          "speech": "Logopeda",
+          "special": "Pedagog specjalny",
+          "dev": "Pedagog terapeutyczny",
+          "psychologist": "Psycholog",
+          "other": "Inne"
+        },
+        "message": "Wiadomość (opcjonalnie)",
+        "messagePlaceholder": "Powiedz nam, jak planujesz używać Calmiki..."
+      },
+      "submit": "Poproś o bezpłatny dostęp Pro",
+      "submitting": "Wysyłanie...",
+      "successTitle": "Dziękujemy za zgłoszenie! 🎉",
+      "successMessage": "Wyślemy Twój kod aktywacyjny Pro na podany adres e-mail w ciągu 24 godzin.",
+      "disclaimer": "Twoje dane są używane wyłącznie do dostarczenia dostępu Pro. Żadnego spamu, żadnych telefonów sprzedażowych."
+    },
+    "faq": {
+      "sectionTitle": "Częste pytania od terapeutów",
+      "items": [
+        {
+          "question": "Czy każdy terapeuta może uzyskać bezpłatny dostęp?",
+          "answer": "Tak — logopedzi, pedagodzy specjalni, pedagodzy terapeutyczni i psychologowie są uprawnieni. Jedynym wymogiem jest udowodnione wykonywanie pracy z dziećmi z ASD."
+        },
+        {
+          "question": "Jak długo ważny jest kod Pro?",
+          "answer": "1 rok, na 10 urządzeniach. Powiadomimy Cię przed wygaśnięciem i zwykle go odnawiamy — naszym celem jest długoterminowa, oparta na zaufaniu współpraca ze specjalistami."
+        },
+        {
+          "question": "Jakie moduły są zawarte w wersji Pro dla terapeutów?",
+          "answer": "Wszystkie: komunikacja AAC (ponad 5000 słów), plan wizualny, muzykoterapia, emocje i strefy, historie społeczne, kolorowanki, gry poznawcze, nauka słownictwa — łącznie ponad 30 modułów."
+        }
+      ]
+    }
+  },
+  "beta": {
+    "hero": {
+      "title": "Bądź wśród pierwszych",
+      "subtitle": "Pomóż kształtować Calmikę i uzyskaj wczesny dostęp oraz bezpłatną subskrypcję Pro w zamian.",
+      "badge1": "Ograniczona liczba miejsc",
+      "badge2": "Premiera wkrótce"
+    },
+    "perks": {
+      "title": "Co dostają członkowie beta",
+      "earlyAccess": {
+        "title": "Wczesny dostęp",
+        "desc": "Bądź pierwszym, który wypróbuje nowe moduły i funkcje przed ich publicznym udostępnieniem."
+      },
+      "proFree": {
+        "title": "Pro za darmo",
+        "desc": "Pełny dostęp Pro w okresie beta — zero kosztów, zero sztuczek."
+      },
+      "voice": {
+        "title": "Kształtuj produkt",
+        "desc": "Twoja opinia bezpośrednio wpływa na to, co trafi do kolejnej wersji."
+      }
+    },
+    "roadmap": {
+      "title": "Plan rozwoju",
+      "s1": "S1 — Fundamenty",
+      "s2": "S2 — AAC i moduły",
+      "s3": "S3 — Społeczne i poznawcze",
+      "s4": "S4 — Narzędzia terapeutyczne"
+    },
+    "form": {
+      "title": "Dołącz do zespołu beta",
+      "subtitle": "Ograniczona liczba miejsc — wypełnij formularz!",
+      "name": "Twoje imię",
+      "namePlaceholder": "np. Anna Kowalska",
+      "email": "E-mail",
+      "emailPlaceholder": "np. anna@email.pl",
+      "asdChild": "Czy masz dziecko z ASD?",
+      "asdYes": "Tak",
+      "asdNo": "Nie",
+      "platform": "Jakiej platformy używasz?",
+      "android": "Android",
+      "ios": "iOS (iPhone / iPad)",
+      "both": "Obie",
+      "selectPlaceholder": "Wybierz...",
+      "submit": "Dołącz do zespołu beta",
+      "submitting": "Wysyłanie...",
+      "successTitle": "Dziękujemy za rejestrację! 🎉",
+      "successDesc": "Wkrótce skontaktujemy się z Tobą ze szczegółami dostępu beta."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakt",
+      "subtitle": "Masz pytanie, opinię lub po prostu chcesz się przywitać? Napisz do nas!"
+    },
+    "form": {
+      "title": "Wyślij wiadomość",
+      "name": "Twoje imię",
+      "namePlaceholder": "np. Piotr Kowalski",
+      "email": "E-mail",
+      "emailPlaceholder": "np. piotr@email.pl",
+      "subject": "Temat",
+      "subjectPlaceholder": "Wybierz temat...",
+      "subjectGeneral": "Ogólne pytanie",
+      "subjectBug": "Zgłoszenie błędu",
+      "subjectTherapist": "Zapytanie terapeuty",
+      "subjectPress": "Prasa / media",
+      "subjectOther": "Inne",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Napisz tutaj swoją wiadomość...",
+      "submit": "Wyślij wiadomość",
+      "submitting": "Wysyłanie...",
+      "successTitle": "Wiadomość wysłana! ✅",
+      "successDesc": "Dziękujemy za kontakt. Odpiszemy w ciągu 24 godzin."
+    },
+    "info": {
+      "responseTitle": "Czas odpowiedzi",
+      "responseText": "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin. W weekendy może to trwać nieco dłużej.",
+      "emailTitle": "Bezpośredni e-mail",
+      "communityTitle": "Społeczność"
+    }
+  },
+  "privacy": {
+    "title": "Polityka Prywatności",
+    "subtitle": "Jasny, ludzki język — bez prawniczego żargonu.",
+    "lastUpdated": "Ostatnia aktualizacja: 1 stycznia 2026.",
+    "s1": {
+      "title": "1. Wprowadzenie",
+      "p1": "Niniejsza polityka prywatności opisuje, w jaki sposób Calmika — prowadzona przez Dávida Kovácsa, jednoosobową działalność gospodarczą (Węgry) — przetwarza dane osobowe na stronie internetowej calmika.com i w aplikacji mobilnej Calmika.",
+      "p2": "Dane są przetwarzane wyłącznie w celu obsługi i ulepszania aplikacji oraz strony internetowej. Nie sprzedajemy danych stronom trzecim i nie korzystamy z systemów reklam ukierunkowanych."
+    },
+    "s2": {
+      "title": "2. Jakie dane zbieramy?",
+      "p1": "Zbieramy minimalne dane. Konkretnie:",
+      "item1": "Adres e-mail — tylko jeśli podasz go samodzielnie (np. rejestracja beta, formularz kontaktowy)",
+      "item2": "Typ urządzenia — do anonimowej analityki (Vercel Analytics)",
+      "p2": "Nie zbieramy automatycznie żadnych innych danych osobowych."
+    },
+    "s3": {
+      "title": "3. Dane dzieci — WAŻNE",
+      "highlight": "🛡️ NIE zbieramy danych osobowych dzieci. Aplikacja działa lokalnie; dane pozostają na urządzeniu — nigdy nie trafiają na nasze serwery.",
+      "p1": "Dane profilu dziecka (imię, wiek, preferencje), zapisy rozwojowe i historia użytkowania są przechowywane wyłącznie na urządzeniu, w trybie offline. Nie możemy zobaczyć, przechowywać ani uzyskać dostępu do tych danych.",
+      "p2": "To nie tylko obowiązek prawny (COPPA, RODO) — to nasza zasada etyczna. W aplikacji zbudowanej dla dzieci prywatność jest na pierwszym miejscu."
+    },
+    "s4": {
+      "title": "4. Pliki cookie",
+      "p1": "Używamy minimalnej liczby plików cookie:",
+      "item1": "Preferencja językowa — aby zapamiętać wybrany przez Ciebie język",
+      "item2": "Anonimowa analityka — liczby odwiedzin stron przez Vercel Analytics (brak danych osobowych)"
+    },
+    "s5": {
+      "title": "5. Strony trzecie",
+      "p1": "Korzystamy z dwóch zewnętrznych usług:",
+      "item1": "Vercel Analytics — anonimowe statystyki odwiedzin (adres IP nie jest przechowywany)",
+      "item2": "RevenueCat — zarządzanie subskrypcjami (dane płatności są obsługiwane przez Play Store / App Store, nie przez nas)",
+      "p2": "Żadna inna strona trzecia nie ma dostępu do Twoich danych."
+    },
+    "s6": {
+      "title": "6. Usuwanie danych",
+      "p1": "Jeśli chcesz usunąć swój adres e-mail lub inne przechowywane przez nas dane, skontaktuj się z nami:"
+    },
+    "s7": {
+      "title": "7. Kontakt",
+      "p1": "W sprawach prywatności lub wniosków o usunięcie danych skontaktuj się z nami:"
+    },
+    "s8": {
+      "title": "8. Zmiany",
+      "p1": "Jeśli wprowadzimy istotne zmiany w tej polityce, powiadomimy Cię e-mailem (jeśli podałeś/aś adres) i zaktualizujemy datę \"Ostatniej aktualizacji\". Drobne, nieistotne zmiany nie będą osobno ogłaszane."
+    }
+  },
+  "terms": {
+    "title": "Regulamin",
+    "subtitle": "Warunki korzystania z aplikacji Calmika i strony internetowej.",
+    "lastUpdated": "Ostatnia aktualizacja: 1 stycznia 2026.",
+    "s1": {
+      "title": "1. Wprowadzenie",
+      "p1": "Witamy w Calmice! Niniejszy Regulamin reguluje korzystanie z aplikacji mobilnej Calmika i strony internetowej (calmika.com).",
+      "p2": "Pobierając i używając aplikacji, akceptujesz niniejsze warunki. Jeśli się z nimi nie zgadzasz, prosimy o nieużywanie aplikacji."
+    },
+    "s2": {
+      "title": "2. O aplikacji",
+      "p1": "Calmika to aplikacja edukacyjna i rozwojowa zaprojektowana dla dzieci z Zaburzeniami ze Spektrum Autyzmu (ASD). Aplikacja zawiera narzędzia komunikacji AAC, plany wizualne, muzykoterapię, rozpoznawanie emocji i inne moduły rozwojowe.",
+      "disclaimer": "⚠️ Calmika NIE jest urządzeniem medycznym i NIE stawia diagnoz. Aplikacja uzupełnia, ale nie zastępuje profesjonalnej opieki medycznej lub terapeutycznej. Zawsze konsultuj się z wykwalifikowanym specjalistą w sprawie rozwoju swojego dziecka."
+    },
+    "s3": {
+      "title": "3. Subskrypcja",
+      "p1": "Calmika jest dostępna w dwóch wersjach:",
+      "item1": "Plan bezpłatny — AAC Lite i Spokojny Kącik są bezpłatne na zawsze",
+      "item2": "Plan Pro — miesięczna lub roczna subskrypcja z 14-dniowym bezpłatnym okresem próbnym (bez karty kredytowej)",
+      "item3": "Po zakończeniu okresu próbnego, jeśli nie wykupisz subskrypcji, aplikacja automatycznie powróci do planu bezpłatnego",
+      "p2": "Subskrypcja odnawia się automatycznie w każdym okresie, chyba że zostanie anulowana co najmniej 24 godziny przed odnowieniem przez Google Play Store lub App Store."
+    },
+    "s4": {
+      "title": "4. Zwroty",
+      "p1": "Zwroty są przetwarzane zgodnie z polityką zwrotów Google Play Store i Apple App Store. Platformy bezpośrednio obsługują wnioski o zwrot.",
+      "p2": "Jeśli nie jesteś zadowolony/a w ciągu pierwszych 7 dni od subskrypcji, skontaktuj się z nami bezpośrednio pod adresem hello@calmika.com — dołożymy wszelkich starań, aby rozwiązać problem."
+    },
+    "s5": {
+      "title": "5. Własność intelektualna",
+      "p1": "Marka Calmika, logo, kod aplikacji, biblioteka symboli AAC, treści audio i wszelkie inne materiały są własnością intelektualną Dávida Kovácsa. Kopiowanie, rozpowszechnianie lub komercyjne wykorzystanie jakichkolwiek treści jest zabronione bez uprzedniej pisemnej zgody."
+    },
+    "s6": {
+      "title": "6. Ograniczenie odpowiedzialności",
+      "p1": "Calmika jest dostarczana \"tak jak jest\". Nie przyjmujemy odpowiedzialności za bezpośrednie lub pośrednie szkody wynikające z korzystania z aplikacji, w tym utratę danych lub nieodpowiednie rezultaty rozwojowe. Aplikacja jest narzędziem uzupełniającym i nie zastępuje profesjonalnej terapii."
+    },
+    "s7": {
+      "title": "7. Prawo właściwe",
+      "p1": "Niniejszy Regulamin podlega prawu węgierskiemu. Spory będą rozwiązywane najpierw w drodze wzajemnego porozumienia; w przypadku niepowodzenia, właściwym będzie węgierski sąd."
+    },
+    "s8": {
+      "title": "8. Zmiany",
+      "p1": "Zastrzegamy sobie prawo do modyfikacji niniejszego Regulaminu. W przypadku istotnych zmian powiadomimy Cię e-mailem lub w aplikacji. Dalsze korzystanie z aplikacji po zmianach oznacza akceptację zaktualizowanego Regulaminu."
+    },
+    "s9": {
+      "title": "9. Kontakt",
+      "p1": "W przypadku pytań lub wątpliwości:"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Baza wiedzy dla rodziców dzieci z ASD — porady, badania, aktualizacje aplikacji",
+    "ctaTitle": "Wypróbuj Calmikę",
+    "ctaDescription": "Jedyna kompleksowa aplikacja wspierająca rozwój dzieci z autyzmem — offline, bez reklam, z ponad 30 modułami.",
+    "categories": {
+      "all": "Wszystkie",
+      "parents": "Dla Rodziców",
+      "therapists": "Dla Terapeutów",
+      "updates": "Aktualizacje Aplikacji",
+      "research": "Badania"
+    },
+    "readingTime": "{minutes} min czytania",
+    "by": "Autor",
+    "relatedPosts": "Powiązane Wpisy",
+    "newsletter": {
+      "title": "Zapisz się do newslettera",
+      "subtitle": "Cotygodniowe porady ASD i aktualizacje aplikacji",
+      "placeholder": "Twój e-mail",
+      "button": "Zapisz się"
+    },
+    "share": "Udostępnij",
+    "toc": "Spis treści"
+  }
+}

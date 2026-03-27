@@ -53,7 +53,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const switchLocale = (newLocale: 'hu' | 'en') => {
+  const switchLocale = (newLocale: 'hu' | 'en' | 'pl') => {
     router.replace(pathname as any, { locale: newLocale });
   };
 
@@ -112,7 +112,7 @@ export default function Header() {
                   >
                     {features.map((feature) => {
                       const Icon = iconMap[feature.icon as IconName];
-                      const name = locale === 'hu' ? feature.huName : feature.enName;
+                      const name = locale === 'hu' ? feature.huName : locale === 'pl' ? feature.plName : feature.enName;
                       return (
                         <li key={feature.key}>
                           <Link
@@ -174,28 +174,20 @@ export default function Header() {
             className="flex items-center rounded-full overflow-hidden"
             style={{ backgroundColor: '#eeeeec' }}
           >
-            <button
-              onClick={() => switchLocale('hu')}
-              className="px-3.5 py-1.5 text-sm font-semibold transition-all duration-200"
-              style={
-                locale === 'hu'
-                  ? { backgroundColor: '#006b5f', color: '#ffffff', borderRadius: '9999px' }
-                  : { color: '#6c7a77' }
-              }
-            >
-              HU
-            </button>
-            <button
-              onClick={() => switchLocale('en')}
-              className="px-3.5 py-1.5 text-sm font-semibold transition-all duration-200"
-              style={
-                locale === 'en'
-                  ? { backgroundColor: '#006b5f', color: '#ffffff', borderRadius: '9999px' }
-                  : { color: '#6c7a77' }
-              }
-            >
-              EN
-            </button>
+            {(['hu', 'en', 'pl'] as const).map((loc) => (
+              <button
+                key={loc}
+                onClick={() => switchLocale(loc)}
+                className="px-3.5 py-1.5 text-sm font-semibold transition-all duration-200"
+                style={
+                  locale === loc
+                    ? { backgroundColor: '#006b5f', color: '#ffffff', borderRadius: '9999px' }
+                    : { color: '#6c7a77' }
+                }
+              >
+                {loc.toUpperCase()}
+              </button>
+            ))}
           </div>
 
           {/* CTA Button — pill shaped, teal gradient */}
@@ -256,7 +248,7 @@ export default function Header() {
               </p>
               {features.map((feature) => {
                 const Icon = iconMap[feature.icon as IconName];
-                const name = locale === 'hu' ? feature.huName : feature.enName;
+                const name = locale === 'hu' ? feature.huName : locale === 'pl' ? feature.plName : feature.enName;
                 return (
                   <Link
                     key={feature.key}
@@ -299,28 +291,20 @@ export default function Header() {
                   className="flex items-center rounded-full overflow-hidden"
                   style={{ backgroundColor: '#eeeeec' }}
                 >
-                  <button
-                    onClick={() => { switchLocale('hu'); setMobileOpen(false); }}
-                    className="px-3.5 py-1.5 text-sm font-semibold transition-all duration-200"
-                    style={
-                      locale === 'hu'
-                        ? { backgroundColor: '#006b5f', color: '#ffffff', borderRadius: '9999px' }
-                        : { color: '#6c7a77' }
-                    }
-                  >
-                    HU
-                  </button>
-                  <button
-                    onClick={() => { switchLocale('en'); setMobileOpen(false); }}
-                    className="px-3.5 py-1.5 text-sm font-semibold transition-all duration-200"
-                    style={
-                      locale === 'en'
-                        ? { backgroundColor: '#006b5f', color: '#ffffff', borderRadius: '9999px' }
-                        : { color: '#6c7a77' }
-                    }
-                  >
-                    EN
-                  </button>
+                  {(['hu', 'en', 'pl'] as const).map((loc) => (
+                    <button
+                      key={loc}
+                      onClick={() => { switchLocale(loc); setMobileOpen(false); }}
+                      className="px-3.5 py-1.5 text-sm font-semibold transition-all duration-200"
+                      style={
+                        locale === loc
+                          ? { backgroundColor: '#006b5f', color: '#ffffff', borderRadius: '9999px' }
+                          : { color: '#6c7a77' }
+                      }
+                    >
+                      {loc.toUpperCase()}
+                    </button>
+                  ))}
                 </div>
               </div>
 
