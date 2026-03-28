@@ -59,7 +59,7 @@ function getFeatures(screenshots: ReturnType<typeof getScreenshots>): FeatureIte
       screenshotAlt: "AAC kommunikációs tábla Fitzgerald Key színkódolással",
       icon: "💬",
       gridClass: "md:col-span-2",
-      badge: "5000+ Words",
+      badge: "77K+ inflected forms",
       accentColor: "rgba(20,184,166,0.06)",
     },
     {

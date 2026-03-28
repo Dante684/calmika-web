@@ -143,7 +143,8 @@
     "learnMore": "Learn more",
     "aac": {
       "name": "AAC Communication",
-      "desc": "5000+ words, prediction bar, drag-and-drop editing"
+      "desc": "Native AAC inflection — real sentences, not just word grids, in 3 languages",
+      "inflectionBadge": "77,000+ inflected forms"
     },
     "napirend": {
       "name": "Visual Schedule",
