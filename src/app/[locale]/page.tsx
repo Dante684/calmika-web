@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: `${t('siteName')} — ${t('siteDescription')}`,
+    title: t('siteDescription'),
     description: t('siteDescription'),
     alternates: getSeoAlternates('/', locale),
   };

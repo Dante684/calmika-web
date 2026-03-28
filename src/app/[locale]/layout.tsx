@@ -29,7 +29,10 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return {
-    title: 'Calmika',
+    title: {
+      template: '%s — Calmika',
+      default: 'Calmika — Autism-friendly educational app',
+    },
     description: 'Calmika – Autism-friendly educational app for children',
     alternates: getSeoAlternates('/', locale),
     openGraph: {

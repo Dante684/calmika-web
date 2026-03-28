@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'pages.about' });
   return {
-    title: `${t('title')} — Calmika`,
+    title: `${t('title')}`,
     description: t('description'),
     alternates: getSeoAlternates('/rolunk', locale),
   };

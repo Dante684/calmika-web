@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'blog' });
   return {
-    title: `${t('title')} — Calmika`,
+    title: `${t('title')}`,
     description: t('subtitle'),
     alternates: getSeoAlternates('/blog', locale),
   };

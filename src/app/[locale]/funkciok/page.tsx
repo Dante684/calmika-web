@@ -6,7 +6,7 @@ export async function generateMetadata() {
   const locale = await getLocale();
   const isHu = locale === 'hu';
   return {
-    title: `${isHu ? 'Funkciók' : 'Features'} — Calmika`,
+    title: `${isHu ? 'Funkciók' : 'Features'}`,
     description: isHu
       ? 'AAC kommunikáció, vizuális naptár, zeneterápia és 30+ modul ASD-s gyerekeknek.'
       : 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',

@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const isHu = locale === 'hu';
   return {
-    title: `${isHu ? 'Béta program' : locale === 'pl' ? 'Program beta' : 'Beta program'} — Calmika`,
+    title: `${isHu ? 'Béta program' : locale === 'pl' ? 'Program beta' : 'Beta program'}`,
     description: isHu
       ? 'Légy az elsők között — korai hozzáférés + ingyenes Pro előfizetés béta tesztelőknek.'
       : locale === 'pl'
