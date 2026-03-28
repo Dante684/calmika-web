@@ -51,7 +51,7 @@
   },
   "meta": {
     "siteName": "Calmika",
-    "siteDescription": "Az egyetlen all-in-one autizmus fejlesztő app"
+    "siteDescription": "Calmika – all-in-one autizmus fejlesztő app 2–7 éves gyerekeknek. AAC kommunikáció, vizuális napirend, zeneterápia, 30+ modul. Magyar, offline, reklám nélkül."
   },
   "nav": {
     "features": "Funkciók",
@@ -77,40 +77,40 @@
   },
   "pages": {
     "features": {
-      "title": "Funkciók",
-      "description": "30+ modul ASD gyerekeknek"
+      "title": "Funkciók – 30+ autizmusbarát modul",
+      "description": "AAC kommunikáció, vizuális napirend, zeneterápia, érzelemfelismerés és 30+ modul ASD gyerekeknek. Magyar anyanyelvű app, teljesen offline, reklám nélkül."
     },
     "pricing": {
-      "title": "Árazás",
-      "description": "Ingyenestől prémiumig"
+      "title": "Árazás – ingyenes és prémium csomagok",
+      "description": "Ingyenes AAC alapcsomag örökre, Pro előfizetés havi 1990 Ft-tól. 14 napos ingyenes próba, bankkártya nélkül. Terapeutáknak teljesen ingyenes Pro hozzáférés."
     },
     "about": {
-      "title": "Rólunk",
-      "description": "A Calmika története"
+      "title": "Rólunk – egy ASD apa küldetése",
+      "description": "A Calmikát egy autizmusspektrum-zavarral élő ikrek apja fejlesztette. Magyar fejlesztés ASD családoknak – mert minden gyereknek joga van megtalálni a hangját."
     },
     "therapists": {
-      "title": "Terapeutáknak",
-      "description": "Ingyenes Pro hozzáférés"
+      "title": "Terapeutáknak – ingyenes Pro hozzáférés",
+      "description": "Logopédusok, gyógypedagógusok és terapeuták ingyenes Pro hozzáférést kapnak. 30+ modul, offline működés, 3 nyelv – klinikai eszköz ASD foglalkozásokhoz."
     },
     "blog": {
-      "title": "Blog",
-      "description": "ASD szülői tudástár"
+      "title": "Blog – ASD szülői tudástár",
+      "description": "Autizmussal élő gyerekek szüleinek szóló cikkek: AAC kommunikáció, vizuális napirend, zeneterápia, kétnyelvűség és fejlesztési tippek magyar nyelven."
     },
     "download": {
-      "title": "Letöltés",
-      "description": "Töltsd le a Calmikát"
+      "title": "Letöltés – ingyenes AAC app Androidra",
+      "description": "Töltsd le a Calmikát ingyenesen a Google Play Store-ból. Android 8.0+, ~93 MB, offline. AAC kommunikáció, vizuális napirend, zeneterápia – 30+ modul."
     },
     "beta": {
-      "title": "Béta Program",
-      "description": "Légy az elsők között"
+      "title": "Béta Program – légy az első tesztelő",
+      "description": "Csatlakozz a Calmika béta programjához: korai hozzáférés, ingyenes Pro előfizetés, és beleszólás a fejlesztésbe. ASD app tesztelés szülőknek és terapeutáknak."
     },
     "contact": {
-      "title": "Kapcsolat",
-      "description": "Írj nekünk"
+      "title": "Kapcsolat – írj nekünk",
+      "description": "Kérdésed van a Calmikáról? Terapeutai megkeresés, hibabejelentés vagy sajtó – 24 órán belül válaszolunk minden emailre. Írj a hello@calmika.com címre."
     },
     "faq": {
-      "title": "GYIK",
-      "description": "Gyakran ismételt kérdések"
+      "title": "Gyakran Ismételt Kérdések",
+      "description": "Válaszok a Calmikával kapcsolatos leggyakoribb kérdésekre: előfizetés, ingyenes csomag, kompatibilitás, adatvédelem és ASD gyerekek fejlesztése."
     },
     "privacy": {
       "title": "Adatvédelem",

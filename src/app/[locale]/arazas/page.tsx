@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { getSeoAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -8,6 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: `${t('title')} — Calmika`,
     description: t('description'),
+    alternates: getSeoAlternates('/arazas', locale),
   };
 }
 import { Check, X, ChevronRight, Heart } from 'lucide-react';

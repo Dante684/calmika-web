@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { getBlogPosts } from '@/lib/blog';
 import { BlogListing } from '@/components/blog/blog-listing';
+import { getSeoAlternates } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -12,6 +13,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${t('title')} — Calmika`,
     description: t('subtitle'),
+    alternates: getSeoAlternates('/blog', locale),
   };
 }
 

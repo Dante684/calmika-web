@@ -51,7 +51,7 @@
   },
   "meta": {
     "siteName": "Calmika",
-    "siteDescription": "Jedyna kompleksowa aplikacja wspierająca rozwój dzieci z autyzmem"
+    "siteDescription": "Calmika – kompleksowa aplikacja edukacyjna dla dzieci z autyzmem w wieku 2–7 lat. AAC, plany wizualne, muzykoterapia, 30+ modułów. Offline, bez reklam, dla ASD."
   },
   "nav": {
     "features": "Funkcje",
@@ -77,40 +77,40 @@
   },
   "pages": {
     "features": {
-      "title": "Funkcje",
-      "description": "Ponad 30 modułów dla dzieci z ASD"
+      "title": "Funkcje – ponad 30 modułów dla ASD",
+      "description": "Komunikacja AAC, plany wizualne, muzykoterapia, rozpoznawanie emocji i 30+ modułów dla dzieci z ASD. Aplikacja edukacyjna offline, bez reklam, dla całej rodziny."
     },
     "pricing": {
-      "title": "Cennik",
-      "description": "Od bezpłatnego do premium"
+      "title": "Cennik – pakiety bezpłatny i premium",
+      "description": "Bezpłatny pakiet AAC na zawsze, Pro od 39,99 zł/mies. 14-dniowy bezpłatny okres próbny bez karty. Terapeuci otrzymują pełny dostęp Pro całkowicie bezpłatnie."
     },
     "about": {
-      "title": "O nas",
-      "description": "Historia Calmiki"
+      "title": "O nas – misja taty dzieci z ASD",
+      "description": "Calmika powstała z inicjatywy taty autystycznych bliźniaków. Rodzinna aplikacja edukacyjna dla dzieci z autyzmem – bo każde dziecko zasługuje na prawo do głosu."
     },
     "therapists": {
-      "title": "Dla Terapeutów",
-      "description": "Bezpłatny dostęp Pro"
+      "title": "Dla Terapeutów – bezpłatny dostęp Pro",
+      "description": "Logopedzi, pedagodzy specjalni i terapeuci otrzymują bezpłatny dostęp Pro. 30+ modułów, offline, 3 języki – narzędzie kliniczne do terapii dzieci z autyzmem i ASD."
     },
     "blog": {
-      "title": "Blog",
-      "description": "Baza wiedzy dla rodziców dzieci z ASD"
+      "title": "Blog – wiedza dla rodziców dzieci z ASD",
+      "description": "Artykuły dla rodziców dzieci z autyzmem: komunikacja AAC, plany wizualne, muzykoterapia, nauka dwujęzyczna i praktyczne porady dla rodzin z dziećmi z ASD."
     },
     "download": {
-      "title": "Pobierz",
-      "description": "Pobierz Calmikę"
+      "title": "Pobierz – bezpłatna aplikacja AAC",
+      "description": "Pobierz Calmikę bezpłatnie z Google Play Store. Android 8.0+, ~93 MB, działa offline. Komunikacja AAC, plany wizualne, muzykoterapia – 30+ modułów dla dzieci z ASD."
     },
     "beta": {
-      "title": "Program Beta",
-      "description": "Bądź wśród pierwszych"
+      "title": "Program Beta – zostań pierwszym testerem",
+      "description": "Dołącz do programu beta Calmiki: wczesny dostęp, bezpłatna subskrypcja Pro i wpływ na rozwój aplikacji. Testowanie aplikacji ASD dla rodziców i terapeutów."
     },
     "contact": {
-      "title": "Kontakt",
-      "description": "Skontaktuj się z nami"
+      "title": "Kontakt – napisz do nas",
+      "description": "Pytania o Calmikę? Zapytania terapeutów, zgłoszenia błędów lub kontakt prasowy – odpowiadamy w 24 godziny. Napisz na hello@calmika.com lub skorzystaj z formularza."
     },
     "faq": {
-      "title": "FAQ",
-      "description": "Często zadawane pytania"
+      "title": "Często Zadawane Pytania",
+      "description": "Odpowiedzi na najczęstsze pytania o Calmikę: subskrypcja, bezpłatny plan, kompatybilność urządzeń, prywatność i wsparcie dzieci z autyzmem i ASD."
     },
     "privacy": {
       "title": "Polityka Prywatności",

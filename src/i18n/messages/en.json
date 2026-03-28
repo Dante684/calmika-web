@@ -51,7 +51,7 @@
   },
   "meta": {
     "siteName": "Calmika",
-    "siteDescription": "The only all-in-one autism development app"
+    "siteDescription": "Calmika – all-in-one autism educational app for kids aged 2–7. AAC communication, visual schedules, music therapy, 30+ modules. Offline, ad-free, ASD-friendly."
   },
   "nav": {
     "features": "Features",
@@ -77,40 +77,40 @@
   },
   "pages": {
     "features": {
-      "title": "Features",
-      "description": "30+ modules for ASD children"
+      "title": "Features – 30+ autism-friendly modules",
+      "description": "AAC communication, visual schedules, music therapy, emotion recognition and 30+ modules for kids with ASD. Fully offline, ad-free, evidence-based educational app."
     },
     "pricing": {
-      "title": "Pricing",
-      "description": "From free to premium"
+      "title": "Pricing – free and premium plans",
+      "description": "Free AAC starter pack forever, Pro from $7.99/mo. 14-day free trial, no credit card needed. Therapists get full Pro access completely free. Transparent pricing."
     },
     "about": {
-      "title": "About Us",
-      "description": "The story of Calmika"
+      "title": "About – an ASD dad's mission",
+      "description": "Calmika was built by a dad of autistic twins. A family-made educational app for children with ASD – because every kid deserves the tools to find their voice."
     },
     "therapists": {
-      "title": "For Therapists",
-      "description": "Free Pro access"
+      "title": "For Therapists – free Pro access",
+      "description": "Speech-language pathologists, special educators and therapists get free Pro access. 30+ modules, offline, 3 languages – clinical tool for ASD therapy sessions."
     },
     "blog": {
-      "title": "Blog",
-      "description": "ASD parent knowledge base"
+      "title": "Blog – ASD parenting knowledge base",
+      "description": "Articles for parents of children with autism: AAC communication, visual schedules, music therapy, bilingual learning and practical ASD development tips."
     },
     "download": {
-      "title": "Download",
-      "description": "Get Calmika"
+      "title": "Download – free AAC app for Android",
+      "description": "Download Calmika free from Google Play. Android 8.0+, ~93 MB, works offline. AAC communication, visual schedules, music therapy – 30+ modules for kids with ASD."
     },
     "beta": {
-      "title": "Beta Program",
-      "description": "Be among the first"
+      "title": "Beta Program – be an early tester",
+      "description": "Join Calmika's beta program: early access, free Pro subscription and direct input into development. ASD app testing open for parents and therapists."
     },
     "contact": {
-      "title": "Contact",
-      "description": "Get in touch"
+      "title": "Contact – get in touch",
+      "description": "Questions about Calmika? Therapist inquiries, bug reports or press – we reply within 24 hours. Reach us at hello@calmika.com or use the contact form."
     },
     "faq": {
-      "title": "FAQ",
-      "description": "Frequently asked questions"
+      "title": "Frequently Asked Questions",
+      "description": "Answers to the most common questions about Calmika: subscription, free plan, device compatibility, privacy and supporting children with ASD."
     },
     "privacy": {
       "title": "Privacy Policy",

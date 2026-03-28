@@ -6,6 +6,8 @@ import { getBlogPost, getRelatedPosts, getAllSlugs, extractHeadings, markdownToH
 import { BlogCard } from '@/components/blog/blog-card';
 import { ShareButtons } from '@/components/blog/share-buttons';
 import { TableOfContents } from '@/components/blog/table-of-contents';
+import { getBlogSeoAlternates } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -28,6 +30,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${post.title} — Calmika Blog`,
     description: post.description,
+    alternates: getBlogSeoAlternates(slug, locale),
   };
 }
 
@@ -73,6 +76,28 @@ export default async function BlogPostPage({ params }: Props) {
 
   const readingLabel = t('readingTime').replace('{minutes}', String(post.readingTime));
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+    },
+    datePublished: post.date,
+    url: postUrl,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Calmika',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://calmika-web.vercel.app/images/logo.png',
+      },
+    },
+    ...(post.image ? { image: post.image } : {}),
+  };
+
   // PlayStore SVG
   function PlayStoreIcon() {
     return (
@@ -83,6 +108,8 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
+    <>
+    <JsonLd data={articleSchema} />
     <div style={{ backgroundColor: '#f9f9f7', minHeight: '100vh' }}>
       {/* Teal gradient hero strip */}
       <div
@@ -295,5 +322,6 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       </div>
     </div>
+    </>
   );
 }

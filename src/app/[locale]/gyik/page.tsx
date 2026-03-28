@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Script from 'next/script';
 import { Link } from '@/i18n/navigation';
+import { getSeoAlternates } from '@/lib/seo';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Accordion,
@@ -61,6 +62,7 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
+    alternates: getSeoAlternates('/gyik', locale),
   };
 }
 

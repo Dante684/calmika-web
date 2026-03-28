@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { moduleData, type ModuleKey } from '@/lib/module-data';
 import { CtaBottomSection } from '@/components/shared/cta-bottom-section';
+import { getModuleSeoAlternates } from '@/lib/seo';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   MessageSquare,
@@ -33,6 +34,18 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 interface Props {
   params: Promise<{ module: string; locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { module: moduleKey, locale } = await params;
+  const data = moduleData[moduleKey as ModuleKey];
+  if (!data) return {};
+  const isHu = locale === 'hu';
+  return {
+    title: `${isHu ? data.huName : data.enName} — Calmika`,
+    description: isHu ? data.huDesc : data.enDesc,
+    alternates: getModuleSeoAlternates(moduleKey, locale),
+  };
 }
 
 export default async function ModulePage({ params }: Props) {

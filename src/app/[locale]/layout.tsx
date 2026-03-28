@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import { getSeoAlternates } from '@/lib/seo';
 import '../globals.css';
 
 const nunito = Nunito({
@@ -20,23 +21,41 @@ const inter = Inter({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'Calmika',
-  description: 'Calmika – Autism-friendly educational app for children',
-  openGraph: {
-    title: 'Calmika — Autism-friendly educational app',
-    description: 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
-    url: 'https://calmika.com',
-    siteName: 'Calmika',
-    locale: 'hu_HU',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
     title: 'Calmika',
-    description: 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
-  },
-};
+    description: 'Calmika – Autism-friendly educational app for children',
+    alternates: getSeoAlternates('/', locale),
+    openGraph: {
+      title: 'Calmika — Autism-friendly educational app',
+      description: 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
+      url: 'https://calmika.com',
+      siteName: 'Calmika',
+      locale: 'hu_HU',
+      type: 'website',
+      images: [
+        {
+          url: 'https://calmika-web.vercel.app/hu/opengraph-image',
+          width: 1200,
+          height: 630,
+          alt: 'Calmika — Autism-friendly educational app',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Calmika',
+      description: 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
+      images: ['https://calmika-web.vercel.app/hu/opengraph-image'],
+    },
+  };
+}
 
 type Props = {
   children: React.ReactNode;

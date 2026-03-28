@@ -1,5 +1,18 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { ModuleGrid } from '@/components/funkciok/module-grid';
+import { getSeoAlternates } from '@/lib/seo';
+
+export async function generateMetadata() {
+  const locale = await getLocale();
+  const isHu = locale === 'hu';
+  return {
+    title: `${isHu ? 'Funkciók' : 'Features'} — Calmika`,
+    description: isHu
+      ? 'AAC kommunikáció, vizuális naptár, zeneterápia és 30+ modul ASD-s gyerekeknek.'
+      : 'AAC communication, visual schedules, music therapy and 30+ modules for children with ASD.',
+    alternates: getSeoAlternates('/funkciok', locale),
+  };
+}
 
 export default async function FunkciokPage() {
   const locale = await getLocale();
