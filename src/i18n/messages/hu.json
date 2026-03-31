@@ -123,7 +123,7 @@
   },
   "story": {
     "sectionTitle": "Miért Calmika?",
-    "quote": "Két fiamnak, Alexnek és Oliviának 2 évesen diagnosztizálták az autizmust. Szülőként az első hónapok a legnehezebbek — mindenki mást mond, az appok drágák, és a legtöbb nem is magyar. Ezért kezdtem el építeni a Calmikát: hogy egyetlen appban meglegyen minden, amire egy ASD család szüksége van.",
+    "quote": "Az ikreimnek 2 évesen diagnosztizálták az autizmust. Szülőként az első hónapok a legnehezebbek — mindenki mást mond, az appok drágák, és a legtöbb nem is magyar. Ezért kezdtem el építeni a Calmikát: hogy egyetlen appban meglegyen minden, amire egy ASD család szüksége van.",
     "author": "Dávid, a Calmika alapítója",
     "ctaReadMore": "Olvasd el a teljes történetet",
     "overline": "A történetünk",
@@ -339,34 +339,80 @@
         "Nyomtatható sablonok (86 db)"
       ]
     },
+    "lifetime": {
+      "overline": "Örök hozzáférés",
+      "name": "Lifetime",
+      "badge": "Legjobb érték",
+      "price_hu": "49 990 Ft",
+      "price_eu": "€149,99",
+      "price_us": "$179,99",
+      "period": "egyszeri vásárlás",
+      "cta": "Vásárold meg most",
+      "features": [
+        "MINDEN modul (30+) örökre",
+        "5000+ AAC szó",
+        "Dual language (3 nyelv)",
+        "Offline mód",
+        "Szülői riportok",
+        "Nyomtatható sablonok (86 db)",
+        "Minden jövőbeli frissítés"
+      ]
+    },
+    "aosz": {
+      "text": "🏷️ AOSZ kedvezmény: Autizmus Országos Szövetség igazolással 50% kedvezmény minden Pro csomagra. Részletek: hello@calmika.com"
+    },
     "comparison": {
       "title": "Mit tartalmaz az egyes csomagok?",
       "feature": "Funkció",
       "free": "Ingyenes",
       "pro": "Pro",
       "rows": {
-        "aac": "AAC szavak",
+        "aac": "AAC Kommunikáció",
+        "calmCorner": "Nyugi Sarok",
         "coloring": "Kifestő",
         "vocab": "Szótanulás",
         "music": "Zeneterápia",
         "schedule": "Napirend",
-        "emotions": "Érzelmek",
         "social": "Szociális Történetek",
         "cognitive": "Kognitív Játékok",
-        "printable": "Nyomtatható sablonok",
-        "reports": "Szülői riportok",
-        "dualLang": "Dual language",
-        "offline": "Offline mód"
+        "categorizer": "Kategorizáló",
+        "emotions": "Érzelmek & Zones",
+        "parentAcademy": "Szülői Akadémia",
+        "printable": "Nyomtatható anyagok",
+        "reports": "Riportok",
+        "streak": "Streak/XP",
+        "colorModes": "Színmódok",
+        "offline": "Offline",
+        "ads": "Reklám"
       },
       "values": {
-        "val_80core": "80 core",
-        "val_3img": "3 kép",
-        "val_5words": "5 szó",
+        "val_80core": "✅ 80 core szó (MINDIG INGYENES)",
+        "val_aac_pro": "✅ 5000+ szó, ragozás, predikció",
+        "val_calmCorner_free": "✅ Teljes (MINDIG INGYENES)",
+        "val_calmCorner_pro": "✅ Teljes",
+        "val_10img": "10 kép / kategória",
+        "val_coloring_pro": "✅ 110+ kép",
+        "val_vocab_free": "Alap szavak",
+        "val_vocab_pro": "✅ 757 szó, dual language",
+        "val_music_free": "Alap hangszerek",
+        "val_music_pro": "✅ 6 almodul, 15 hangszer",
+        "val_schedule_free": "3 rutin",
+        "val_schedule_pro": "✅ Korlátlan",
+        "val_social_free": "5 történet",
+        "val_social_pro": "✅ 20+ történet",
+        "val_cognitive_free": "Napi 3",
+        "val_cognitive_pro": "✅ Korlátlan",
         "val_basic": "Alap",
-        "val_music_pro": "6 almodul, 15 hangszer",
-        "val_schedule_pro": "Teljes + sablonok",
-        "val_86templates": "86 sablon",
-        "val_3lang": "✅ 3 nyelv (HU/EN/PL)"
+        "val_full": "✅ Teljes",
+        "val_emotions_pro": "✅ Teljes + napló",
+        "val_parentAcademy_pro": "✅ 37 cikk",
+        "val_printable_pro": "✅ 86 sablon",
+        "val_reports_pro": "✅ Heti/havi PDF",
+        "val_streak_pro": "✅ Motivációs rendszer",
+        "val_colorModes_free": "Alapértelmezett",
+        "val_colorModes_pro": "✅ 4 mód",
+        "val_yes": "✅",
+        "val_no_ads": "❌ Nincs"
       }
     },
     "ethics": {
@@ -400,6 +446,11 @@
       "heroTitle1": "A diagnózistól",
       "heroTitle2": "a mindennapokig",
       "sectionTitle": "Hogyan jutottunk idáig",
+      "quote1": "A kommunikáció emberi jog, nem luxus.",
+      "quote2": "Két diagnózis egyszerre. Hegy a láthatáron, és nincs térkép.",
+      "quote3": "Hajnali 3-kor kódolok. Soronként. Értük.",
+      "quote4": "Egy kommunikációs gombból egy neurodiverzitás-ökoszisztéma lett.",
+      "quote5": "Globális hatás, helyi és személyes szívvel.",
       "y2022": {
         "title": "A diagnózis",
         "text": "Ikreim 2 évesen kapták meg az autizmus diagnózist. Az első hónapok teljes káosz — orvostól orvosig rohantunk, mindenki mást mondott. Az interneten angol nyelvű, drága alkalmazásokat találtam, amik nem is fedhették le a mi igényeinket."
@@ -737,10 +788,10 @@
   "terms": {
     "title": "Általános Szerződési Feltételek",
     "subtitle": "A Calmika alkalmazás és weboldal használatának feltételei.",
-    "lastUpdated": "Utolsó frissítés: 2026. január 1.",
+    "lastUpdated": "Utolsó frissítés: 2026. április 1.",
     "s1": {
       "title": "1. Bevezetés",
-      "p1": "Üdvözlünk a Calmika alkalmazásban! Ezek az Általános Szerződési Feltételek (ÁSZF) szabályozzák a Calmika mobilalkalmazás és weboldal (calmika.com) használatát.",
+      "p1": "Üdvözlünk a Calmika alkalmazásban! Ezek az Általános Szerződési Feltételek (ÁSZF) szabályozzák a Calmika mobilalkalmazás és weboldal (calmika.com) használatát. Az alkalmazás üzemeltetője: Kovács Dávid egyéni vállalkozó (adószám: 90794065-2-33, székhely: Magyarország).",
       "p2": "Az alkalmazás letöltésével és használatával elfogadod ezeket a feltételeket. Ha nem értesz egyet, kérjük, ne használd az alkalmazást."
     },
     "s2": {
@@ -754,7 +805,9 @@
       "item1": "Ingyenes csomag — az AAC Lite és a Nyugi Sarok modul örökre ingyenes",
       "item2": "Pro csomag — havi vagy éves előfizetés, 14 napos ingyenes próbaidőszakkal (reverse trial, bankkártya nélkül)",
       "item3": "A próbaidőszak lejártával, ha nem iratkozol fel, automatikusan az Ingyenes csomagra vált vissza",
-      "p2": "Az előfizetés automatikusan megújul minden időszak végén, kivéve ha legalább 24 órával a megújulás előtt lemondod a Google Play Store vagy App Store felületén."
+      "item4": "Lifetime csomag — egyszeri vásárlás, örök hozzáférés",
+      "item5": "AOSZ kedvezmény — Autizmus Országos Szövetség igazolással 50% kedvezmény minden Pro csomagra",
+      "p2": "Az előfizetés automatikusan megújul minden időszak végén, kivéve ha legalább 24 órával a megújulás előtt lemondod a Google Play Store (és a jövőbeli App Store) felületén."
     },
     "s4": {
       "title": "4. Visszatérítés",
@@ -787,6 +840,8 @@
     "subtitle": "ASD szülői tudástár — tippek, kutatások, app frissítések",
     "ctaTitle": "Próbáld ki a Calmikát",
     "ctaDescription": "Az egyetlen all-in-one autizmus fejlesztő app — offline, reklám nélkül, 30+ modullal.",
+    "authorBio": "Édesapa, akinek ikergyermekei autizmus spektrumon élnek. Programozó, aki hisz abban, hogy a technológia mindenki számára elérhető kell legyen.",
+    "ctaButton": "Google Playen letölthető",
     "categories": {
       "all": "Mind",
       "parents": "Szülőknek",

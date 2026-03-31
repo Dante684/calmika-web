@@ -218,7 +218,7 @@ export default async function BlogPostPage({ params }: Props) {
                   {post.author}
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: '#4a5568' }}>
-                  Calmika alapítója. Édesapja egy autizmus spektrumon élő kisfiúnak — a Calmikát az ő számára, és minden hasonló cipőben járó családnak építi.
+                  {t('authorBio')}
                 </p>
               </div>
             </div>
@@ -272,7 +272,7 @@ export default async function BlogPostPage({ params }: Props) {
                 style={{ backgroundColor: '#ffffff', color: '#006b5f' }}
               >
                 <PlayStoreIcon />
-                Google Playen letölthető
+                {t('ctaButton')}
               </a>
             </div>
           </article>

@@ -24,18 +24,23 @@ import { CtaBottomSection } from '@/components/shared/cta-bottom-section';
 
 // ─── Feature comparison data (i18n keys for text values) ──────────────────────
 const comparisonRows = [
-  { key: 'aac',       free: 'val_80core', pro: '5000+' },
-  { key: 'coloring',  free: 'val_3img',   pro: '110+' },
-  { key: 'vocab',     free: 'val_5words',  pro: '757' },
-  { key: 'music',     free: 'val_basic',   pro: 'val_music_pro' },
-  { key: 'schedule',  free: 'val_basic',   pro: 'val_schedule_pro' },
-  { key: 'emotions',  free: null,      pro: true },
-  { key: 'social',    free: null,      pro: true },
-  { key: 'cognitive', free: null,      pro: true },
-  { key: 'printable', free: null,      pro: 'val_86templates' },
-  { key: 'reports',   free: null,      pro: true },
-  { key: 'dualLang',  free: null,      pro: 'val_3lang' },
-  { key: 'offline',   free: true,      pro: true },
+  { key: 'aac',           free: 'val_80core',          pro: 'val_aac_pro' },
+  { key: 'calmCorner',    free: 'val_calmCorner_free',  pro: 'val_calmCorner_pro' },
+  { key: 'coloring',      free: 'val_10img',            pro: 'val_coloring_pro' },
+  { key: 'vocab',         free: 'val_vocab_free',       pro: 'val_vocab_pro' },
+  { key: 'music',         free: 'val_music_free',       pro: 'val_music_pro' },
+  { key: 'schedule',      free: 'val_schedule_free',    pro: 'val_schedule_pro' },
+  { key: 'social',        free: 'val_social_free',      pro: 'val_social_pro' },
+  { key: 'cognitive',     free: 'val_cognitive_free',   pro: 'val_cognitive_pro' },
+  { key: 'categorizer',   free: 'val_basic',            pro: 'val_full' },
+  { key: 'emotions',      free: 'val_basic',            pro: 'val_emotions_pro' },
+  { key: 'parentAcademy', free: null,                   pro: 'val_parentAcademy_pro' },
+  { key: 'printable',     free: null,                   pro: 'val_printable_pro' },
+  { key: 'reports',       free: null,                   pro: 'val_reports_pro' },
+  { key: 'streak',        free: null,                   pro: 'val_streak_pro' },
+  { key: 'colorModes',    free: 'val_colorModes_free',  pro: 'val_colorModes_pro' },
+  { key: 'offline',       free: 'val_yes',              pro: 'val_yes' },
+  { key: 'ads',           free: 'val_no_ads',           pro: 'val_no_ads' },
 ] as const;
 
 function FeatureCell({ value, t }: { value: string | boolean | null; t: ReturnType<typeof useTranslations> }) {
@@ -53,8 +58,8 @@ function FeatureCell({ value, t }: { value: string | boolean | null; t: ReturnTy
       </td>
     );
   }
-  // i18n key (starts with val_) or plain number
-  const display = value.startsWith('val_') ? t(`comparison.values.${value}`) : value;
+  // all string values are i18n keys in comparison.values
+  const display = t(`comparison.values.${value}`);
   return (
     <td className="p-5 text-center text-sm font-medium" style={{ color: '#3c4947' }}>
       {display}
@@ -86,15 +91,31 @@ function useRegionPricing(t: ReturnType<typeof useTranslations>) {
     };
   };
 
+  const getLifetimePricing = () => {
+    if (locale === 'hu') {
+      return {
+        primary: `🇭🇺 ${t('lifetime.price_hu')}`,
+        secondary: `🇪🇺 ${t('lifetime.price_eu')} · 🇺🇸 ${t('lifetime.price_us')}`,
+      };
+    }
+    return {
+      primary: `🇪🇺 ${t('lifetime.price_eu')}`,
+      secondary: `🇭🇺 ${t('lifetime.price_hu')} · 🇺🇸 ${t('lifetime.price_us')}`,
+    };
+  };
+
   return {
     monthly: getPricing('pro_monthly'),
     yearly: getPricing('pro_yearly'),
+    lifetime: getLifetimePricing(),
+    showLifetime: locale !== 'pl',
+    isHu: locale === 'hu',
   };
 }
 
 export default function ArazasPage() {
   const t = useTranslations('pricing');
-  const prices = useRegionPricing(t);
+  const { monthly: monthlyPrices, yearly: yearlyPrices, lifetime: lifetimePrices, showLifetime, isHu } = useRegionPricing(t);
 
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#f9f9f7' }}>
@@ -122,8 +143,8 @@ export default function ArazasPage() {
       </section>
 
       {/* ── 2. Pricing cards ── */}
-      <section className="container mx-auto px-4 max-w-6xl pb-28">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <section className="container mx-auto px-4 max-w-7xl pb-16">
+        <div className={`grid grid-cols-1 gap-8 items-center ${showLifetime ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
 
           {/* Card 1 — Free */}
           <div
@@ -219,11 +240,11 @@ export default function ArazasPage() {
                   className="font-nunito text-4xl font-extrabold"
                   style={{ color: '#006b5f' }}
                 >
-                  {prices.monthly.primary}
+                  {monthlyPrices.primary}
                 </span>
               </div>
               <p className="text-xs mt-1.5" style={{ color: '#6c7a77' }}>
-                {prices.monthly.secondary}
+                {monthlyPrices.secondary}
               </p>
             </div>
             <ul className="space-y-3 mb-9 flex-grow">
@@ -289,11 +310,11 @@ export default function ArazasPage() {
                   className="font-nunito text-4xl font-extrabold"
                   style={{ color: '#1a1c1b' }}
                 >
-                  {prices.yearly.primary}
+                  {yearlyPrices.primary}
                 </span>
               </div>
               <p className="text-xs mt-1.5" style={{ color: '#6c7a77' }}>
-                {prices.yearly.secondary}
+                {yearlyPrices.secondary}
               </p>
             </div>
             <ul className="space-y-3 mb-9 flex-grow">
@@ -312,8 +333,92 @@ export default function ArazasPage() {
             </button>
           </div>
 
+          {/* Card 4 — Lifetime (not shown on PL locale) */}
+          {showLifetime && (
+            <div
+              className="relative flex flex-col h-full rounded-3xl p-9"
+              style={{
+                backgroundColor: '#ffffff',
+                boxShadow: '0 40px 60px -15px rgba(249,189,34,0.15)',
+                outline: '2.5px solid #f9bd22',
+                outlineOffset: '0px',
+              }}
+            >
+              {/* "Legjobb érték" badge */}
+              <div className="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                <span
+                  className="inline-block px-5 py-1.5 rounded-full text-xs font-bold font-nunito"
+                  style={{
+                    backgroundColor: '#f9bd22',
+                    color: '#261a00',
+                    boxShadow: '0 4px 20px rgba(249,189,34,0.4)',
+                  }}
+                >
+                  {t('lifetime.badge')}
+                </span>
+              </div>
+
+              <div className="mb-7 pt-3">
+                <span
+                  className="text-xs font-bold tracking-widest uppercase block mb-2"
+                  style={{ color: '#6c7a77' }}
+                >
+                  {t('lifetime.overline')}
+                </span>
+                <h3
+                  className="font-nunito text-2xl font-bold"
+                  style={{ color: '#1a1c1b' }}
+                >
+                  {t('lifetime.name')}
+                </h3>
+              </div>
+              <div className="mb-7">
+                <div className="flex items-baseline gap-1 flex-wrap">
+                  <span
+                    className="font-nunito text-4xl font-extrabold"
+                    style={{ color: '#261a00' }}
+                  >
+                    {lifetimePrices.primary}
+                  </span>
+                </div>
+                <p className="text-xs mt-1.5" style={{ color: '#6c7a77' }}>
+                  {lifetimePrices.secondary}
+                </p>
+                <p className="text-xs mt-1" style={{ color: '#6c7a77' }}>
+                  {t('lifetime.period')}
+                </p>
+              </div>
+              <ul className="space-y-3 mb-9 flex-grow">
+                {(t.raw('lifetime.features') as string[]).map((feat, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm" style={{ color: '#1a1c1b' }}>
+                    <Check className="h-4 w-4 mt-0.5 shrink-0" style={{ color: '#f9bd22' }} />
+                    {feat}
+                  </li>
+                ))}
+              </ul>
+              <button
+                className="w-full py-4 rounded-full font-nunito font-bold text-sm transition-opacity hover:opacity-80"
+                style={{ backgroundColor: '#f9bd22', color: '#261a00' }}
+              >
+                {t('lifetime.cta')}
+              </button>
+            </div>
+          )}
+
         </div>
       </section>
+
+      {/* ── AOSZ kedvezmény szekció (csak HU locale-on) ── */}
+      {isHu && (
+        <section className="container mx-auto px-4 max-w-3xl pb-10">
+          <div
+            className="rounded-2xl p-5 text-center text-sm font-medium"
+            style={{ backgroundColor: '#fff8e1', color: '#5a3e00', border: '1px solid #f9bd22' }}
+          >
+            {t('aosz.text')}
+          </div>
+        </section>
+      )}
 
       {/* ── 3. Ethics banner ── */}
       <section className="container mx-auto px-4 max-w-5xl pb-28">

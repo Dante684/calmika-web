@@ -123,7 +123,7 @@
   },
   "story": {
     "sectionTitle": "Why Calmika?",
-    "quote": "My twin sons, Alex and Olivia, were diagnosed with autism at age 2. As a parent, the first months are the hardest — everyone says something different, apps are expensive, and most don't even support Hungarian. That's why I started building Calmika: so that one app can provide everything an ASD family needs.",
+    "quote": "My twins were diagnosed with autism at age 2. As a parent, the first months are the hardest — everyone says something different, apps are expensive, and most don't even support Hungarian. That's why I started building Calmika: so that one app can provide everything an ASD family needs.",
     "author": "Dávid, founder of Calmika",
     "ctaReadMore": "Read the full story",
     "overline": "Our Story",
@@ -339,34 +339,80 @@
         "Printable templates (86)"
       ]
     },
+    "lifetime": {
+      "overline": "Forever Access",
+      "name": "Lifetime",
+      "badge": "Best value",
+      "price_hu": "49,990 HUF",
+      "price_eu": "€149.99",
+      "price_us": "$179.99",
+      "period": "one-time purchase",
+      "cta": "Buy now",
+      "features": [
+        "ALL modules (30+) forever",
+        "5000+ AAC words",
+        "Dual language (3 languages)",
+        "Offline mode",
+        "Parent reports",
+        "Printable templates (86)",
+        "All future updates included"
+      ]
+    },
+    "aosz": {
+      "text": "🏷️ AOSZ discount: Autizmus Országos Szövetség igazolással 50% off all Pro plans. Details: hello@calmika.com"
+    },
     "comparison": {
       "title": "What's included in each plan?",
       "feature": "Feature",
       "free": "Free",
       "pro": "Pro",
       "rows": {
-        "aac": "AAC words",
+        "aac": "AAC Communication",
+        "calmCorner": "Calm Corner",
         "coloring": "Coloring",
         "vocab": "Vocabulary",
         "music": "Music Therapy",
-        "schedule": "Schedule",
-        "emotions": "Emotions",
+        "schedule": "Visual Schedule",
         "social": "Social Stories",
         "cognitive": "Cognitive Games",
-        "printable": "Printable templates",
-        "reports": "Parent reports",
-        "dualLang": "Dual language",
-        "offline": "Offline mode"
+        "categorizer": "Categorization",
+        "emotions": "Emotions & Zones",
+        "parentAcademy": "Parent Academy",
+        "printable": "Printable Materials",
+        "reports": "Reports",
+        "streak": "Streak/XP",
+        "colorModes": "Color Modes",
+        "offline": "Offline",
+        "ads": "Ads"
       },
       "values": {
-        "val_80core": "80 core",
-        "val_3img": "3 images",
-        "val_5words": "5 words",
+        "val_80core": "✅ 80 core words (ALWAYS FREE)",
+        "val_aac_pro": "✅ 5000+ words, inflection, prediction",
+        "val_calmCorner_free": "✅ Full (ALWAYS FREE)",
+        "val_calmCorner_pro": "✅ Full",
+        "val_10img": "10 images / category",
+        "val_coloring_pro": "✅ 110+ images",
+        "val_vocab_free": "Basic words",
+        "val_vocab_pro": "✅ 757 words, dual language",
+        "val_music_free": "Basic instruments",
+        "val_music_pro": "✅ 6 sub-modules, 15 instruments",
+        "val_schedule_free": "3 routines",
+        "val_schedule_pro": "✅ Unlimited",
+        "val_social_free": "5 stories",
+        "val_social_pro": "✅ 20+ stories",
+        "val_cognitive_free": "3 / day",
+        "val_cognitive_pro": "✅ Unlimited",
         "val_basic": "Basic",
-        "val_music_pro": "6 sub-modules, 15 instruments",
-        "val_schedule_pro": "Full + templates",
-        "val_86templates": "86 templates",
-        "val_3lang": "✅ 3 languages (HU/EN/PL)"
+        "val_full": "✅ Full",
+        "val_emotions_pro": "✅ Full + journal",
+        "val_parentAcademy_pro": "✅ 37 articles",
+        "val_printable_pro": "✅ 86 templates",
+        "val_reports_pro": "✅ Weekly/monthly PDF",
+        "val_streak_pro": "✅ Motivation system",
+        "val_colorModes_free": "Default",
+        "val_colorModes_pro": "✅ 4 modes",
+        "val_yes": "✅",
+        "val_no_ads": "❌ None"
       }
     },
     "ethics": {
@@ -400,6 +446,11 @@
       "heroTitle1": "From Diagnosis to",
       "heroTitle2": "Daily Support",
       "sectionTitle": "How We Got Here",
+      "quote1": "Communication is a human right, not a luxury.",
+      "quote2": "Two diagnoses at once. A mountain on the horizon, and no map.",
+      "quote3": "Coding at 3 AM. Line by line. For them.",
+      "quote4": "One communication button became a neurodiversity ecosystem.",
+      "quote5": "Global impact, with local heart and soul.",
       "y2022": {
         "title": "The Diagnosis",
         "text": "My twins were diagnosed with autism at age two. The first months were complete chaos — running from one doctor to the next, everyone saying something different. Online, I found only expensive English-language apps that couldn't even meet our needs."
@@ -737,10 +788,10 @@
   "terms": {
     "title": "Terms of Service",
     "subtitle": "Terms and conditions for using the Calmika app and website.",
-    "lastUpdated": "Last updated: January 1, 2026.",
+    "lastUpdated": "Last updated: April 1, 2026.",
     "s1": {
       "title": "1. Introduction",
-      "p1": "Welcome to Calmika! These Terms of Service govern the use of the Calmika mobile app and website (calmika.com).",
+      "p1": "Welcome to Calmika! These Terms of Service govern the use of the Calmika mobile app and website (calmika.com), operated by Dávid Kovács, sole proprietor (tax ID: 90794065-2-33, Hungary).",
       "p2": "By downloading and using the app, you agree to these terms. If you disagree, please do not use the app."
     },
     "s2": {
@@ -754,7 +805,9 @@
       "item1": "Free plan — AAC Lite and Calm Corner are free forever",
       "item2": "Pro plan — monthly or annual subscription with a 14-day free trial (reverse trial, no credit card required)",
       "item3": "After the trial, if you don't subscribe, the app automatically reverts to the Free plan",
-      "p2": "The subscription renews automatically each period unless cancelled at least 24 hours before renewal via Google Play Store or App Store."
+      "item4": "Lifetime plan — one-time purchase, forever access",
+      "item5": "Disability discount — 50% off all Pro plans with valid autism association certificate",
+      "p2": "The subscription renews automatically each period unless cancelled at least 24 hours before renewal via Google Play Store (and future App Store)."
     },
     "s4": {
       "title": "4. Refunds",
@@ -787,6 +840,8 @@
     "subtitle": "ASD parenting knowledge base — tips, research, app updates",
     "ctaTitle": "Try Calmika",
     "ctaDescription": "The only all-in-one autism development app — offline, ad-free, with 30+ modules.",
+    "authorBio": "Father of twins on the autism spectrum. Developer who believes technology should be accessible to everyone.",
+    "ctaButton": "Available on Google Play",
     "categories": {
       "all": "All",
       "parents": "For Parents",

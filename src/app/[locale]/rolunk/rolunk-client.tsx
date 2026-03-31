@@ -204,7 +204,7 @@ export default function RolunkClient() {
                   className="font-nunito font-bold text-base leading-snug"
                   style={{ color: '#261a00' }}
                 >
-                  &ldquo;A kommunikáció emberi jog, nem luxus.&rdquo;
+                  &ldquo;{t('timeline.quote1')}&rdquo;
                 </p>
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function RolunkClient() {
               title={t('timeline.y2022.title')}
               text={t('timeline.y2022.text')}
               icon="👨‍👩‍👦‍👦"
-              quote="Két diagnózis egyszerre. Hegy a láthatáron, és nincs térkép."
+              quote={t('timeline.quote2')}
               reverse={false}
             />
             <TimelineItem
@@ -249,7 +249,7 @@ export default function RolunkClient() {
               title={t('timeline.y2023.title')}
               text={t('timeline.y2023.text')}
               icon="💻"
-              quote="Hajnali 3-kor kódolok. Soronként. Értük."
+              quote={t('timeline.quote3')}
               reverse={true}
             />
             <TimelineItem
@@ -257,7 +257,7 @@ export default function RolunkClient() {
               title={t('timeline.y2024.title')}
               text={t('timeline.y2024.text')}
               icon="🔧"
-              quote="Egy kommunikációs gombból egy neurodiverzitás-ökoszisztéma lett."
+              quote={t('timeline.quote4')}
               reverse={false}
             />
             <TimelineItem
@@ -265,7 +265,7 @@ export default function RolunkClient() {
               title={t('timeline.y2025.title')}
               text={t('timeline.y2025.text')}
               icon="🌍"
-              quote="Globális hatás, helyi és személyes szívvel."
+              quote={t('timeline.quote5')}
               reverse={true}
             />
           </div>

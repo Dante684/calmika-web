@@ -206,8 +206,8 @@ export default async function ModulePage({ params }: Props) {
           </p>
           <p className="text-calmika-teal-700 text-base mt-2 font-medium">
             {isHu
-              ? 'Calmiká-ban: ingyenesen kipróbálható, Pro-ban teljes hozzáféréssel. 🎁'
-              : 'In Calmika: free to try, full access with Pro. 🎁'}
+              ? 'Calmiká-ban: örökre ingyenes, korlátlanul. 🎁'
+              : 'In Calmika: free forever, unlimited. 🎁'}
           </p>
           {moduleKey === 'nyugi-sarok' && (
             <div className="mt-4 inline-block bg-calmika-teal-500 text-white font-bold px-6 py-2 rounded-full text-sm">
