@@ -32,7 +32,6 @@ export default function Footer() {
   const supportLinks = [
     { key: 'faq', label: t('nav.faq'), href: '/gyik' },
     { key: 'contact', label: t('nav.contact'), href: '/kapcsolat' },
-    { key: 'beta', label: t('nav.beta'), href: '/beta' },
     { key: 'privacy', label: t('nav.privacy'), href: '/adatvedelem' },
     { key: 'terms', label: t('nav.terms'), href: '/aszf' },
   ] as const;
