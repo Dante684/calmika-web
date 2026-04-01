@@ -29,7 +29,7 @@ const competitors: CompetitorData[] = [
     isCalmika: true,
     price: "€5,99",
     platform: "Android (iOS hamarosan)",
-    aacWords: "5000+",
+    aacWords: "77 000+",
     education: "yes",
     dualLang: "yes",
     freeTier: "yes",
@@ -106,7 +106,7 @@ function StatsRow() {
   const t = useTranslations("socialProof.stats")
 
   const stats = [
-    { value: 5000, suffix: "+", label: t("words") },
+    { value: 77000, suffix: "+", label: t("words") },
     { value: 30, suffix: "+", label: t("modules") },
     { value: 3, suffix: "", label: t("languages") },
     { value: 0, suffix: "", label: t("ads") },
