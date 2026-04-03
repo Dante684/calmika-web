@@ -16,4 +16,7 @@ export type PromoCode = {
   created_by: string | null;
   note: string | null;
   is_active: boolean;
+  recipient_email: string | null;
+  recipient_name: string | null;
+  email_sent_at: string | null;
 };
