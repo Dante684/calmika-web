@@ -179,7 +179,7 @@ function RegistrationForm() {
     const body = encodeURIComponent(
       `Név: ${formData.name}\nEmail: ${formData.email}\nSzervezet: ${formData.organization}\nSzerep: ${formData.role}\n\nÜzenet:\n${formData.message}`
     );
-    window.location.href = `mailto:hello@calmika.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@calmika.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
   }
 

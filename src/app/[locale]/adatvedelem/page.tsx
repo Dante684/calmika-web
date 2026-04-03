@@ -106,10 +106,10 @@ export default function AdatvedelemPage() {
             <p>{t('s6.p1')}</p>
             <p>
               <a
-                href="mailto:hello@calmika.com"
+                href="mailto:info@calmika.com"
                 className="text-calmika-teal-600 hover:underline font-semibold"
               >
-                hello@calmika.com
+                info@calmika.com
               </a>
             </p>
           </Section>
@@ -119,10 +119,10 @@ export default function AdatvedelemPage() {
             <p>{t('s7.p1')}</p>
             <p>
               <a
-                href="mailto:hello@calmika.com"
+                href="mailto:info@calmika.com"
                 className="text-calmika-teal-600 hover:underline font-semibold"
               >
-                hello@calmika.com
+                info@calmika.com
               </a>
             </p>
           </Section>

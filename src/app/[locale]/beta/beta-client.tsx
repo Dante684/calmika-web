@@ -127,7 +127,7 @@ function BetaForm({ t }: { t: ReturnType<typeof useTranslations> }) {
     const body = encodeURIComponent(
       `Név: ${form.name}\nEmail: ${form.email}\nASD gyerek: ${form.hasAsdChild}\nPlatform: ${form.platform}`
     );
-    window.location.href = `mailto:hello@calmika.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@calmika.com?subject=${subject}&body=${body}`;
 
     // Optimistic success
     setTimeout(() => setState('success'), 600);

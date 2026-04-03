@@ -14,7 +14,7 @@ const organizationSchema = {
   url: 'https://calmika-web.vercel.app',
   logo: 'https://calmika-web.vercel.app/images/logo.png',
   description: 'Autism-friendly educational app for children with ASD',
-  email: 'hello@calmika.com',
+  email: 'info@calmika.com',
   sameAs: [] as string[],
 };
 

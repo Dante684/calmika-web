@@ -106,7 +106,7 @@
     },
     "contact": {
       "title": "Kapcsolat – írj nekünk",
-      "description": "Kérdésed van a Calmikáról? Terapeutai megkeresés, hibabejelentés vagy sajtó – 24 órán belül válaszolunk minden emailre. Írj a hello@calmika.com címre."
+      "description": "Kérdésed van a Calmikáról? Terapeutai megkeresés, hibabejelentés vagy sajtó – 24 órán belül válaszolunk minden emailre. Írj a info@calmika.com címre."
     },
     "faq": {
       "title": "Gyakran Ismételt Kérdések",
@@ -359,7 +359,7 @@
       ]
     },
     "aosz": {
-      "text": "🏷️ AOSZ kedvezmény: Autizmus Országos Szövetség igazolással 50% kedvezmény minden Pro csomagra. Részletek: hello@calmika.com"
+      "text": "🏷️ AOSZ kedvezmény: Autizmus Országos Szövetség igazolással 50% kedvezmény minden Pro csomagra. Részletek: info@calmika.com"
     },
     "comparison": {
       "title": "Mit tartalmaz az egyes csomagok?",
@@ -433,7 +433,7 @@
       "q3": "Mi történik a 14 nap után?",
       "a3": "Ha nem fizetsz elő, automatikusan visszavált az Ingyenes csomagra. Az AAC és Nyugi Sarok megmarad — ezek örökre ingyenesek.",
       "q4": "Van visszatérítési garancia?",
-      "a4": "Igen. Ha az első 7 napon belül (előfizetés után) nem vagy elégedett, visszatérítjük. Írj nekünk a hello@calmika.com címre."
+      "a4": "Igen. Ha az első 7 napon belül (előfizetés után) nem vagy elégedett, visszatérítjük. Írj nekünk a info@calmika.com címre."
     }
   },
   "about": {
@@ -812,7 +812,7 @@
     "s4": {
       "title": "4. Visszatérítés",
       "p1": "A visszatérítések a Google Play Store és az Apple App Store visszatérítési szabályai szerint történnek. A platformok visszatérítési kérelmeket közvetlenül kezelnek.",
-      "p2": "Ha az első 7 napban nem vagy elégedett az előfizetéssel, fordulj hozzánk közvetlenül a hello@calmika.com e-mail címen — mindent megteszünk, hogy megoldjuk a problémát."
+      "p2": "Ha az első 7 napban nem vagy elégedett az előfizetéssel, fordulj hozzánk közvetlenül a info@calmika.com e-mail címen — mindent megteszünk, hogy megoldjuk a problémát."
     },
     "s5": {
       "title": "5. Szellemi tulajdon",

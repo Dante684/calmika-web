@@ -152,11 +152,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:hello@calmika.com"
+                  href="mailto:info@calmika.com"
                   className="flex items-center gap-2 text-sm text-slate-300 hover:text-calmika-teal-300 transition-colors"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>hello@calmika.com</span>
+                  <span>info@calmika.com</span>
                 </a>
               </li>
             </ul>

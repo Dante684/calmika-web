@@ -49,7 +49,7 @@ function ContactForm({ t }: { t: ReturnType<typeof useTranslations> }) {
     const mailBody = encodeURIComponent(
       `Név: ${form.name}\nEmail: ${form.email}\nTárgy: ${form.subject}\n\n${form.message}`
     );
-    window.location.href = `mailto:hello@calmika.com?subject=${mailSubject}&body=${mailBody}`;
+    window.location.href = `mailto:info@calmika.com?subject=${mailSubject}&body=${mailBody}`;
 
     setTimeout(() => setState('success'), 600);
   };
@@ -211,10 +211,10 @@ export default function KapcsolatClient() {
                     <h3 className="font-semibold text-calmika-dark">{t('info.emailTitle')}</h3>
                   </div>
                   <a
-                    href="mailto:hello@calmika.com"
+                    href="mailto:info@calmika.com"
                     className="text-calmika-teal-600 font-semibold hover:underline text-sm"
                   >
-                    hello@calmika.com
+                    info@calmika.com
                   </a>
                 </div>
 

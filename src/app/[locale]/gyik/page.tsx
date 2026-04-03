@@ -191,10 +191,10 @@ export default function GyikPage() {
                 {t('contact.contactLink')}
               </Link>
               <a
-                href="mailto:hello@calmika.com"
+                href="mailto:info@calmika.com"
                 className="inline-flex items-center gap-2 border border-calmika-teal-400 text-calmika-teal-600 font-semibold rounded-full px-7 py-3 hover:bg-calmika-teal-50 transition-colors duration-200"
               >
-                hello@calmika.com
+                info@calmika.com
               </a>
             </div>
           </div>

@@ -105,10 +105,10 @@ export default function AszfPage() {
             <p>{t('s9.p1')}</p>
             <p>
               <a
-                href="mailto:hello@calmika.com"
+                href="mailto:info@calmika.com"
                 className="text-calmika-teal-600 hover:underline font-semibold"
               >
-                hello@calmika.com
+                info@calmika.com
               </a>
             </p>
           </Section>
