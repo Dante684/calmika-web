@@ -114,11 +114,11 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Privacy information"
+      "description": "Learn how Calmika protects your family's privacy. No child data collected, fully offline, COPPA & GDPR compliant. Transparent data practices for parents."
     },
     "terms": {
       "title": "Terms of Service",
-      "description": "Terms and conditions"
+      "description": "Terms of service for the Calmika autism development app and calmika.com website. Subscription, refund policy, and usage conditions."
     }
   },
   "story": {
@@ -168,7 +168,7 @@
     },
     "kifesto": {
       "name": "Coloring",
-      "desc": "110+ images, sensory world, calming coloring"
+      "desc": "393+ images, sensory world, calming coloring"
     },
     "nyugi-sarok": {
       "name": "Calm Corner",
@@ -359,7 +359,7 @@
       ]
     },
     "aosz": {
-      "text": "🏷️ AOSZ discount: Autizmus Országos Szövetség igazolással 50% off all Pro plans. Details: info@calmika.com"
+      "text": "🏷️ Autism association discount: 50% off all Pro plans with a valid certificate from a recognized national autism association. Details: info@calmika.com"
     },
     "comparison": {
       "title": "What's included in each plan?",

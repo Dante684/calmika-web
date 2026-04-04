@@ -168,7 +168,7 @@
     },
     "kifesto": {
       "name": "Kolorowanki",
-      "desc": "Ponad 110 obrazów, świat sensoryczny, uspokajające kolorowanie"
+      "desc": "Ponad 393 obrazów, świat sensoryczny, uspokajające kolorowanie"
     },
     "nyugi-sarok": {
       "name": "Spokojny Kącik",
@@ -358,7 +358,13 @@
         "printable": "Szablony do druku",
         "reports": "Raporty dla rodziców",
         "dualLang": "Tryb dwujęzyczny",
-        "offline": "Tryb offline"
+        "offline": "Tryb offline",
+        "calmCorner": "Spokojny Kącik",
+        "categorizer": "Kategoryzacja",
+        "parentAcademy": "Akademia Rodziców",
+        "streak": "Streak/XP",
+        "colorModes": "Tryby kolorów",
+        "ads": "Reklamy"
       },
       "values": {
         "val_80core": "80 podstawowych",
@@ -368,7 +374,30 @@
         "val_music_pro": "6 podmodułów, 15 instrumentów",
         "val_schedule_pro": "Pełny + szablony",
         "val_86templates": "86 szablonów",
-        "val_3lang": "✅ 3 języki (HU/EN/PL)"
+        "val_3lang": "✅ 3 języki (HU/EN/PL)",
+        "val_aac_pro": "✅ Ponad 5000 słów, fleksja, predykcja",
+        "val_calmCorner_free": "✅ Pełny (ZAWSZE BEZPŁATNY)",
+        "val_calmCorner_pro": "✅ Pełny",
+        "val_10img": "10 obrazów / kategoria",
+        "val_coloring_pro": "✅ 393+ obrazów",
+        "val_vocab_free": "Podstawowe słowa",
+        "val_vocab_pro": "✅ 757 słów, tryb dwujęzyczny",
+        "val_music_free": "Podstawowe instrumenty",
+        "val_schedule_free": "3 rutyny",
+        "val_social_free": "5 historii",
+        "val_social_pro": "✅ 20+ historii",
+        "val_cognitive_free": "3 dziennie",
+        "val_cognitive_pro": "✅ Bez limitu",
+        "val_full": "✅ Pełny",
+        "val_emotions_pro": "✅ Pełny + dziennik",
+        "val_parentAcademy_pro": "✅ 37 artykułów",
+        "val_printable_pro": "✅ 86 szablonów",
+        "val_reports_pro": "✅ Tygodniowy/miesięczny PDF",
+        "val_streak_pro": "✅ System motywacyjny",
+        "val_colorModes_free": "Domyślny",
+        "val_colorModes_pro": "✅ 4 tryby",
+        "val_yes": "✅",
+        "val_no_ads": "❌ Brak"
       }
     },
     "ethics": {
@@ -390,6 +419,29 @@
       "a3": "Jeśli nie wykupisz subskrypcji, automatycznie powrócisz do planu bezpłatnego. AAC i Spokojny Kącik pozostają — są bezpłatne na zawsze.",
       "q4": "Czy jest gwarancja zwrotu pieniędzy?",
       "a4": "Tak. Jeśli nie jesteś zadowolony/a w ciągu pierwszych 7 dni od subskrypcji, zwrócimy pieniądze. Napisz na info@calmika.com."
+    },
+    "lifetime": {
+      "overline": "Dostęp Na Zawsze",
+      "name": "Lifetime",
+      "badge": "Najlepsza wartość",
+      "price_hu": "49 990 HUF",
+      "price_pl": "999,99 zł",
+      "price_eu": "€149,99",
+      "price_us": "$179,99",
+      "period": "jednorazowy zakup",
+      "cta": "Kup teraz",
+      "features": [
+        "WSZYSTKIE moduły (30+) na zawsze",
+        "Ponad 5000 słów AAC",
+        "Tryb dwujęzyczny (3 języki)",
+        "Tryb offline",
+        "Raporty dla rodziców",
+        "Szablony do druku (86)",
+        "Wszystkie przyszłe aktualizacje"
+      ]
+    },
+    "aosz": {
+      "text": "🏷️ Zniżka dla stowarzyszeń autyzmu: 50% zniżki na wszystkie plany Pro z ważnym certyfikatem uznanego stowarzyszenia autyzmu. Szczegóły: info@calmika.com"
     }
   },
   "about": {
@@ -417,7 +469,12 @@
       "y2025": {
         "title": "Calmika",
         "text": "Dziś Calmika ma ponad 30 modułów, jest w pełni dostępna w 3 językach (HU/EN/PL), a komunikacja AAC + Spokojny Kącik pozostaną bezpłatne na zawsze. Bo komunikacja to podstawowe prawo — nie luksus."
-      }
+      },
+      "quote1": "Komunikacja to prawo człowieka, nie luksus.",
+      "quote2": "Dwie diagnozy naraz. Góra na horyzoncie i brak mapy.",
+      "quote3": "Koduję o 3 w nocy. Linia po linii. Dla nich.",
+      "quote4": "Jeden przycisk komunikacyjny stał się ekosystemem neuroróżnorodności.",
+      "quote5": "Globalny wpływ, z lokalnym sercem i duszą."
     },
     "values": {
       "sectionTitle": "Nasze Wartości",
@@ -691,7 +748,7 @@
   "privacy": {
     "title": "Polityka Prywatności",
     "subtitle": "Jasny, ludzki język — bez prawniczego żargonu.",
-    "lastUpdated": "Ostatnia aktualizacja: 1 stycznia 2026.",
+    "lastUpdated": "Ostatnia aktualizacja: 1 kwietnia 2026.",
     "s1": {
       "title": "1. Wprowadzenie",
       "p1": "Niniejsza polityka prywatności opisuje, w jaki sposób Calmika — prowadzona przez Dávida Kovácsa, jednoosobową działalność gospodarczą (Węgry) — przetwarza dane osobowe na stronie internetowej calmika.com i w aplikacji mobilnej Calmika.",
@@ -739,7 +796,7 @@
   "terms": {
     "title": "Regulamin",
     "subtitle": "Warunki korzystania z aplikacji Calmika i strony internetowej.",
-    "lastUpdated": "Ostatnia aktualizacja: 1 stycznia 2026.",
+    "lastUpdated": "Ostatnia aktualizacja: 1 kwietnia 2026.",
     "s1": {
       "title": "1. Wprowadzenie",
       "p1": "Witamy w Calmice! Niniejszy Regulamin reguluje korzystanie z aplikacji mobilnej Calmika i strony internetowej (calmika.com).",
@@ -756,6 +813,8 @@
       "item1": "Plan bezpłatny — AAC Lite i Spokojny Kącik są bezpłatne na zawsze",
       "item2": "Plan Pro — miesięczna lub roczna subskrypcja z 14-dniowym bezpłatnym okresem próbnym (bez karty kredytowej)",
       "item3": "Po zakończeniu okresu próbnego, jeśli nie wykupisz subskrypcji, aplikacja automatycznie powróci do planu bezpłatnego",
+      "item4": "Plan Lifetime — jednorazowy zakup, dostęp na zawsze",
+      "item5": "Zniżka dla stowarzyszeń autyzmu — 50% zniżki na wszystkie plany Pro z ważnym certyfikatem uznanego stowarzyszenia autyzmu",
       "p2": "Subskrypcja odnawia się automatycznie w każdym okresie, chyba że zostanie anulowana co najmniej 24 godziny przed odnowieniem przez Google Play Store lub App Store."
     },
     "s4": {
@@ -806,6 +865,8 @@
       "button": "Zapisz się"
     },
     "share": "Udostępnij",
-    "toc": "Spis treści"
+    "toc": "Spis treści",
+    "authorBio": "Ojciec bliźniaków w spektrum autyzmu. Programista, który wierzy, że technologia powinna być dostępna dla każdego.",
+    "ctaButton": "Dostępna w Google Play"
   }
 }

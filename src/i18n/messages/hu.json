@@ -131,7 +131,7 @@
   },
   "ctaBottom": {
     "title": "Próbáld ki a Calmikát — 14 nap ingyen, teljes Pro",
-    "subtitle": "Nincs bankkártya szükség. Töltsd le most.",
+    "subtitle": "Nem szükséges bankkártya. Töltsd le most.",
     "playStore": "Google Play",
     "appStore": "App Store",
     "appStoreComingSoon": "Hamarosan",
@@ -168,7 +168,7 @@
     },
     "kifesto": {
       "name": "Kifestő",
-      "desc": "110+ kép, szenzoros világ, nyugtató színezés"
+      "desc": "393+ kép, szenzoros világ, nyugtató színezés"
     },
     "nyugi-sarok": {
       "name": "Nyugi Sarok",
@@ -210,7 +210,7 @@
     "subtitle": "Az egyetlen all-in-one autizmus fejlesztő app — AAC kommunikáció, vizuális napirend, zeneterápia és 30+ modul. Ingyenesen.",
     "ctaPrimary": "Töltsd le ingyen",
     "ctaSecondary": "Nézd meg a funkciókat",
-    "titleLine1": "Segítsd gyermeked megtalálni",
+    "titleLine1": "Segítsd gyermekedet megtalálni",
     "titleLine2": "a hangját ✨",
     "mockupAlt": "Calmika alkalmazás főoldal tanulási modulokkal",
     "trustRated": "30+ modul, offline",
